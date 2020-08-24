@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.App-container {
+   width: 100%;
+   height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titleBox {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 7vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titleBox .display {
+   position: absolute;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 3.5vw;
+   font-weight: lighter;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.display-menu  {
+   float: left;
+   margin: 5px 0 0 5px;
+   padding: 0;
+   font-size: 1.5vw;
+   font-weight: lighter;
+   color: black;
+   cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.display-menu:hover  {
+   cursor: pointer;
+   color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img {
+   width: 20vw;
+   height: 20vw;
+   border-radius: 8px;
+   border: 3px solid black;
 }
+
+div.row  {
+   width: 100%;
+   padding-left: 8.2vw;
+}
+
+.column  {
+   padding: 10px;
+}
+
+.row .column .lead {
+   font-size: 1.2vw;
+   text-align: center;
+   margin: 2px 0 0 0;
+   padding: 0;
+   font-weight: bold;
+}
+
+.display-2  {
+   text-align: center;
+   padding-bottom: 1vw;
+}
+
+.jumbotron  {
+   width: 90%;
+   margin-left: 5%;
+
+}
+
+.jumbotron .lead  {
+   font-size: 1.5vw;
+   font-weight: bold;
+}
+

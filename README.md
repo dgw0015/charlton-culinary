@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## About This Application
+This application will be used to show case Charlton's culinary experiences as well as add 
+to her overall portfolio.
 
 ## Available Scripts
 
