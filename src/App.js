@@ -9,11 +9,23 @@ import porkLionPlate from "./images/pork loin plate.JPG";
 import lasagna from "./images/top view lasagna.JPG";
 import porkLoinLong from "./images/pork loin long view.JPG";
 import { BsBoxArrowInUpLeft } from "react-icons/bs";
+import { useState } from 'react';
+import { Collapse, Button, CardBody, Card } from 'reactstrap';
 
 
 function App() {
 
-  return (
+    const [researchIsOpen, setResearchIsOpen] = useState(false);
+    const [recipeIsOpen, setRecipeIsOpen] = useState(false);
+    const [foodCostOpen, setFoodCostIsOpen] = useState(false);
+    const [reflectionIsOpen, setReflectionIsOpen] = useState(false);
+
+    const toggle = () => setResearchIsOpen(!researchIsOpen);
+    const toggle2 = () => setRecipeIsOpen(!recipeIsOpen);
+    const toggle3 = () => setFoodCostIsOpen(!foodCostOpen);
+    const toggle4 = () => setReflectionIsOpen(!reflectionIsOpen);
+
+    return (
     <div className="App-container">
        <a href="https://charltonkam.now.sh/">
           <h1 className="display-menu">
@@ -64,15 +76,55 @@ function App() {
         <br/>
         <hr className="hr-4" />
         <br/>
-        <h1 className="display-2">Recipes</h1>
+        <br/>
+        <h1 className="display-2"><mark>Recipes</mark></h1>
         <div className="jumbotron">
             <h1 className="display-4">Recipe Name!</h1>
-            <p className="h5">Short description of what were making</p>
+            <p className="h5">Week</p>
             <hr className="my-4"/>
 
-            <p className="lead">Ingredients</p>
-            <li className="ingredients">item-1</li>
-            <li className="ingredients">item-2</li>
+            <div>
+                <Button outline color="secondary" onClick={toggle} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen}>
+                    <Card>
+                        <CardBody>
+                            About this recipe.
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div>
+                <Button outline color="danger" onClick={toggle2} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen}>
+                    <Card>
+                        <CardBody>
+                            <li className="ingredients">item-1</li>
+                            <li className="ingredients">item-2</li>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div>
+                <Button outline color="success" onClick={toggle3} style={{ marginBottom: '1rem' }}>Food Costs</Button>
+                <Collapse isOpen={foodCostOpen}>
+                    <Card>
+                        <CardBody>
+                            Excel Doc can go here.
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div>
+                <Button outline color="primary" onClick={toggle4} style={{ marginBottom: '1rem' }}>Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen}>
+                    <Card>
+                        <CardBody>
+                            Reflection body will go here
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
         </div>
     </div>
   );

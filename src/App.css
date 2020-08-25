@@ -61,17 +61,21 @@ div.row  {
 
 .display-2  {
    text-align: center;
-   padding-bottom: 1vw;
 }
 
 .jumbotron  {
    width: 90%;
+   margin-top: 3vw;
    margin-left: 5%;
-
 }
 
 .jumbotron .lead  {
    font-size: 1.5vw;
    font-weight: bold;
+}
+
+.jumbotron button {
+   width: 8vw;
+   margin-top: 3px;
 }
 
