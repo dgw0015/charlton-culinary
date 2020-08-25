@@ -42,11 +42,11 @@ function App() {
           </div>
           <div className="column">
               <img src={faccacioBread} alt="faccacio Bread" className="img" />
-              <p className="lead">Faccacio Bread</p>
+              <p className="lead">Focaccia Bread</p>
           </div>
            <div className="column">
-               <img src={portaBella} alt="portabella mushroom dish" className="img" />
-               <p className="lead">Portabella Mushroom</p>
+               <img src={portaBella} alt="portobello mushroom dish" className="img" />
+               <p className="lead">Portobello Mushroom</p>
            </div>
            <div className="column">
                <img src={lasagna} alt="lasagna that charlton made" className="img" />
