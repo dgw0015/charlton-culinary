@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import bananaBread from "./images/banana bread long view.JPG";
 import chocStrawberryCake from "./images/choco & strawberries side view.JPG";
@@ -8,9 +8,11 @@ import portaBella from "./images/stuffed portobello side view.JPG";
 import porkLionPlate from "./images/pork loin plate.JPG";
 import lasagna from "./images/top view lasagna.JPG";
 import porkLoinLong from "./images/pork loin long view.JPG";
-import { BsBoxArrowInUpLeft } from "react-icons/bs";
-import { useState } from 'react';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import {BsBoxArrowInUpLeft} from "react-icons/bs";
+import {FaFacebook, FaLinkedin} from "react-icons/fa";
+import {FiInstagram} from "react-icons/fi";
+import {RiPinterestFill} from "react-icons/ri";
+import {Button, Card, CardBody, Collapse, Table} from 'reactstrap';
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
     const toggle3 = () => setFoodCostIsOpen(!foodCostOpen);
     const toggle4 = () => setReflectionIsOpen(!reflectionIsOpen);
 
+
     return (
     <div className="App-container">
        <a href="https://charlton-website.vercel.app/">
@@ -32,8 +35,14 @@ function App() {
              <BsBoxArrowInUpLeft /> Back to Website
           </h1>
        </a>
+        <div className="socialMediaLinks">
+            <a className="facebook" href="https://www.facebook.com/charlton.kam" ><FaFacebook /></a>
+            <a className="linkedIn" href="https://www.linkedin.com/in/charlton-kam-ba81b5176/"><FaLinkedin /></a>
+            <a className="pinterest" href="https://www.pinterest.com/auburnthunder17/"><RiPinterestFill /></a>
+            <a className="instagram" href="https://www.instagram.com/c.kam_design/"><FiInstagram /></a>
+        </div>
         <div className="titleBox">
-            <h1 className="display">Welcome to My Culinary Page</h1>
+            <h1 className="display"><mark>Welcome to My Culinary Page</mark></h1>
         </div>
        <div className="row">
           <div className="column">
@@ -79,32 +88,219 @@ function App() {
         <br/>
         <h1 className="display-2"><mark>Recipes</mark></h1>
         <div className="jumbotron">
-            <h1 className="display-4">Recipe Name!</h1>
-            <p className="h5">Week</p>
+            <h1 className="display-4">Minestrone Soup & Vegetable Stock</h1>
+            <p className="h4">Week 1</p>
             <hr className="my-4"/>
 
-            <div>
+            <div className="recipeCard" id="reflection">
                 <Button outline color="secondary" onClick={toggle} style={{ marginBottom: '1rem' }}>Research</Button>
                 <Collapse isOpen={researchIsOpen}>
                     <Card>
                         <CardBody>
-                            About this recipe.
+                            <p>
+                                Any soup can be great comfort food when it comes to a cold, winter day or something to enjoy after a long day at work.
+                                Not only is Minestrone soup nutritious and delicious, it’s not very difficult to make. You can enjoy it as a side dish or even as a main course
+                                with some fresh bread. Minestrone Soup is an Italian soup that is typically made with vegetable stock or beef stock as well as adding pasta or rice
+                                accompanied with an array of vegetables and beans and herbs. Minestrone soup was originally created by peasants who used leftover food in order to reduce
+                                food waste and provide meals for their families (Devteam, 2019, para. 5). A lot of people have their own ways of making this soup because of how many
+                                different types of vegetables, pastas, herbs, and rice you can add to make it unique. The objectives that we’re trying to learn from this is how to
+                                make a basic vegetable stock using a simmering moist-heat cooking method and practicing our knife skills for chopping vegetables and herbs.
+                                The simmering method helps to bring out the natural flavors of the herbs and vegetables and also helps to infuse the flavors into the soup because it is a
+                                gentler process of cooking as opposed to boiling everything. If you’re looking for a new soup recipe and love vegetables and herbs,
+                                check out this delicious Minestrone soup recipe below!
+                            </p>
+                            <p>
+                                Making a vegetable stock is a very quick and easy process. There are many uses for vegetable stock other than for soup; for example,
+                                you can use it to make gravy or dressings, to cook casseroles, to cook/flavor grains like rice or quinoa, and in different pasta recipes (Jawad, Y. 2019).
+                                All stocks are made from 3 basic ingredients that involve simmering them together: mirepoix (onions, carrots, and celery), bones, and seasonings.
+                                You can add anything else or even take out the use of bones if you’d like depending on what you’re using it for,
+                                but the key is to get the ratios correct for the mirepoix. Different types of bones give off different flavors and richness to your stock.
+                                Stocks are an easy thing to start experimenting with whether you’re trying to make a soup or a casserole!
+                                <br/><br/>
+                                Devteam (2019, September 30). <i>The History of Minestrone Soup: What is it and How is it Made?</i> Authentic Italian De Nicola’s Restaurant.
+                                <br/>
+                                <a href="https://www.denicolasitaliandining.com/blog/the-history-of-minestrone-soup-what-is-it-and-how-is-it-made">
+                                    <i>https://www.denicolasitaliandining.com/blog/the-history-of-minestrone-soup-what-is-it-and-how-is-it-made</i>
+                                </a>
+                                <br/><br/>
+                                Jawad, Y. (2019, February 25). 10 Recipes with Vegetable Stock. Feel Good Foodie.
+                                <br/>
+                                <a href="https://feelgoodfoodie.net/blog/vegetable-broth/"><i>https://feelgoodfoodie.net/blog/vegetable-broth/</i></a>
+                            </p>
+
                         </CardBody>
                     </Card>
                 </Collapse>
             </div>
-            <div>
+            <div className="recipeCard" id="recipe">
                 <Button outline color="danger" onClick={toggle2} style={{ marginBottom: '1rem' }}>Recipe</Button>
                 <Collapse isOpen={recipeIsOpen}>
                     <Card>
-                        <CardBody>
-                            <li className="ingredients">item-1</li>
-                            <li className="ingredients">item-2</li>
+                        <CardBody className="recipeCardBody">
+                            <h2 className="inCardTitle"><mark>Vegetable Stock</mark></h2>
+                            <h4 className="servingSize">Serving Size: 4</h4>
+                            <br/>
+                            <Table dark>
+                                <thead>
+                                    <tr>
+                                        <th>Ingredients</th>
+                                        <th>Weight</th>
+                                        <th>Volume</th>
+                                        <th>Directions: <i>Include step by step instructions</i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Onion</td>
+                                        <td>4 oz</td>
+                                        <td>--</td>
+                                        <td>1. Cut all vegetables into macedoine.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carrot</td>
+                                        <td>4 oz</td>
+                                        <td>--</td>
+                                        <td>2. Place all ingredients into a pot & bring to a boil.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Celery</td>
+                                        <td>4 oz</td>
+                                        <td>--</td>
+                                        <td>3. Gently simmer for approximately 1 hour.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leek</td>
+                                        <td>4 oz</td>
+                                        <td>--</td>
+                                        <td>4. Skim as needed.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Water</td>
+                                        <td>--</td>
+                                        <td>50 fl oz</td>
+                                        <td>5. Strain & use.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Parsley stalks</td>
+                                        <td>4 ea</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Peppercorns</td>
+                                        <td>6 ea</td>
+                                        <td>--</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                            <br/>
+                            <h2 className="inCardTitle"><mark>Minestrone Soup</mark></h2>
+                            <h4 className="servingSize">Serving Size: 2</h4>
+                            <br/>
+                            <Table dark>
+                                <thead>
+                                <tr>
+                                    <th>Ingredients</th>
+                                    <th>Weight</th>
+                                    <th>Volume</th>
+                                    <th>Directions: <i>Include step by step instructions</i></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Olive oil</td>
+                                        <td>--</td>
+                                        <td>1/4 oz</td>
+                                        <td>1. Soak beans overnight in cold water (in a fridge), drain and rinse before use .</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carrots, peeled, medium dice</td>
+                                        <td>1 ea</td>
+                                        <td>--</td>
+                                        <td>2. Simmer the beans in a pot until tender.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Celery, medium dice</td>
+                                        <td>1.5 ea</td>
+                                        <td>--</td>
+                                        <td>3. Sautee the onions, celery, zucchini, and carrots in oil in a saucepan over medium heat (3 mins).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zucchini, medium dice</td>
+                                        <td>1.5 oz</td>
+                                        <td>--</td>
+                                        <td>4. Add garlic and cook for a further minute.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garlic cloves, finely chopped</td>
+                                        <td>1 ea</td>
+                                        <td>--</td>
+                                        <td>5. Add tomato paste and cook for a further 3 minutes.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tomato paste</td>
+                                        <td>0.5 oz</td>
+                                        <td>--</td>
+                                        <td>6. Add tomato concassee & stock. Reduce the heat to a gentle simmer, cover with lid & cook for 15 minutes.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tomato concassee</td>
+                                        <td>2 oz</td>
+                                        <td>--</td>
+                                        <td>7. Add the paste and cook for 10 minutes.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vegetable stock</td>
+                                        <td>--</td>
+                                        <td>1.25 pints</td>
+                                        <td>8. Add cooked beans & cabbage, cook for a further 2 minutes.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dry white beans</td>
+                                        <td>1 oz</td>
+                                        <td>--</td>
+                                        <td>9. The volume of liquid may need to be adjusted, if so add more stock.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dry spaghetti, broken into short lengths</td>
+                                        <td>1.5 oz</td>
+                                        <td>--</td>
+                                        <td>10. Add herbs and season with salt and pepper to taste.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Green cabbage, finely shredded</td>
+                                        <td>2 oz</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bouquet garni</td>
+                                        <td>0.5 ea</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fresh basil, chiffonade</td>
+                                        <td>--</td>
+                                        <td>1/2 Tbsp</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fresh parsley, chopped</td>
+                                        <td>TT</td>
+                                        <td>1/2 Tbsp</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Salt</td>
+                                        <td>TT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Black pepper</td>
+                                        <td>TT</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
                         </CardBody>
                     </Card>
                 </Collapse>
             </div>
-            <div>
+            <div className="recipeCard" id="Food Cost">
                 <Button outline color="success" onClick={toggle3} style={{ marginBottom: '1rem' }}>Food Costs</Button>
                 <Collapse isOpen={foodCostOpen}>
                     <Card>
@@ -114,12 +310,13 @@ function App() {
                     </Card>
                 </Collapse>
             </div>
-            <div>
+            <div className="recipeCard" id="reflection">
                 <Button outline color="primary" onClick={toggle4} style={{ marginBottom: '1rem' }}>Reflection</Button>
                 <Collapse isOpen={reflectionIsOpen}>
                     <Card>
                         <CardBody>
-                            Reflection body will go here
+
+
                         </CardBody>
                     </Card>
                 </Collapse>

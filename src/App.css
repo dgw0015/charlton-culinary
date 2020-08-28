@@ -3,6 +3,28 @@
    height: 100%;
 }
 
+.socialMediaLinks {
+   float: right;
+   padding: 10px 10px 0 0;
+   font-size: 2vw;
+}
+
+.socialMediaLinks a  {
+   margin: 0 4px 0 4px;
+}
+
+.socialMediaLinks .linkedIn   {
+   color: #0076b3;
+}
+
+.socialMediaLinks .pinterest  {
+   color: #e6001a;
+}
+
+.socialMediaLinks .instagram  {
+   color: black;
+}
+
 .titleBox {
    position: relative;
    overflow: hidden;
@@ -65,12 +87,39 @@ div.row  {
 
 .jumbotron  {
    width: 90%;
-   margin-top: 3vw;
-   margin-left: 5%;
+   margin: 2vw 0 0 5%;
+
 }
 
 .jumbotron .lead  {
    font-size: 1.5vw;
    font-weight: bold;
+}
+
+.jumbotron button {
+   width: 20%;
+   font-size: 1vw;
+   margin: 5px;
+}
+
+.recipeCard  {
+   text-indent: 40px;
+}
+
+.recipeCard p  {
+   margin: 5px;
+   padding: 5px 3px 5px 3px;
+}
+
+.recipeCard .recipeCardBody h2 {
+   margin: 2vw 0 2vw 0;
+   padding: 0;
+   float: left;
+}
+
+.recipeCard .recipeCardBody h4 {
+   margin: 2vw 3vw 0 0;
+   padding: 0;
+   float: right;
 }
 
