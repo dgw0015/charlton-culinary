@@ -21,11 +21,13 @@ function App() {
     const [recipeIsOpen, setRecipeIsOpen] = useState(false);
     const [foodCostOpen, setFoodCostIsOpen] = useState(false);
     const [reflectionIsOpen, setReflectionIsOpen] = useState(false);
+    const [prepListIsOpen, setPrepListIsOpen] = useState(false);
 
     const toggle = () => setResearchIsOpen(!researchIsOpen);
     const toggle2 = () => setRecipeIsOpen(!recipeIsOpen);
     const toggle3 = () => setFoodCostIsOpen(!foodCostOpen);
     const toggle4 = () => setReflectionIsOpen(!reflectionIsOpen);
+    const toggle5 = () => setPrepListIsOpen(!prepListIsOpen);
 
 
     return (
@@ -92,11 +94,11 @@ function App() {
             <p className="h4">Week 1</p>
             <hr className="my-4"/>
 
-            <div className="recipeCard" id="reflection">
-                <Button outline color="secondary" onClick={toggle} style={{ marginBottom: '1rem' }}>Research</Button>
+            <div className="recipeCard" id="research">
+                <Button color="secondary" onClick={toggle} style={{ marginBottom: '1rem' }}>Research</Button>
                 <Collapse isOpen={researchIsOpen}>
                     <Card>
-                        <CardBody>
+                        <CardBody className="researchCardBody">
                             <p>
                                 Any soup can be great comfort food when it comes to a cold, winter day or something to enjoy after a long day at work.
                                 Not only is Minestrone soup nutritious and delicious, it’s not very difficult to make. You can enjoy it as a side dish or even as a main course
@@ -132,8 +134,271 @@ function App() {
                     </Card>
                 </Collapse>
             </div>
+            <div className="recipeCard" id="PrepList">
+                <Button color="info" onClick={toggle5} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen}>
+                    <Card>
+                        <CardBody className="prepCardBody">
+                            <Table dark>
+                                <thead>
+                                    <tr>
+                                        <th><u>Date:</u> August 29, 2020</th>
+                                        <th><u>Topic Of the Day:</u>   Soups</th>
+                                        <th><u>Dishes:</u>   Minestrone Soup</th>
+                                    </tr>
+                                </thead>
+                            </Table>
+                            <Table striped>
+                                <thead>
+                                    <tr>
+                                        <th><h4><b>Ingredients</b></h4></th>
+                                    </tr>
+                                </thead>
+                                <br/>
+                                <tbody>
+                                    <tr>
+                                        <td>Olive Oil</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carrots</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zucchini</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garlic</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Celery</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tomato paste</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tomato concassee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dry white beans</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dry spaghetti</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Green cabbage</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bouquet garni</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fresh basil</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fresh parsley</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Salt & pepper</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                            <br/>
+                            <br/>
+                            <Table striped>
+                                <thead>
+                                    <tr>
+                                        <th><h4><b>Equipment Needs</b></h4></th>
+                                        <th><h4><b>Amount</b></h4></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cutting boards</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pot</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Knife</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bowl</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colander</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                            <br/>
+                            <br/>
+                            <Table striped>
+                                <thead>
+                                    <tr>
+                                        <th><h4><b>Method of Production (list key steps)</b></h4></th>
+                                        <th><h4><b>Time taken to complete</b></h4></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i>Key Steps</i></td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Soak beans overnight</td>
+                                        <td>~12 hrs.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dice the onion, carrots, celery, amd zucchini</td>
+                                        <td>10 min.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Simmer beans in pot</td>
+                                        <td>3 min.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sautee onions, carrots, celery, and zucchini</td>
+                                        <td>3 min.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Add garlic</td>
+                                        <td>1 min.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Add tomato paste and cook</td>
+                                        <td>3 min.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Add tomato concassee and stock</td>
+                                        <td>15 min.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Add and cook pasta</td>
+                                        <td>10 min.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Add cooked beans and cabbage</td>
+                                        <td>2 min.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Add herbs and seasoning</td>
+                                        <td>--</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                            <br/>
+                            <br/>
+                            <hr className="my-2"/>
+                            <br/>
+                            <Table dark>
+                                <thead>
+                                    <tr>
+                                        <th><u>Date:</u> August 30th, 2020</th>
+                                        <th><u>Topic of the Day:</u> Stocks</th>
+                                        <th><u>Dishes:</u> Vegetable Stock</th>
+                                    </tr>
+                                </thead>
+                            </Table>
+                            <Table striped>
+                                <thead>
+                                    <tr>
+                                        <th><h4><b>Ingredients</b></h4></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Onion</td>
+                                </tr>
+                                <tr>
+                                    <td>Carrot</td>
+                                </tr>
+                                <tr>
+                                    <td>Celery</td>
+                                </tr>
+                                <tr>
+                                    <td>Leek</td>
+                                </tr>
+                                <tr>
+                                    <td>Water</td>
+                                </tr>
+                                <tr>
+                                    <td>Parsley stalks</td>
+                                </tr>
+                                <tr>
+                                    <td>Peppercorns</td>
+                                </tr>
+                                </tbody>
+                            </Table>
+                            <br/>
+                            <br/>
+
+                            <Table striped>
+                                <thead>
+                                <tr>
+                                    <th><h4><b>Equipment Needs</b></h4></th>
+                                    <th><h4><b>Amount</b></h4></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Cutting board</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Knife</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Colander</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Pot</td>
+                                    <td>1</td>
+                                </tr>
+                                </tbody>
+                            </Table>
+                            <br/>
+                            <br/>
+
+                            <Table striped>
+                                <thead>
+                                <tr>
+                                    <th><h4><b>Method of Production (list key steps)</b></h4></th>
+                                    <th><h4><b>Time taken to complete</b></h4></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><i>Key Steps</i></td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>Boil water</td>
+                                    <td>10 min.</td>
+                                </tr>
+                                <tr>
+                                    <td>Cut vegetables</td>
+                                    <td>5 min.</td>
+                                </tr>
+                                <tr>
+                                    <td>Place ingredients in pot and gently simmer</td>
+                                    <td>1 hour</td>
+                                </tr>
+                                <tr>
+                                    <td>Skim and strain</td>
+                                    <td>--</td>
+                                </tr>
+                                </tbody>
+                            </Table>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
             <div className="recipeCard" id="recipe">
-                <Button outline color="danger" onClick={toggle2} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Button color="danger" onClick={toggle2} style={{ marginBottom: '1rem' }}>Recipe</Button>
                 <Collapse isOpen={recipeIsOpen}>
                     <Card>
                         <CardBody className="recipeCardBody">
@@ -184,10 +449,12 @@ function App() {
                                         <td>Parsley stalks</td>
                                         <td>4 ea</td>
                                         <td>--</td>
+                                        <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>Peppercorns</td>
                                         <td>6 ea</td>
+                                        <td>--</td>
                                         <td>--</td>
                                     </tr>
                                 </tbody>
@@ -270,29 +537,37 @@ function App() {
                                         <td>Green cabbage, finely shredded</td>
                                         <td>2 oz</td>
                                         <td>--</td>
+                                        <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>Bouquet garni</td>
                                         <td>0.5 ea</td>
+                                        <td>--</td>
                                         <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>Fresh basil, chiffonade</td>
                                         <td>--</td>
                                         <td>1/2 Tbsp</td>
+                                        <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>Fresh parsley, chopped</td>
                                         <td>TT</td>
                                         <td>1/2 Tbsp</td>
+                                        <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>Salt</td>
                                         <td>TT</td>
+                                        <td>--</td>
+                                        <td>--</td>
                                     </tr>
                                     <tr>
                                         <td>Black pepper</td>
                                         <td>TT</td>
+                                        <td>--</td>
+                                        <td>--</td>
                                     </tr>
                                 </tbody>
                             </Table>
@@ -301,7 +576,7 @@ function App() {
                 </Collapse>
             </div>
             <div className="recipeCard" id="Food Cost">
-                <Button outline color="success" onClick={toggle3} style={{ marginBottom: '1rem' }}>Food Costs</Button>
+                <Button color="success" onClick={toggle3} style={{ marginBottom: '1rem' }}>Food Costs</Button>
                 <Collapse isOpen={foodCostOpen}>
                     <Card>
                         <CardBody>
@@ -311,7 +586,7 @@ function App() {
                 </Collapse>
             </div>
             <div className="recipeCard" id="reflection">
-                <Button outline color="primary" onClick={toggle4} style={{ marginBottom: '1rem' }}>Reflection</Button>
+                <Button color="primary" onClick={toggle4} style={{ marginBottom: '1rem' }}>Reflection</Button>
                 <Collapse isOpen={reflectionIsOpen}>
                     <Card>
                         <CardBody>
