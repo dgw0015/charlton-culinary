@@ -76,6 +76,10 @@
    border: 3px solid black;
 }
 
+.introTitle {
+   text-align: left;
+}
+
 div.row  {
    width: 100%;
    padding-left: 8.2vw;
@@ -115,13 +119,20 @@ div.row  {
    text-align: left;
 }
 
-.jumbotron #research .researchCardBody   {
-   text-indent: 40px;
-}
-
 .recipeCard p  {
    margin: 5px;
-   padding: 5px 3px 5px 3px;
+   padding: 6px 3px 20px 3px;
+   line-height: 1.5vw;
+}
+
+.jumbotron #research .researchHeader   {
+   margin: 0;
+   padding: 0 0 8px 0;
+   font-size: 1.3vw;
+}
+
+.jumbotron #research button   {
+   text-decoration: none;
 }
 
 .recipeCard .recipeCardBody h2 {

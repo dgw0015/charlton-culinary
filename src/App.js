@@ -91,7 +91,7 @@ function App() {
         <h1 className="display-2"><mark>Recipes</mark></h1>
         <div className="jumbotron">
             <h1 className="display-4">Minestrone Soup & Vegetable Stock</h1>
-            <p className="h4">Week 1</p>
+            <p className="h3">Week 1</p>
             <hr className="my-4"/>
 
             <div className="recipeCard" id="research">
@@ -100,25 +100,49 @@ function App() {
                     <Card>
                         <CardBody className="researchCardBody">
                             <p>
-                                Any soup can be great comfort food when it comes to a cold, winter day or something to enjoy after a long day at work.
-                                Not only is Minestrone soup nutritious and delicious, it’s not very difficult to make. You can enjoy it as a side dish or even as a main course
-                                with some fresh bread. Minestrone Soup is an Italian soup that is typically made with vegetable stock or beef stock as well as adding pasta or rice
-                                accompanied with an array of vegetables and beans and herbs. Minestrone soup was originally created by peasants who used leftover food in order to reduce
-                                food waste and provide meals for their families (Devteam, 2019, para. 5). A lot of people have their own ways of making this soup because of how many
-                                different types of vegetables, pastas, herbs, and rice you can add to make it unique. The objectives that we’re trying to learn from this is how to
-                                make a basic vegetable stock using a simmering moist-heat cooking method and practicing our knife skills for chopping vegetables and herbs.
-                                The simmering method helps to bring out the natural flavors of the herbs and vegetables and also helps to infuse the flavors into the soup because it is a
-                                gentler process of cooking as opposed to boiling everything. If you’re looking for a new soup recipe and love vegetables and herbs,
-                                check out this delicious Minestrone soup recipe below!
+                                <h4 className="researchHeader">INTRO</h4>
+                                <u><b>Method of cookery:</b></u> Broth Soups and Stocks
+                                <br/>
+                                <u><b>List of objectives:</b></u> I would like increase my knife skills and learn how to pack large amounts of flavor in a soup using just
+                                the right amounts of seasoning.
+                                <br/>
+                                <u><b>Method of cooking:</b></u> The simmering method helps to bring out the natural flavors of the herbs and vegetables. It also helps
+                                to infuse the flavors into the soup because it is a gentler process of cooking as opposed to boiling. Simmering also allows for you to
+                                remove the impurities from the soup as it’s being cooked. All stocks are made from 3 basic ingredients that involve simmering them
+                                together: mirepoix (onions, carrots, and celery), bones, and seasonings. A key thing to remember is to not let the liquid boil for an
+                                extended period of time because it can cause impurities to blend in with the liquid making the stock cloudy (Labensky et al., 2018).
+                                <br/>
+                                <u><b>Prior knowledge:</b></u>
+                                This will be my first time making a vegetable stock. However, I have made minestrone soup before and enjoy eating it at restaurants.
+                                The story of the first time I made minestrone soup was actually not a good one. It came out more watery than expected hence, the flavors were
+                                not as concentrated when compared to the restaurant experience.
                             </p>
+
                             <p>
-                                Making a vegetable stock is a very quick and easy process. There are many uses for vegetable stock other than for soup; for example,
-                                you can use it to make gravy or dressings, to cook casseroles, to cook/flavor grains like rice or quinoa, and in different pasta recipes (Jawad, Y. 2019).
-                                All stocks are made from 3 basic ingredients that involve simmering them together: mirepoix (onions, carrots, and celery), bones, and seasonings.
-                                You can add anything else or even take out the use of bones if you’d like depending on what you’re using it for,
-                                but the key is to get the ratios correct for the mirepoix. Different types of bones give off different flavors and richness to your stock.
-                                Stocks are an easy thing to start experimenting with whether you’re trying to make a soup or a casserole!
-                                <br/><br/>
+                                <h4 className="researchHeader">BACKGROUND</h4>
+                                <u><b>Origin and history:</b></u> Minestrone soup was originally created by peasants from Northern Italy who used leftover food in order to
+                                reduce food waste and provide meals for their families (Devteam, 2019, para. 5).
+                                <br/>
+                                <u><b>Methods used:</b></u> For this minestrone soup, we will also be using a tomato concasse. This is a method used to peel, seed, and chop tomatoes.
+                                To start this process, you make an “X” at the bottom of the tomato just deep enough to penetrate the skin, then you place it in boiling water
+                                for about 30 seconds, remove it and place it in an ice bath. This ice bath will halt the cooking process making it easier for you to remove
+                                the tomato skin. Lastly, cut the tomato in half and scoop out the seeds and chop it. This is a useful process because the skin and seeds
+                                can sometimes cause an unwanted bitterness and texture to your finished product (Alfaro, D. 2020).
+                                <br/>
+                                <u><b>Variations:</b></u> Minestrone Soup is an Italian soup that is typically made with vegetable stock or beef stock as well as adding pasta or rice
+                                accompanied with an array of vegetables and beans and herbs. A lot of people have their own ways of making this soup because of how many
+                                different types of vegetables, pastas, herbs, and rice you can add to make it unique. There are also many uses for vegetable stock other than
+                                for soup; for example, you can use it to make gravy or dressings, to cook casseroles, to cook/flavor grains like rice or quinoa, and in different
+                                pasta recipes (Jawad, Y. 2019). Different types of bones give off different flavors and richness to your stock.
+                                <br/>
+                                <br/>
+                                Alfaro, D. (2020, March 25). Tomato Concasseée. The Spruce Eats
+                                <br/>
+                                <a href="https://www.thespruceeats.com/how-to-make-tomato-concasse-996208">
+                                    <i>https://www.thespruceeats.com/how-to-make-tomato-concasse-996208</i>
+                                </a>
+                                <br/>
+                                <br/>
                                 Devteam (2019, September 30). <i>The History of Minestrone Soup: What is it and How is it Made?</i> Authentic Italian De Nicola’s Restaurant.
                                 <br/>
                                 <a href="https://www.denicolasitaliandining.com/blog/the-history-of-minestrone-soup-what-is-it-and-how-is-it-made">
@@ -129,7 +153,6 @@ function App() {
                                 <br/>
                                 <a href="https://feelgoodfoodie.net/blog/vegetable-broth/"><i>https://feelgoodfoodie.net/blog/vegetable-broth/</i></a>
                             </p>
-
                         </CardBody>
                     </Card>
                 </Collapse>
