@@ -12,8 +12,14 @@ import {BsBoxArrowInUpLeft} from "react-icons/bs";
 import {FaFacebook, FaLinkedin} from "react-icons/fa";
 import {FiInstagram} from "react-icons/fi";
 import {RiPinterestFill} from "react-icons/ri";
-import {Button, Card, CardBody, Collapse, Table} from 'reactstrap';
+import {Button, Card, CardBody, Collapse, Table, Row, Col, Label} from 'reactstrap';
+import boilingWater from "./images/Week_1/BoilingWater.jpg";
+import iceBath from "./images/Week_1/IceBath.jpg";
+import peelSkinBack from "./images/Week_1/peelSkinBack.jpg";
+import seedRemoval from "./images/Week_1/SeedRemoval.jpg";
+import skinSeparation from "./images/Week_1/SkinSeparation.jpg";
 
+// App.js includes week 1, we will make each week a seperate component then insert them here.
 
 function App() {
 
@@ -22,13 +28,14 @@ function App() {
     const [foodCostOpen, setFoodCostIsOpen] = useState(false);
     const [reflectionIsOpen, setReflectionIsOpen] = useState(false);
     const [prepListIsOpen, setPrepListIsOpen] = useState(false);
+    const [demoVidIsOpen, setDemoVidIsOpen] = useState(false);
 
     const toggle = () => setResearchIsOpen(!researchIsOpen);
     const toggle2 = () => setRecipeIsOpen(!recipeIsOpen);
     const toggle3 = () => setFoodCostIsOpen(!foodCostOpen);
     const toggle4 = () => setReflectionIsOpen(!reflectionIsOpen);
     const toggle5 = () => setPrepListIsOpen(!prepListIsOpen);
-
+    const toggle6 = () => setDemoVidIsOpen(!demoVidIsOpen);
 
     return (
     <div className="App-container">
@@ -603,18 +610,82 @@ function App() {
                 <Collapse isOpen={foodCostOpen}>
                     <Card>
                         <CardBody>
-                            Excel Doc can go here.
+                            NA.
                         </CardBody>
                     </Card>
                 </Collapse>
             </div>
             <div className="recipeCard" id="reflection">
-                <Button color="primary" onClick={toggle4} style={{ marginBottom: '1rem' }}>Reflection</Button>
+                <Button color="primary" onClick={toggle4} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
                 <Collapse isOpen={reflectionIsOpen}>
                     <Card>
                         <CardBody>
-
-
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                            Overall, the minestrone soup and the vegetable stock turned out very well. The vegetable stock had good flavors and aromas from the mirepoix and 
+                            the bouquet garni. The minestrone soup was also very tasty with the variety of vegetables and different textures from the spaghetti and beans. 
+                            Together with that, the soup was colorful since we had the shades of reds and oranges from the tomato paste, tomato concasse, and carrots. 
+                            In addition, the zucchini added a nice green to the dish from the vibrant outer skin. The tomato concasee technique worked very well seeing 
+                            that it was easy to peel, chop, and remove the seeds without it falling apart
+                            </p>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                            The tomato concasee technique worked because of the “X” cut that we made, the length of time that it was submerged in the boiling water, and 
+                            the ice bath (Labensky et al., 2018).  If we hadn’t made a cut prior to submerging the tomato in boiling water, it would’ve been more difficult to peel 
+                            off the skin afterwards. When the skin starts to peel it serves as an indicator for when the tomato is ready to be pulled out. The water has to be boiling 
+                            so that it quickly separates the skin from the rest of the tomato without cooking the whole tomato. Lastly, the ice bath halts the cooking process of the 
+                            tomato and makes it easier to handle when you are chopping it. The bouquet garni imparts a lot of flavor into what you’re making and since it’s tied together 
+                            it allows for easy removal of each ingredient (Filippone, P. T., 2019). 
+                            </p>
+                            <Row>
+                                <Col><img src={boilingWater} alt="Tomcato skin being peeled" name="boilingwater" className="cardImg"></img>
+                                <Label for="bolingwater">Boil tomato for 30 seconds</Label>
+                                </Col>
+                                <Col><img src={iceBath} alt="A tomato going into an ice bath after boiling" name="iceBath" className="cardImg"></img>
+                                <Label for="iceBath">Place in ice bath</Label>
+                                </Col>
+                                <Col><img src={skinSeparation} alt="Skin starts to separate from tomato in the ice bath" name="skinSeparation" className="cardImg"></img>
+                                <Label for="skinSeparation">Skin starts to separate from tomato</Label>
+                                </Col>
+                                <Col><img src={peelSkinBack} alt="Peeling the skin from the tomato after it separates" name="peelBack" className="cardImg"></img>
+                                <Label for="peelBack">Remove skin from tomato</Label>
+                                </Col>
+                                <Col><img src={seedRemoval} alt="Tomato having it seeds removed after skin peeled off" name="seedsOut" className="cardImg"></img>
+                                <Label for="seedsOut">Scoop out seeds and chop</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                            My learning objectives were to improve my knife skills for chopping and dicing vegetables and herbs. After watching the demonstrations, I gained a better 
+                            understanding of how to correctly cut an onion, celery, and carrots. Since these are such widely used vegetables to cook with, these new techniques will 
+                            come in handy to be more efficient and have more even cuts in the kitchen.I had never heard of a bouquet garni so it was interesting to learn what it was 
+                            and how easy it was to assemble. The tomato concasse technique also worked very well with peaches. I made a peach cobbler and needed to peel the skin off so 
+                            I decided to use this technique and it worked out very well. I also recently made short ribs in which case I needed to make a bouquet garni for the sauce. 
+                            I think I still need to practice my knife skills so that I can get faster and make more precise cuts.
+                            <br/>
+                            <br/>
+                            Filippone, Peggy T. (2019, November 16). Bouquet Garni. The Spruce Eats.<br/>
+                            <a href="https://www.thespruceeats.com/bouquet-garni-recipe-1805692">
+                                <i>https://www.thespruceeats.com/bouquet-garni-recipe-1805692</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Labensky, S. R., Hause, A.M., Martel P. A. (2018). On Cooking: A Textbook of Culinary Fundamentals. Pearson.
+                            </p>
+                            
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div className="recipeCard" id="reflection">
+                <Button color="warning" onClick={toggle6} style={{ marginBottom: '1rem' }}>Demo Video</Button>
+                <Collapse isOpen={demoVidIsOpen}>
+                    <Card>
+                        <CardBody>
+                            <h5>Flipgrid link is below</h5>
+                            <a href="https://flipgrid.com/8878ea12">
+                                <i>https://flipgrid.com/8878ea12</i>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>

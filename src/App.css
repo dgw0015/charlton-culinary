@@ -166,3 +166,24 @@ div.row  {
    border: 1px solid black;
 }
 
+.reflectionHeader {
+   margin: 0;
+   padding: 0 0 8px 0;
+   font-size: 1.3vw; 
+}
+
+.jumbotron .recipeCard .row   {
+   padding: 0;
+   margin: 0 0 1vw 8px;
+}
+
+.jumbotron #reflection .row .col .cardImg  {
+   width: 100%;
+   padding: 0;
+}
+
+label {
+   font-weight: bold;
+}
+
+
