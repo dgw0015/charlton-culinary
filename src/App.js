@@ -18,8 +18,13 @@ import iceBath from "./images/Week_1/IceBath.jpg";
 import peelSkinBack from "./images/Week_1/peelSkinBack.jpg";
 import seedRemoval from "./images/Week_1/SeedRemoval.jpg";
 import skinSeparation from "./images/Week_1/SkinSeparation.jpg";
+import beefStockRecipe from './images/Week_2/BeefStickRecipe.PNG';
+import chickenStock from './images/Week_2/Recipe.PNG';
+import creameTomatoSoup from './images/Week_2/CreamOfTomatoSoup.PNG';
+import beefStickPrepList from './images/Week_2/brown stock prep list.png';
+import chickenStockPrepList from './images/Week_2/chicken stock prep list.png';
+import tomatoSoupPrepList from './images/Week_2/cream of tomato soup prep list.png';
 
-// App.js includes week 1, we will make each week a seperate component then insert them here.
 
 function App() {
 
@@ -28,14 +33,24 @@ function App() {
     const [foodCostOpen, setFoodCostIsOpen] = useState(false);
     const [reflectionIsOpen, setReflectionIsOpen] = useState(false);
     const [prepListIsOpen, setPrepListIsOpen] = useState(false);
-    const [demoVidIsOpen, setDemoVidIsOpen] = useState(false);
+
+    const [weekFourResearch, setWeekFourResearch] = useState(false);
+    const [weekFourPrepList, setWeekFourPrepList] = useState(false);
+    const [weekFourRecipe, setWeekFourRecipe] = useState(false);
+    const [weekFourFoodCost, setWeekFourFoodCost] = useState(false);
+    const [weekFourReflection, setWeekFourReflection] = useState(false);
 
     const toggle = () => setResearchIsOpen(!researchIsOpen);
-    const toggle2 = () => setRecipeIsOpen(!recipeIsOpen);
-    const toggle3 = () => setFoodCostIsOpen(!foodCostOpen);
-    const toggle4 = () => setReflectionIsOpen(!reflectionIsOpen);
-    const toggle5 = () => setPrepListIsOpen(!prepListIsOpen);
-    const toggle6 = () => setDemoVidIsOpen(!demoVidIsOpen);
+    const toggle2 = () => setPrepListIsOpen(!prepListIsOpen);
+    const toggle3 = () => setRecipeIsOpen(!recipeIsOpen);
+    const toggle4 = () => setFoodCostIsOpen(!foodCostOpen);
+    const toggle5 = () => setReflectionIsOpen(!reflectionIsOpen);
+    const toggle6 = () => setWeekFourResearch(!weekFourResearch);
+    const toggle7 = () => setWeekFourPrepList(!weekFourPrepList);
+    const toggle8 = () => setWeekFourRecipe(!weekFourRecipe);
+    const toggle9 = () => setWeekFourFoodCost(!weekFourFoodCost);
+    const toggle10 = () => setWeekFourReflection(!weekFourReflection);
+
 
     return (
     <div className="App-container">
@@ -98,7 +113,7 @@ function App() {
         <h1 className="display-2"><mark>Recipes</mark></h1>
         <div className="jumbotron">
             <h1 className="display-4">Minestrone Soup & Vegetable Stock</h1>
-            <p className="h3">Week 1</p>
+            <p className="h3">Week 3</p>
             <hr className="my-4"/>
 
             <div className="recipeCard" id="research">
@@ -106,8 +121,8 @@ function App() {
                 <Collapse isOpen={researchIsOpen}>
                     <Card>
                         <CardBody className="researchCardBody">
+                            <h4 className="researchHeader">INTRO</h4>
                             <p>
-                                <h4 className="researchHeader">INTRO</h4>
                                 <u><b>Method of cookery:</b></u> Broth Soups and Stocks
                                 <br/>
                                 <u><b>List of objectives:</b></u> I would like increase my knife skills and learn how to pack large amounts of flavor in a soup using just
@@ -125,8 +140,8 @@ function App() {
                                 not as concentrated when compared to the restaurant experience.
                             </p>
 
+                            <h4 className="researchHeader">BACKGROUND</h4>
                             <p>
-                                <h4 className="researchHeader">BACKGROUND</h4>
                                 <u><b>Origin and history:</b></u> Minestrone soup was originally created by peasants from Northern Italy who used leftover food in order to
                                 reduce food waste and provide meals for their families (Devteam, 2019, para. 5).
                                 <br/>
@@ -165,7 +180,7 @@ function App() {
                 </Collapse>
             </div>
             <div className="recipeCard" id="PrepList">
-                <Button color="info" onClick={toggle5} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Button color="info" onClick={toggle2} style={{ marginBottom: '1rem' }}>Prep List</Button>
                 <Collapse isOpen={prepListIsOpen}>
                     <Card>
                         <CardBody className="prepCardBody">
@@ -428,7 +443,7 @@ function App() {
                 </Collapse>
             </div>
             <div className="recipeCard" id="recipe">
-                <Button color="danger" onClick={toggle2} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Button color="danger" onClick={toggle3} style={{ marginBottom: '1rem' }}>Recipe</Button>
                 <Collapse isOpen={recipeIsOpen}>
                     <Card>
                         <CardBody className="recipeCardBody">
@@ -606,7 +621,7 @@ function App() {
                 </Collapse>
             </div>
             <div className="recipeCard" id="Food Cost">
-                <Button color="success" onClick={toggle3} style={{ marginBottom: '1rem' }}>Food Costs</Button>
+                <Button color="success" onClick={toggle4} style={{ marginBottom: '1rem' }}>Food Costs</Button>
                 <Collapse isOpen={foodCostOpen}>
                     <Card>
                         <CardBody>
@@ -616,7 +631,7 @@ function App() {
                 </Collapse>
             </div>
             <div className="recipeCard" id="reflection">
-                <Button color="primary" onClick={toggle4} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Button color="primary" onClick={toggle5} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
                 <Collapse isOpen={reflectionIsOpen}>
                     <Card>
                         <CardBody>
@@ -638,7 +653,8 @@ function App() {
                             it allows for easy removal of each ingredient (Filippone, P. T., 2019). 
                             </p>
                             <Row>
-                                <Col><img src={boilingWater} alt="Tomcato skin being peeled" name="boilingwater" className="cardImg"></img>
+                                <Col>
+                                    <img src={boilingWater} alt="Tomcato skin being peeled" name="boilingwater" className="cardImg"></img>
                                 <Label for="bolingwater">Boil tomato for 30 seconds</Label>
                                 </Col>
                                 <Col><img src={iceBath} alt="A tomato going into an ice bath after boiling" name="iceBath" className="cardImg"></img>
@@ -677,15 +693,124 @@ function App() {
                     </Card>
                 </Collapse>
             </div>
-            <div className="recipeCard" id="reflection">
-                <Button color="warning" onClick={toggle6} style={{ marginBottom: '1rem' }}>Demo Video</Button>
-                <Collapse isOpen={demoVidIsOpen}>
+        </div>
+
+        <div className="jumbotron" id="Week-4">
+            <h1 className="display-4">Chicken Stock, Beef Stock, Cream of Tomato Soup</h1>
+            <p className="h3">Week 4</p>
+            <hr className="my-4"/>
+
+            <div className="recipeCard">
+                <Button color="secondary" onClick={toggle6} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={weekFourResearch}>
                     <Card>
                         <CardBody>
-                            <h5>Flipgrid link is below</h5>
-                            <a href="https://flipgrid.com/8878ea12">
-                                <i>https://flipgrid.com/8878ea12</i>
-                            </a>
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <u><b>Method of cookery:</b></u> Soups and Stocks.
+                                <br/>
+                                <u><b>List of objectives:</b></u>
+                                The objectives that we’re trying to learn from this is how to deglaze a pan as well as preparing the bones in the correct way in order
+                                to impart the correct flavors into the stock.
+                                <br/>
+                                <u><b>Method of cooking:</b></u>
+                                Caramelizing adds color and extra flavor into the stock. Caramelizing is the process of browning the sugars of the food which brings
+                                out the natural flavors of the ingredient Labensky et al., 2018).  Deglazing is the process of stirring liquid in a pan in order to loosen any food bits that might’ve
+                                been stuck to the pan while it was being caramelized (Labensky et al., 2018). Deglazing helps to get every last bit of food off of the pan so that it can be used to add
+                                more flavor or to become the base of a sauce.
+                                <br/>
+                                <u><b>Prior Knowledge:</b></u> I’ve never made chicken stock, beef stock, or cream of tomato soup before.
+                                <br/>
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                                <u><b>Origin and history:</b></u> Cream of Tomato soup is seen as a comfort food for Americans and Europeans. The soup is creamy and thick and is often accompanied with fresh bread or even a sandwich.
+                                <br/>
+                                <u><b>Methods used:</b></u> The main difference between a white stock and a brown stock is that the brown stock involves caramelizing of the mirepoix and the
+                                bones before adding it into the stock. “The caramelization adds rich dark color and a more intense flavor” (Labensky et al., 2018). Cream of tomato soup is
+                                often cooked at a lower temperature as opposed to other tomato soups because too high of a cooking temperature could cause the cream to curdle.
+                                <br/>
+                                <u><b>Variations:</b></u> Cream of Tomato soup can be made vegetarian or vegan with just a few substitutions. Instead of using chicken or beef stock, an easy alternative is to use vegetable stock. To make it vegan,
+                                substitute the heavy cream for almond milk or silken tofu (Mcgavin, J., 2019).
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals.</i> Pearson.
+                                <br/>
+                                <br/>
+                                McGavin, Jennifer. (2019, November 1). <i>German Fresh Cream of Tomato Soup.</i> The Spruce Eats.
+                                <br/>
+                                <a href="https://www.thespruceeats.com/german-fresh-cream-of-tomato-soup-1447351">
+                                    <i>https://www.thespruceeats.com/german-fresh-cream-of-tomato-soup-1447351</i>
+                                </a>
+                            </p>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div className="recipeCard">
+                <Button color="info" onClick={toggle7} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={weekFourPrepList}>
+                    <Card>
+                        <CardBody>
+                            <div>
+                                <img src={chickenStockPrepList} alt="chicken stock prep list" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={beefStickPrepList} alt="Beef stock prep list items" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={tomatoSoupPrepList} alt="creame of tomato soup pre list" className="prepListImg"/>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div className="recipeCard">
+                <Button color="danger" onClick={toggle8} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={weekFourRecipe}>
+                    <Card>
+                        <CardBody>
+                            <div>
+                                <img src={chickenStock} alt="Chicken stock recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={beefStockRecipe} alt="Beef stock recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={creameTomatoSoup} alt="Cream of tomato soup recipe" className="recipeImg"/>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div className="recipeCard">
+                <Button color="success" onClick={toggle9} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={weekFourFoodCost}>
+                    <Card>
+                        <CardBody>
+                            NA.
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div className="recipeCard">
+                <Button color="primary" onClick={toggle10} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={weekFourReflection}>
+                    <Card>
+                        <CardBody>
+                            NA.
                         </CardBody>
                     </Card>
                 </Collapse>

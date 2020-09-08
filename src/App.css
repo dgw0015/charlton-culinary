@@ -187,3 +187,10 @@ label {
 }
 
 
+/* Styling added for/during week 4*/
+#Week-4 .recipeCard .prepListImg {
+   width: 60%;
+   margin-left: 5px;
+}
+
+
