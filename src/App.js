@@ -921,7 +921,7 @@ function App() {
             </div>
         </div>
         <div className="jumbotron" id="week5">
-            <h1 className="display-4">Consomme Leek & Potato Soup</h1>
+            <h1 className="display-4">Consomme and Leek & Potato Soup</h1>
             <p className="h3">Week 5</p>
             <hr className="my-4"/>
 
