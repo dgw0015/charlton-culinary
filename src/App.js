@@ -32,6 +32,10 @@ import creamOfTomatoSoup from './images/Week_2/cream_of_tomato_soup.jpg';
 import foodCostBrownStock from './images/Week_2/food cost - brown stock.xlsx';
 import foodCostChickenStock from './images/Week_2/food cost - chicken stock.xlsx';
 import foodCostCreameOfTomato from './images/Week_2/food cost - cream of tomato.xlsx';
+import wk5ConsommePrepList from './images/Week_5/PrepList/consomme.png';
+import wk5LeekAndPotatoSoupPrepList from './images/Week_5/PrepList/LeekAndPotatoSoup.png';
+import wk5ConsommeRecipe from './images/Week_5/Recipe/ConsommeRecipe.PNG';
+import wk5LeekPotatoSoupRecipe from './images/Week_5/Recipe/LeekAndPotatoSoupRecipe.PNG';
 
 
 function App() {
@@ -48,6 +52,13 @@ function App() {
     const [weekFourFoodCost, setWeekFourFoodCost] = useState(false);
     const [weekFourReflection, setWeekFourReflection] = useState(false);
 
+    const [fiveResearchIsOpen, setFiveResearchIsOpen] = useState(false);
+    const [fivePrepListIsOpen, setFivePrepListIsOpen] = useState(false);
+    const [fiveRecipeIsOpen, setFiveRecipeIsOpen] = useState(false);
+    const [fiveFoodCostIsOpen, setFiveFoodCostIsOpen] = useState(false);
+    const [fiveReflectionIsOpen, setFiveReflectionIsOpen] = useState(false);
+
+
     const toggle = () => setResearchIsOpen(!researchIsOpen);
     const toggle2 = () => setPrepListIsOpen(!prepListIsOpen);
     const toggle3 = () => setRecipeIsOpen(!recipeIsOpen);
@@ -58,6 +69,13 @@ function App() {
     const toggle8 = () => setWeekFourRecipe(!weekFourRecipe);
     const toggle9 = () => setWeekFourFoodCost(!weekFourFoodCost);
     const toggle10 = () => setWeekFourReflection(!weekFourReflection);
+
+    const toggle11 = () => setFiveResearchIsOpen(!fiveResearchIsOpen);
+    const toggle12 = () => setFivePrepListIsOpen(!fivePrepListIsOpen);
+    const toggle13 = () => setFiveRecipeIsOpen(!fiveRecipeIsOpen);
+    const toggle14 = () => setFiveFoodCostIsOpen(!fiveFoodCostIsOpen);
+    const toggle15= () => setFiveReflectionIsOpen(!fiveReflectionIsOpen);
+
 
 
     return (
@@ -754,6 +772,7 @@ function App() {
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
             <div className="recipeCard">
                 <Button color="info" onClick={toggle7} style={{ marginBottom: '1rem' }}>Prep List</Button>
@@ -778,6 +797,7 @@ function App() {
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
             <div className="recipeCard">
                 <Button color="danger" onClick={toggle8} style={{ marginBottom: '1rem' }}>Recipe</Button>
@@ -802,6 +822,7 @@ function App() {
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
             <div className="recipeCard">
                 <Button color="success" onClick={toggle9} style={{ marginBottom: '1rem' }}>Food Cost</Button>
@@ -822,6 +843,7 @@ function App() {
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
             <div className="recipeCard" id="reflection2">
                 <Button color="primary" onClick={toggle10} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
@@ -893,13 +915,131 @@ function App() {
                             <br/>
                             Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals.</i> Pearson.
                             </p>
-                            
                         </CardBody>
                     </Card>
                 </Collapse>
             </div>
-
         </div>
+        <div className="jumbotron" id="week5">
+            <h1 className="display-4">Consomme Leek & Potato Soup</h1>
+            <p className="h3">Week 5</p>
+            <hr className="my-4"/>
+
+            <div className="recipeCard">
+                <Button color="secondary" onClick={toggle11} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={fiveResearchIsOpen}>
+                    <Card>
+                        <CardBody>
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <u><b>Method of Cooking:</b></u> Clear stocks and broths
+                                <br/>
+                                <u><b>List of Objectives:</b></u> This week I would like to practice clarifying stocks properly.
+                                <br/>
+                                <u><b>Method of Cookery:</b></u> Clarifying the broth/stock is essential to creating the perfect consommé. 
+                                Even if you were to remove all of the fat, if the flavor isn’t quite what you expected, it’s because the 
+                                quality of the stock you used didn’t have the quality it needed to begin with. The consomme should be very 
+                                flavorful and have a high gelatin content but with almost no fat (Labensky et al., 2018). The leek and potato 
+                                soup is a pretty easy soup to make as long as you don’t overcook the vegetables. The onions, leeks, and 
+                                potatoes are sweated in a pan before adding the stock so that they are cooked properly and can impart the 
+                                correct flavor.
+                                <br/>
+                                <u><b>Prior Knowledge:</b></u> I’ve never made either of these dishes before; although I have heard of them. I 
+                                haven’t had much experience with leeks either until this class.
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                                <u><b>Origin and history:</b></u> Leek and potato soup originated from Britain. It was mainly eaten during the winter 
+                                time because it was served warm and could be quite filling from all of the potatoes that are added. Leek and potato soup 
+                                is also known as vichyssoie which comes from France <i>(Lemm, E., 2019)</i>.
+                                <br/>
+                                <u><b>Methods used:</b></u> Consomme is different from other stocks because it has almost no fat in the finished product. 
+                                The stock goes through multiple cheesecloths in order to remove all impurities that may have ended up in the soup. Consomme 
+                                is also combined with a clearmeat which is a mixture of egg whites, ground meat, mirepoix, herbs and spices, and tomatoes 
+                                or lemon juice. The clearmeat mixture is added to the stock and helps trap impurities to make it easier to remove. A raft 
+                                forms from the clearmeat and other ingredients interacting with each other, the raft imparts extra flavor into the soup. 
+                                An onion brule is also added to the stock which would be similar to a bouquet garni because of the extra flavor and color 
+                                that it adds.
+                                <br/>
+                                <u><b>Variations:</b></u> Instead of making a leek and potato soup, you can substitute the leek for an onion to make an 
+                                onion and potato soup. You can also use watercress because of it’s crisp light flavor to make watercress and potato soup. 
+                                The soup can also be served hot or cold depending on the season and preference.
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals. Pearson</i>
+                                <br/>
+                                <br/>
+                                Lemm, E. (2019, August 12). <i>Classic Leek and Potato Soup</i>. The Spruce Eats. 
+                                <a href="https://www.thespruceeats.com/leek-and-potato-soup-recipe-435299">
+                                    <i>https://www.thespruceeats.com/leek-and-potato-soup-recipe-435299</i>
+                                </a>
+                            </p>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+            <div className="recipeCard">
+                <Button color="info" onClick={toggle12} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={fivePrepListIsOpen}>
+                    <Card>
+                        <CardBody>
+                            <div>
+                                <img src={wk5ConsommePrepList} alt="table for prep-list for consomme" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk5LeekAndPotatoSoupPrepList} alt="table for leek and potato soup" className="prepListImg"/>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+            <div className="recipeCard">
+                <Button color="danger" onClick={toggle13} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={fiveRecipeIsOpen}>
+                    <Card>
+                        <CardBody>
+                            <div>
+                                <img src={wk5ConsommeRecipe} alt="Recipe list for consomme" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk5LeekPotatoSoupRecipe} alt="Recipe list for leek and potato soup" className="recipeImg"/>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+            <div className="recipeCard">
+                <Button color="success" onClick={toggle14} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={fiveFoodCostIsOpen}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            <div className="recipeCard">
+                <Button color="primary" onClick={toggle15} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={fiveReflectionIsOpen}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+            
+        </div>
+
     </div>
   );
 }
