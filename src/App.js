@@ -20,10 +20,18 @@ import seedRemoval from "./images/Week_1/SeedRemoval.jpg";
 import skinSeparation from "./images/Week_1/SkinSeparation.jpg";
 import beefStockRecipe from './images/Week_2/BeefStickRecipe.PNG';
 import chickenStock from './images/Week_2/Recipe.PNG';
-import creameTomatoSoup from './images/Week_2/CreamOfTomatoSoup.PNG';
+import creameOfTomatoSoupRecipe from './images/Week_2/CreamOfTomatoSoup.PNG';
 import beefStickPrepList from './images/Week_2/brown stock prep list.png';
 import chickenStockPrepList from './images/Week_2/chicken stock prep list.png';
 import tomatoSoupPrepList from './images/Week_2/cream of tomato soup prep list.png';
+import brownStockNoFat from './images/Week_2/brown stock NO fat.JPG';
+import brownStockWithFat from './images/Week_2/brown stock with fat.JPG';
+import chickenStockNoFat from './images/Week_2/chicken stock NO fat.JPG';
+import chickenStockWithFat from './images/Week_2/chicken_stock with fat.jpg';
+import creamOfTomatoSoup from './images/Week_2/cream_of_tomato_soup.jpg';
+import foodCostBrownStock from './images/Week_2/food cost - brown stock.xlsx';
+import foodCostChickenStock from './images/Week_2/food cost - chicken stock.xlsx';
+import foodCostCreameOfTomato from './images/Week_2/food cost - cream of tomato.xlsx';
 
 
 function App() {
@@ -789,7 +797,7 @@ function App() {
                             <hr className="my-3"/>
                             <br/>
                             <div>
-                                <img src={creameTomatoSoup} alt="Cream of tomato soup recipe" className="recipeImg"/>
+                                <img src={creameOfTomatoSoupRecipe} alt="Cream of tomato soup recipe" className="recipeImg"/>
                             </div>
                         </CardBody>
                     </Card>
@@ -800,17 +808,92 @@ function App() {
                 <Collapse isOpen={weekFourFoodCost}>
                     <Card>
                         <CardBody>
-                            NA.
+                            <a href={foodCostBrownStock}>
+                                <b>Brown_Stock.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={foodCostChickenStock}>
+                                <b>Chicken_Stock.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={foodCostCreameOfTomato}>
+                                <b>Cream_of_Tomato_Soup.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
             </div>
-            <div className="recipeCard">
+            <div className="recipeCard" id="reflection2">
                 <Button color="primary" onClick={toggle10} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
                 <Collapse isOpen={weekFourReflection}>
                     <Card>
                         <CardBody>
-                            NA.
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                            Overall, the cream of tomato soup turned out very well. I don’t usually like eating tomatoes, but I really enjoyed the soup that we made. 
+                            It had a really good flavor and texture that made it easy to eat. The croutons that we made had lots of flavor and added a nice crunchy texture 
+                            to the soup. Garnishing the soup with the basil and the red peppers added different complimenting flavors for the tomato. I used the blender 
+                            as opposed to the immersion blender, so my soup came out nice and thin with minimal clumps. The soup was a light orange color because of the 
+                            cream that we added. Together with that, the fresh chiffonade green basil gave a nice ribbon of green and the julienne red peppers gave dots of 
+                            red spread throughout. Our technique of delgazing, sweating, and blending the soup worked well. In addition, the brown stock and chicken stock 
+                            turned out well and had good color from the bones that we roasted and the chicken wings that we cooked. 
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={brownStockNoFat} alt="brown stock in pot with no fat" name="brownStockWithNoFat" className="cardImg" id="wk4-img1"></img>
+                                    <Label for="brownStockWithNoFat">Beef stock with NO fat.</Label>
+                                </Col>
+                                <Col>
+                                    <img src={chickenStockNoFat} alt="chicken stock in bowl with no fat" name="chickenStockWithNoFat" className="cardImg" id="wk4-img2"></img>
+                                    <Label for="chickenStockWithNoFat">Chicken stock with NO fat.</Label>
+                                </Col>
+                                <Col>
+                                    <img src={creamOfTomatoSoup} alt="creame of tomato soup" name="creamOfTomatoSoup" className="cardImg" id="wk4-img3"></img>
+                                    <Label for="creamOfTomatoSoup">Cream of tomato soup.</Label>
+                                </Col>
+                            </Row>
+                            <br/>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                            The brown stock had good color because we were able to get good browning from the roasted bones (Labensky et. al., 2018). We also added tomato 
+                            paste which helped with the color and flavor of the stock. We also caramelized the mirepoix before adding it to the stock which helped with 
+                            the flavor as opposed to if we had burned it. Burned mirepoix would’ve imparted bitter flavors into the stock. While the chicken wings added 
+                            extra depth of flavor from the meat, skin, and fat, it caused a lot of impurities to come through the stock which resulted in us having to 
+                            constantly skim the top. If we were able to use larger chicken bones, we still would’ve had to skim the top, but we wouldn’t have had to do 
+                            it so often; together with that the larger bones come with more cartilage and collagen which help to make it more gelatin like (Jenny, 2018). 
+                            The cream of tomato soup had extra tomato flavor because we added tomato paste to the mirepoix while it was sweating. Since we were able to 
+                            sweat the mirepoix the right amount, we were able to get good flavor from them as opposed to if we had caramelized or burned them.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={brownStockWithFat} alt="brown stock in bowl with no fat" name="brownStockWithFat" className="cardImg" id="wk4-img4"></img>
+                                    <Label for="brownStockWithFat">Brown stock with fat.</Label>
+                                </Col>
+                                <Col>
+                                    <img src={chickenStockWithFat} alt="chicken stock in bowl with no fat" name="chickenStockWithFat" className="cardImg" id="wk4-img5"></img>
+                                    <Label for="chickenStockWithFat">Chicken stock with fat.</Label>
+                                </Col>
+                            </Row>
+                            <br/>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                            The objectives that I set out to learn from this week is how to correctly deglaze and roast bones the correct amount. I think I did well with 
+                            these tasks because I was able to get all of the flavor from the mirepoix out of the pot and into the stock pot. Even though I didn’t roast 
+                            the bones myself, I learned how much time it takes to roast the bones and what they should look like when they're done and how to correctly 
+                            prepare them to go into the stock pot (removing the oil and fat from the top). Additional skills that I learned was how to skim the top of the 
+                            broth without removing too much stock. This clarification process can also be used to clarify butter. I need to practice my knife skills so that 
+                            I can get faster and make more precise cuts.
+                            <br/>
+                            <br/>
+                            Jenny. (2018, January, 11). <i>Why Your Broth Doesn’t Gel.</i> Nourished Kitchen.
+                            <br/>
+                            <a href="https://nourishedkitchen.com/bone-broth-doesnt-gel/">
+                                <i>https://nourishedkitchen.com/bone-broth-doesnt-gel/</i>
+                            </a>
+                            <br/>
+                            Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals.</i> Pearson.
+                            </p>
+                            
                         </CardBody>
                     </Card>
                 </Collapse>

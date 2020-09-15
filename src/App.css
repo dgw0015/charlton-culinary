@@ -193,4 +193,24 @@ label {
    margin-left: 5px;
 }
 
+.jumbotron #reflection2 .row .col .cardImg {
+   width: 100%;
+   padding: 0;
+}
+
+.jumbotron #reflection2 #wk4-img1   {
+   height: 25vw;
+}
+
+.jumbotron #reflection2 #wk4-img2   {
+   height: 25vw;
+}
+
+.jumbotron #reflection2 .row .col #wk4-img4   {
+   height: 30vw;
+}
+
+.jumbotron #reflection2 #wk4-img5   {
+   height: 30vw;
+}
 
