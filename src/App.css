@@ -214,3 +214,20 @@ label {
    height: 30vw;
 }
 
+.jumbotron #reflection5 .row .col .cardImg   {
+   width: 75%;
+   height: 30vw;
+   padding: 0;
+}
+
+.jumbotron #reflection5 .row .col .cardImgWk5   {
+   width: 95%;
+   height: 30vw;
+   padding: 0;
+}
+
+.jumbotron #reflection5 .row .col .cardImgWk5Unique   {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}

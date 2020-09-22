@@ -36,7 +36,19 @@ import wk5ConsommePrepList from './images/Week_5/PrepList/consomme.png';
 import wk5LeekAndPotatoSoupPrepList from './images/Week_5/PrepList/LeekAndPotatoSoup.png';
 import wk5ConsommeRecipe from './images/Week_5/Recipe/ConsommeRecipe.PNG';
 import wk5LeekPotatoSoupRecipe from './images/Week_5/Recipe/LeekAndPotatoSoupRecipe.PNG';
-
+import wk5BeefConsommeExcel from './images/Week_5/FoodCost_beef.xlsx';
+import wk5LeekPotatoSoupExcel from './images/Week_5/FoodCost_LP.xlsx';
+import wk5ReflectBeefWithGar from './images/Week_5/Reflect/beef_with_garnish.jpg';
+import wk5ReflectClearConsomme from './images/Week_5/Reflect/clear consomme.jpg';
+import wk5ReflectRaft from './images/Week_5/Reflect/consomme with raft.jpg';
+import wk5ReflectLpSoup from './images/Week_5/Reflect/leek_&_potato_soup.jpg';
+import wk5ReflectLpSoupBeforeBlend from './images/Week_5/Reflect/LP_soupBeforeBlend.jpg';
+import wk6PrepListMashedPotatoes from './images/Week_6/PrepList/garlicMashedPotatoes.png';
+import wk6PrepListRoastedChicken from './images/Week_6/PrepList/roastedChicken.png';
+import wk6PrepListVeloute from './images/Week_6/PrepList/Veloute.png';
+import wk6RecipePotatoes from './images/Week_6/Recipe/MashedPotatoesRecipe.PNG';
+import wk6RoastedChickenRecipe from './images/Week_6/Recipe/RoastedChickenRecipe.PNG';
+import wk6SauceRecipe from './images/Week_6/Recipe/SauceRecipe.PNG';
 
 function App() {
 
@@ -58,12 +70,31 @@ function App() {
     const [fiveFoodCostIsOpen, setFiveFoodCostIsOpen] = useState(false);
     const [fiveReflectionIsOpen, setFiveReflectionIsOpen] = useState(false);
 
+    const [researchIsOpen6, setResearchIsOpen6] = useState(false);
+    const [recipeIsOpen6, setRecipeIsOpen6] = useState(false);
+    const [foodCostIsOpen6, setFoodCostIsOpen6] = useState(false);
+    const [reflectionIsOpen6, setReflectionIsOpen6] = useState(false);
+    const [prepListIsOpen6, setPrepListIsOpen6] = useState(false);
+    
+    const [researchIsOpen7, setResearchIsOpen7] = useState(false);
+    const [recipeIsOpen7, setRecipeIsOpen7] = useState(false);
+    const [foodCostIsOpen7, setFoodCostIsOpen7] = useState(false);
+    const [reflectionIsOpen7, setReflectionIsOpen7] = useState(false);
+    const [prepListIsOpen7, setPrepListIsOpen7] = useState(false);
+    
+    const [researchIsOpen8, setResearchIsOpen8] = useState(false);
+    const [recipeIsOpen8, setRecipeIsOpen8] = useState(false);
+    const [foodCostIsOpen8, setFoodCostIsOpen8] = useState(false);
+    const [reflectionIsOpen8, setReflectionIsOpen8] = useState(false);
+    const [prepListIsOpen8, setPrepListIsOpen8] = useState(false);
+
 
     const toggle = () => setResearchIsOpen(!researchIsOpen);
     const toggle2 = () => setPrepListIsOpen(!prepListIsOpen);
     const toggle3 = () => setRecipeIsOpen(!recipeIsOpen);
     const toggle4 = () => setFoodCostIsOpen(!foodCostOpen);
     const toggle5 = () => setReflectionIsOpen(!reflectionIsOpen);
+
     const toggle6 = () => setWeekFourResearch(!weekFourResearch);
     const toggle7 = () => setWeekFourPrepList(!weekFourPrepList);
     const toggle8 = () => setWeekFourRecipe(!weekFourRecipe);
@@ -75,6 +106,24 @@ function App() {
     const toggle13 = () => setFiveRecipeIsOpen(!fiveRecipeIsOpen);
     const toggle14 = () => setFiveFoodCostIsOpen(!fiveFoodCostIsOpen);
     const toggle15= () => setFiveReflectionIsOpen(!fiveReflectionIsOpen);
+
+    const toggle16 = () => setResearchIsOpen6(!researchIsOpen6);
+    const toggle17 = () => setPrepListIsOpen6(!prepListIsOpen6);
+    const toggle18 = () => setRecipeIsOpen6(!recipeIsOpen6);
+    const toggle19 = () => setFoodCostIsOpen6(!foodCostIsOpen6);
+    const toggle20 = () => setReflectionIsOpen6(!reflectionIsOpen6);
+    
+    const toggle21 = () => setResearchIsOpen7(!researchIsOpen7);
+    const toggle22 = () => setPrepListIsOpen7(!prepListIsOpen7);
+    const toggle23 = () => setRecipeIsOpen7(!recipeIsOpen7);
+    const toggle24 = () => setFoodCostIsOpen7(!foodCostIsOpen7);
+    const toggle25 = () => setReflectionIsOpen7(!reflectionIsOpen7);
+    
+    const toggle26 = () => setResearchIsOpen8(!researchIsOpen8);
+    const toggle27 = () => setPrepListIsOpen8(!prepListIsOpen8);
+    const toggle28 = () => setRecipeIsOpen8(!recipeIsOpen8);
+    const toggle29 = () => setFoodCostIsOpen8(!foodCostIsOpen8);
+    const toggle30 = () => setReflectionIsOpen8(!reflectionIsOpen8);
 
 
 
@@ -1022,14 +1071,227 @@ function App() {
                 <Collapse isOpen={fiveFoodCostIsOpen}>
                     <Card>
                         <CardBody>
-                            Content
+                            <a href={wk5BeefConsommeExcel}>
+                                <b>Beef_Consomme_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk5LeekPotatoSoupExcel}>
+                                <b>Leek_Potato_Soup_FoodCost.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
             </div>
-            <div className="recipeCard">
+            <div className="recipeCard" id="reflection5">
                 <Button color="primary" onClick={toggle15} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
                 <Collapse isOpen={fiveReflectionIsOpen}>
+                    <Card>
+                        <CardBody>
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                            Overall, the beef consomme and the leek and potato soup turned out well. The clarifying technique of creating 
+                            a raft and straining the stock through a cheesecloth worked very well. Since we prepared a good quality brown 
+                            stock in the past weeks, we were able to create a tasty, flavorful consomme. The consomme was golden brown 
+                            with pops of green, orange, and beige from the mushrooms, carrots, and green beans we garnished it with. 
+                            It had flavors from the clearmeat mixture that we prepared prior to adding the stock. The garnishes also 
+                            added more texture into the soup because the carrots and green beans were slightly hard and were balanced 
+                            by soft mushrooms. The leek and potato soup was thick and hearty and had subtle flavors from the leek, 
+                            potato skins, and onions. Since I used the blender to puree my soup, it was very smooth with minimal chunks 
+                            of potato. The parsley and croutons added extra texture and flavor to the soup with its crunchy, salty, bitter 
+                            profile.
+                            </p>
+                            <br/>
+                            <Row>
+                                <Col>
+                                <img src={wk5ReflectBeefWithGar} alt="beef consomme with a garnish" name="beefWithGarnish" className="cardImg"></img>
+                                <Label for="beefWithGarnish">Beef Consomme with Garnish</Label>
+                                </Col>
+                                <Col>
+                                <img src={wk5ReflectLpSoup} alt="leek and potato soup" name="LPSoup" className="cardImg"></img>
+                                <br/>
+                                <Label for="LPSoup">Leek and Potato Soup</Label>
+                                </Col>
+                            </Row>
+                            <br/>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                            The main reason that we were able to have a flavorful, golden colored consomme with no trace of fat is because we had a 
+                            good quality stock to start with (Labensky et. al., 2018). We were also able to create a sturdy raft to hold the 
+                            impurities at the top of the soup. If we were to use a larger pot, with this small quantity of consomme, the raft 
+                            would’ve had trouble forming because of the large surface area it would’ve had to cover. We also kept an eye on the 
+                            temperature of the stock to make sure it didn’t boil and potentially destroy the raft. For the leek and potato soup, 
+                            we decided to keep the skins on the potato to impart more flavor and a slight texture into the soup. Not only was 
+                            this soup filling and tasty, there are also a lot of nutrients in the skin like potassium and vitamin C along with 
+                            other vitamins and minerals (Arnarson, A. 2019). If I were to make the leek and potato soup again, I would use the 
+                            hand blender so that the soup is more coarse. 
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk5ReflectRaft} alt="Consomme with raft" name="consommeRaft" className="cardImgWk5"></img>
+                                    <Label for="consommeRaft">Consomme with Raft</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk5ReflectClearConsomme} alt="clear consomme in bowl" name="clearConsomme" className="cardImgWk5"></img>
+                                    <Label for="cleaConsomme">Clear Consomme</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk5ReflectLpSoupBeforeBlend} alt="Leak and potato soup before being blended" name="LPSoupBeforeBlend" className="cardImgWk5Unique"></img>
+                                    <Label for="LPSoupBeforeBlend">Leek & Potato Soup Before Blender</Label>
+                                </Col>
+                            </Row>
+                            <br/>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                            The objective that I had for this week was to practice clarifying stocks without removing too much of the liquid. 
+                            I think I did well at this because my consomme came out very clear with almost no fat. After I strained it through a 
+                            cheesecloth and a strainer, I also used a paper towel to remove the fat from the top of the soup. I learned what a 
+                            cartouche is which is really helpful when you don’t have a lid for a pot. There have been many circumstances that I’ll 
+                            be cooking and I can’t find the correct size lid for my pot so now that I know this technique I’ll be able to use it 
+                            in the future.
+                            <br/>
+                            <br/>
+                            Arnarson, A. (2019, March 7). <i>Potatoes 101: Nutrition Facts and Health Effects.</i> Healthline.
+                            <br/>
+                            <a href="https://www.healthline.com/nutrition/foods/potatoes">
+                                <i>https://www.healthline.com/nutrition/foods/potatoes</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Labensky, S. R., Hause, A.M., Martel P. A. (2018).<i>On Cooking: A Textbook of Culinary Fundamentals.</i> Pearson.
+                            </p>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+        </div>
+
+        <div className="jumbotron" id="week6">
+            <h1 className="display-4">Roast Chicken, Garlic Mashed Potatoes & Supreme Sauce</h1>
+            <p className="h3">Week 6</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek6">
+                <Button color="secondary" onClick={toggle16} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen6}>
+                    <Card>
+                        <CardBody>
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <u><b>Method of cooking:</b></u> Roasting and Baking
+                                <br/>
+                                <u><b>List of Objectives:</b></u> I would like to practice carving and trussing a chicken. 
+                                <br/>
+                                <u><b>Method of cookery:</b></u> Roasting provides a nice brown color to a slightly crunchy skin while holding in all of 
+                                the juices, making it tender and juicy on the inside (Labensky et al., 2018). Trussing the meat also helps to cook the 
+                                poultry evenly. Since the poultry is tied together and is more compact, the juices can’t escape as easily. 
+                                For the veloute, it should be rich and smooth from the roux that was added. The sauce should take on the flavor 
+                                of the type of stock used. The potatoes should be smooth, light, and airy from being whipped in the stand mixer.
+                                <br/>
+                                <u><b>Prior knowledge:</b></u> I’ve roasted a chicken before but I’ve never had to tie it. I’ve also had some experience 
+                                butchering/carving meat but I could still use some practice. I’ve made mashed potatoes multiple times in many different 
+                                ways but I’ve never made a supreme sauce.
+                                <br/>
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                                <u><b>Origin and history:</b></u> Veloute is a traditional French mother sauce. A mother sauce means that it acts as a 
+                                base for many different types of sauces (Waggoner, S. 2015).
+                                <br/>
+                                <u><b>Methods used:</b></u>  Roasting is different from baking because roasting is a term used for poultry, meat, and 
+                                vegetables, whereas baking is used for desserts and pastries, fruits, fish, starches, etc. When seasoning the poultry 
+                                it’s important to remember not to season it with a lot of herbs on the outside if it’s going to be cooking at high 
+                                temperatures because the herbs will burn. Another option to season the poultry is to brine it for a few hours before 
+                                cooking. This adds extra flavor to the meat and helps it retain its moisture. There are a few different dry heat cooking 
+                                methods, but the main component of roasting is that the “heat is transferred by convection to the food’s surface and 
+                                then penetrates the food by conduction” (Labensky et al., 2018).The veloute is a mixture of clarified butter, stock, 
+                                and roux. The roux acts as a thickening agent and gives the sauce more stability.
+                                <br/>
+                                <u><b>Variations:</b></u> You can roast any type of poultry, however the time and temperature will vary based on the 
+                                fat content of the meat. You can also use any type of seasoning for your poultry which allows you to pair it with many 
+                                different side dishes. The mashed potatoes can also have some variation like adding different seasonings and cheeses. 
+                                For the veloute, you can use chicken, fish, veal, beef, or vegetable stock. This allows the sauce to be paired with 
+                                many different dishes.
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals.</i> Pearson.
+                                <br/>
+                                <br/>
+                                Waggoner, S. (2015, February 4th). <i>Veloute Sauce: The Versatile Stranger.</i> Fork and Plate.
+                                <br/>
+                                <a href="https://forknplate.com/2015/02/04/veloute-sauce-the-versatile-stranger/">
+                                    <i>https://forknplate.com/2015/02/04/veloute-sauce-the-versatile-stranger/</i>
+                                </a>
+                            </p>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek6">
+                <Button color="info" onClick={toggle17} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen6}>
+                    <Card>
+                        <CardBody>
+                            <div>
+                                <img src={wk6PrepListMashedPotatoes} alt="Mashed potatoes prep list" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk6PrepListRoastedChicken} alt="Roasted chicken prep list" className="prepListImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                            <img src={wk6PrepListVeloute} alt="a veloute sauce prep list" className="prepListImg"/>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek6">
+                <Button color="danger" onClick={toggle18} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen6}>
+                    <Card>
+                        <CardBody>
+                        <div>
+                                <img src={wk6RecipePotatoes} alt="Mashed potatoes recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk6RoastedChickenRecipe} alt="Roasted chicken recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk6SauceRecipe} alt="a veloute sauce recipe" className="recipeImg"/>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek6">
+                <Button color="success" onClick={toggle19} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen6}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek6">
+                <Button color="primary" onClick={toggle20} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen6}>
                     <Card>
                         <CardBody>
                             Content
@@ -1037,7 +1299,127 @@ function App() {
                     </Card>
                 </Collapse>
             </div>
-            
+            <br/>
+        </div>
+
+        <div className="jumbotron" id="week-7">
+            <h1 className="display-4">Pan Fried Chicken, Collard Greens, Gratin Dauphinois</h1>
+            <p className="h3">Week 7</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek7">
+                <Button color="secondary" onClick={toggle21} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen7}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek7">
+                <Button color="info" onClick={toggle22} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen7}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek7">
+                <Button color="danger" onClick={toggle23} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen7}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek7">
+                <Button color="success" onClick={toggle24} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen7}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek7">
+                <Button color="primary" onClick={toggle25} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen7}>
+                    <Card>
+                        <CardBody>
+
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+        </div>
+
+        <div className="jumbotron" id="week-8">
+            <h1 className="display-4">Pork Escalope with Apples, Lyonnaise Potato, Green Beans</h1>
+            <p className="h3">Week 8</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek8">
+                <Button color="secondary" onClick={toggle26} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen8}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek8">
+                <Button color="info" onClick={toggle27} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen8}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek8">
+                <Button color="danger" onClick={toggle28} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen8}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek8">
+                <Button color="success" onClick={toggle29} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen8}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek8">
+                <Button color="primary" onClick={toggle30} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen8}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
         </div>
 
     </div>
