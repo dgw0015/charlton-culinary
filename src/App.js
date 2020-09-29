@@ -1426,9 +1426,28 @@ function App() {
                             </p>
                             <h4 className="researchHeader">BACKGROUND</h4>
                             <p>
-                            <u><b>Origin and history:</b></u> Surprisingly, pan fried chicken wasn’t originally created in America; rather it is a dish created by the Scottish (Grilli, S., 2017). As people immigrated to America from Europe, the recipe has had slight changes like adding seasoning to the breading. Ratatouille is originally a French dish usually associated with the Nice region of France. It was commonly eaten by the peasants because they had access to the summer vegetables that are used in it (Nudi, E., 2014). Dauphinoise potatoes are also from the Southern region of France. Traditionally, this dish doesn’t contain cheese or eggs because the potatoes are starchy enough to hold the dish together (Alfaro, D., 2019).  
-                            <u><b>Method used:</b></u> There are many different types of dry heat cooking methods like grilling, baking, and broiling. The main difference between frying and these other methods is that the poultry is immersed in oil during its cooking process. The pan/oil needs to be hot before adding the chicken so that the outside can immediately start browning and sealing in the juices. The temperature of the pan depends on how long the poultry is going to cook for and how thick the meat is (Labensky et al., 2018). Since you dice the vegetables, sauteeing is the best option of cooking it because of how quickly the vegetables will cook. You can still keep the structure and natural flavors of the vegetables with a gentler cooking process.
-                            <u><b>Variations:</b></u> Pan fried chicken is a pretty basic recipe so the only variations you might see are seasoning variations or maybe the order at which you batter the chicken. Because ratatouille is mainly vegetables, you can substitute a lot of different vegetables for this recipe. Typically eggplant, tomatoes, zucchini, and onions are used but you could also use squash and bell peppers. Some variations for the dauphinoise potatoes include using sweet potatoes, adding onions and meat like ham or chicken, or using chicken/vegetable stock instead of cream. You can also add mushrooms or other vegetables.
+                            <u><b>Origin and history:</b></u> Surprisingly, pan fried chicken wasn’t originally created in America; rather 
+                            it is a dish created by the Scottish (Grilli, S., 2017). As people immigrated to America from Europe, the 
+                            recipe has had slight changes like adding seasoning to the breading. Ratatouille is originally a French dish 
+                            usually associated with the Nice region of France. It was commonly eaten by the peasants because they had 
+                            access to the summer vegetables that are used in it (Nudi, E., 2014). Dauphinoise potatoes are also from the 
+                            Southern region of France. Traditionally, this dish doesn’t contain cheese or eggs because the potatoes are 
+                            starchy enough to hold the dish together (Alfaro, D., 2019).  
+                            <br/>
+                            <u><b>Method used:</b></u> There are many different types of dry heat cooking methods like grilling, baking, 
+                            and broiling. The main difference between frying and these other methods is that the poultry is immersed in 
+                            oil during its cooking process. The pan/oil needs to be hot before adding the chicken so that the outside 
+                            can immediately start browning and sealing in the juices. The temperature of the pan depends on how long 
+                            the poultry is going to cook for and how thick the meat is (Labensky et al., 2018). Since you dice the 
+                            vegetables, sauteeing is the best option of cooking it because of how quickly the vegetables will cook. 
+                            You can still keep the structure and natural flavors of the vegetables with a gentler cooking process.
+                            <br/>
+                            <u><b>Variations:</b></u> Pan fried chicken is a pretty basic recipe so the only variations you might see 
+                            are seasoning variations or maybe the order at which you batter the chicken. Because ratatouille is mainly 
+                            vegetables, you can substitute a lot of different vegetables for this recipe. Typically eggplant, tomatoes, 
+                            zucchini, and onions are used but you could also use squash and bell peppers. Some variations for the 
+                            dauphinoise potatoes include using sweet potatoes, adding onions and meat like ham or chicken, or using 
+                            chicken/vegetable stock instead of cream. You can also add mushrooms or other vegetables.
                             <br/>
                             <br/>
                             Alafaro, D. (2019, October 2). <i>Potatoes Dauphinoise vs. Potatoes Dauphine.</i> The Spruce Eats. 
