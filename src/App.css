@@ -244,7 +244,9 @@ label {
    padding: 0;
 }
 
-/* Styling for week 7 */
+/* Preplist styling for all cards */
 .jumbotron .recipeCard .prepListImg {
    width: 80%;
 }
+
+/* Styling for week 7 */
