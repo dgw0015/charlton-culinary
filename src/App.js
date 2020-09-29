@@ -1401,7 +1401,7 @@ function App() {
         </div>
 
         <div className="jumbotron" id="week-7">
-            <h1 className="display-4">Pan Fried Chicken, Collard Greens, Gratin Dauphinois</h1>
+            <h1 className="display-4">Pan Fried Chicken, Ratatouille, Gratin Dauphinoise</h1>
             <p className="h3">Week 7</p>
             <hr className="my-4"/>
             <div className="recipeCard" id="researchWeek7">
