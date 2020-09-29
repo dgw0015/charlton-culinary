@@ -245,6 +245,6 @@ label {
 }
 
 /* Styling for week 7 */
-.jumbotron #prepListWeek7 .prepListImg {
+.jumbotron .recipeCard .prepListImg {
    width: 80%;
 }
