@@ -243,3 +243,8 @@ label {
    width: 60%;
    padding: 0;
 }
+
+/* Styling for week 7 */
+.jumbotron #prepListWeek7 .prepListImg {
+   width: 80%;
+}

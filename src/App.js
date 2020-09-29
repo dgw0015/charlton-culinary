@@ -1481,18 +1481,18 @@ function App() {
                     <Card>
                         <CardBody>
                         <div>
-                                <img src={wk7PanFriedChickenPrepList} alt="Pan Fried Chicken prep list" className="prepListImg"/>
+                                <img src={wk7PanFriedChickenPrepList} alt="Pan Fried Chicken prep list" className="prepListImg" id="wk7PrepL1"/>
                             </div>
                             <br/>
                             <hr className="my-3"/>
                             <br/>
                             <div>
-                                <img src={wk7PotatoPrepList} alt="Potato dauph prep list" className="prepListImg"/>
+                                <img src={wk7PotatoPrepList} alt="Potato dauph prep list" className="prepListImg" id="wk7PrepL2"/>
                             </div>
                             <hr className="my-3"/>
                             <br/>
                             <div>
-                            <img src={wk7RatatouillePrepList} alt="Ratatouille prep list" className="prepListImg"/>
+                            <img src={wk7RatatouillePrepList} alt="Ratatouille prep list" className="prepListImg" id="wk7PrepL3"/>
                             </div>
                         </CardBody>
                     </Card>
