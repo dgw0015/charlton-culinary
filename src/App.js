@@ -49,6 +49,20 @@ import wk6PrepListVeloute from './images/Week_6/PrepList/Veloute.png';
 import wk6RecipePotatoes from './images/Week_6/Recipe/MashedPotatoesRecipe.PNG';
 import wk6RoastedChickenRecipe from './images/Week_6/Recipe/RoastedChickenRecipe.PNG';
 import wk6SauceRecipe from './images/Week_6/Recipe/SauceRecipe.PNG';
+import wk6ReflectBlondeRoux from './images/Week_6/Reflection/blondeRoux.jpg';
+import wk6ReflectFinalPlate from'./images/Week_6/Reflection/final_plate.jpg';
+import wk6ReflectMashedPotatoes from './images/Week_6/Reflection/mashedPotatoes.JPG';
+import wk6ReflectRoastedChickec from './images/Week_6/Reflection/roasted_chicken.jpg';
+import wk6ReflectSupremeSauce from './images/Week_6/Reflection/supreme_sauce.jpg';
+import wk6FoodCostPotatoes from './images/Week_6/FoodCost1.xlsx';
+import wk6FoodCostChicken from './images/Week_6/FoodCost2.xlsx';
+import wk6FoodCostSauce from './images/Week_6/FoodCost3.xlsx';
+import wk7PanFriedChickenPrepList from './images/Week_7/PrepList/panFriedChickenPrepList.png';
+import wk7PotatoPrepList from './images/Week_7/PrepList/potatoPrepList.png';
+import wk7RatatouillePrepList from './images/Week_7/PrepList/ratatouillePrepList.png';
+import wk7PanFriedChickenRecipe from './images/Week_7/Recipe/panFriedChicken.PNG';
+import wk7PotatoDauph from './images/Week_7/Recipe/potatoDauph.PNG';
+import wk7Rata from './images/Week_7/Recipe/ratatouille.PNG';
 
 function App() {
 
@@ -1224,7 +1238,6 @@ function App() {
                         </CardBody>
                     </Card>
                 </Collapse>
-                <br/>
             </div>
 
             <div className="recipeCard" id="prepListWeek6">
@@ -1257,7 +1270,7 @@ function App() {
                 <Collapse isOpen={recipeIsOpen6}>
                     <Card>
                         <CardBody>
-                        <div>
+                            <div>
                                 <img src={wk6RecipePotatoes} alt="Mashed potatoes recipe" className="recipeImg"/>
                             </div>
                             <br/>
@@ -1282,7 +1295,17 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen6}>
                     <Card>
                         <CardBody>
-                            Content
+                            <a href={wk6FoodCostPotatoes}>
+                                <b>MashedPotatoes_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk6FoodCostChicken}>
+                                <b>RoastedChicken_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk6FoodCostSauce}>
+                                <b>SupremeSauce_FoodCost.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -1294,12 +1317,87 @@ function App() {
                 <Collapse isOpen={reflectionIsOpen6}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                            Overall, the roasted chicken, mashed potatoes, and supreme sauce came out very well. The chicken had a nice golden brown color around the 
+                            whole chicken and developed a crispy skin. It had lots of flavor and was very moist even though we seasoned it with simple ingredients 
+                            like salt, olive oil, onions, thyme, and a lemon. The mashed potatoes had a fluffy, smooth texture with subtle flavors from the garlic. 
+                            The mashed potatoes had a bland color because we used the white pepper so that it would blend in with the potatoes. The potatoes weren’t 
+                            too salty or peppery since we were constantly trying it and adjusting it. The supreme sauce had a thick creamy texture to it from the 
+                            roux and heavy cream that was added. The sauce took on the flavor from the mushrooms which were added at the very end of the cooking process. 
+                            The sauce started out brown/tan because of the blonde roux and chicken stock that were added, but the heavy cream that we added to make 
+                            it a supreme sauce caused it to lighten up to a light brown. 
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk6ReflectSupremeSauce} alt="supreme sauce that charlton made" name="wk6SupremeSauce" className="cardImg" />
+                                    <Label for="wk6SupremeSauce">Supreme Sauce</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk6ReflectRoastedChickec} alt="Roasted chicken" name="wk6Chicken" className="cardImg" />
+                                    <Label for="wk6Chicken">Roasted Chicken</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk6ReflectFinalPlate} alt="final plate" name="finalPlate" className="cardImg" />
+                                    <Label for="finalPlate">Final Plate</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                            The roasted chicken came out as expected because they were placed on a rack so that the juices could drip to the bottom which prevented the 
+                            bottom of the chicken from becoming very soggy. Together with that, the chickens were removed every 20 minutes and were basted in order to keep 
+                            it moist and develop a crispy skin from the natural oils and fats that were being released from the chicken. The mashed potatoes had a good 
+                            consistency because we cooked the potatoes just enough that they weren’t mushy. We also slowly added the heavy cream so that the potatoes had 
+                            time to absorb the cream. The first time I made the veloute, it ended up separating towards the end of the process, so I had to start over. I might’ve 
+                            added the chicken stock too quickly which caused the roux to start separating. I noticed small clumps of flour rising to the top and a small layer of 
+                            oil that formed at the top of the sauce. However, the second time I made it, it came out very well because I added more flour than butter so that 
+                            the roux had a thicker consistency and was able to absorb the chicken stock better. Another important aspect of creating the sauce is to use 
+                            clarified butter. Clarifying the butter allows you to cook the butter to a higher temperature without it burning. When creating the roux, you 
+                            had to make sure to slowly add the stock and whisk it constantly so that all of the stock was incorporated well and was free of clumps. 
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk6ReflectBlondeRoux} alt="Blonde roux" name="blondeRoux" className="cardImgWeek6" />
+                                    <br/>
+                                    <Label for="blondeRoux">Blonde Roux</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk6ReflectMashedPotatoes} alt="mashed potatoes" name="wk6MashedPotatoes" className="cardImgWeek6" />
+                                    <br/>
+                                    <Label for="wk6MashedPotatoes">Mashed Potatoes</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                            The objectives that I set out for this class was to learn how to truss and carve a chicken. I did well at trussing the chicken even though it took a 
+                            few tries. There are a few different ways to truss a chicken so that each area is exposed to the heat in order for the skin to cook properly. Most people 
+                            say that trussing a chicken helps cook it evenly and helps with appearance (Hill, 2018). I also practiced carving a chicken properly. One thing to look/feel 
+                            for are the joints of where you’re going to cut so that you cut between them and not end up with pieces of bone embedded in the meat. Together with that, the 
+                            chicken needs to rest for a few minutes before carving so that the juices can redistribute throughout the chicken (Mattison, L. and Woodward, P., 2019). I 
+                            also learned how to save a sauce from breaking. After I found out why my sauce separated, I was able to pay closer attention to the signs the second time 
+                            around and more flour and heat accordingly. This technique can be applied to other sauces as well. For example, when you make a hollandaise sauce, you have 
+                            to be careful not to have the heat on too high or else you’ll end up with scrambled eggs. So when you start to notice a slight curdling in the eggs you have 
+                            to whisk it rapidly and remove it from the heat immediately to save it. I need to practice carving meat better because there were a few times that I was 
+                            unsure of exactly where I was supposed to cut.
+                            <br/>
+                            <br/>
+                            Hill, Meggan. (2018, November 11). <i>How to Truss a Chicken.</i> Culinary Hill.
+                            <br/>
+                            <a href="https://www.culinaryhill.com/how-to-truss-a-chicken/">
+                                <i>https://www.culinaryhill.com/how-to-truss-a-chicken/.</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Mattison, L. and Woodward, P. (2019, October 31). How to Carve a Chicken. Taste of Home.
+                            <br/>
+                            <a href="https://www.tasteofhome.com/article/how-to-carve-a-chicken/">
+                                <i>https://www.tasteofhome.com/article/how-to-carve-a-chicken/</i>
+                            </a>
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
             </div>
-            <br/>
         </div>
 
         <div className="jumbotron" id="week-7">
@@ -1311,10 +1409,51 @@ function App() {
                 <Collapse isOpen={researchIsOpen7}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                            <u><b>Method of cooking:</b></u> Pan frying and roasting
+                            <br/>
+                            <u><b>List of Objectives:</b></u> This week I would like to learn how to bread chicken correctly so that it’s flavorful and moist.
+                            <br/>
+                            <u><b>Method of cookery:</b></u> Breading your poultry before frying is not only important for its flavor 
+                            and appearance, but it also helps to keep the meat juicy and less oily. The ratatouille is simply a stewed 
+                            or sauteed vegetable dish. Its simplicity allows for the natural flavors of the vegetables to come through, 
+                            making it a great vegetarian dish. The potatoes are cooked in the garlic cream sauce and then baked rather 
+                            than being boiled first and then added to the mixture. This allows the potatoes to soak in some of the 
+                            seasonings prior to being baked. Prior knowledge: I’ve never pan fried chicken before, but I have 
+                            seen my family members make it. When I made the gratin potatoes they came out very creamy and tasty, 
+                            but I think I could’ve used less cream because it was overwhelming at times. 
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                            <u><b>Origin and history:</b></u> Surprisingly, pan fried chicken wasn’t originally created in America; rather it is a dish created by the Scottish (Grilli, S., 2017). As people immigrated to America from Europe, the recipe has had slight changes like adding seasoning to the breading. Ratatouille is originally a French dish usually associated with the Nice region of France. It was commonly eaten by the peasants because they had access to the summer vegetables that are used in it (Nudi, E., 2014). Dauphinoise potatoes are also from the Southern region of France. Traditionally, this dish doesn’t contain cheese or eggs because the potatoes are starchy enough to hold the dish together (Alfaro, D., 2019).  
+                            <u><b>Method used:</b></u> There are many different types of dry heat cooking methods like grilling, baking, and broiling. The main difference between frying and these other methods is that the poultry is immersed in oil during its cooking process. The pan/oil needs to be hot before adding the chicken so that the outside can immediately start browning and sealing in the juices. The temperature of the pan depends on how long the poultry is going to cook for and how thick the meat is (Labensky et al., 2018). Since you dice the vegetables, sauteeing is the best option of cooking it because of how quickly the vegetables will cook. You can still keep the structure and natural flavors of the vegetables with a gentler cooking process.
+                            <u><b>Variations:</b></u> Pan fried chicken is a pretty basic recipe so the only variations you might see are seasoning variations or maybe the order at which you batter the chicken. Because ratatouille is mainly vegetables, you can substitute a lot of different vegetables for this recipe. Typically eggplant, tomatoes, zucchini, and onions are used but you could also use squash and bell peppers. Some variations for the dauphinoise potatoes include using sweet potatoes, adding onions and meat like ham or chicken, or using chicken/vegetable stock instead of cream. You can also add mushrooms or other vegetables.
+                            <br/>
+                            <br/>
+                            Alafaro, D. (2019, October 2). <i>Potatoes Dauphinoise vs. Potatoes Dauphine.</i> The Spruce Eats. 
+                            <br/>
+                            <a href="https://www.thespruceeats.com/potatoes-dauphine-vs-dauphinoise-995642">
+                                <b>https://www.thespruceeats.com/potatoes-dauphine-vs-dauphinoise-995642</b>
+                            </a>
+                            <br/>
+                            <br/>
+                            Grilli, S. (2017, April 12). <i>The Surprising History of Fried Chicken.</i> Groupon Guide.                            <br/>
+                            <a href="https://www.groupon.com/articles/who-invented-fried-chicken">
+                                <b>https://www.groupon.com/articles/who-invented-fried-chicken</b>
+                            </a>
+                            <br/>
+                            <br/>
+                            Nudi, E. (2014, April 25). <i>Food History: Ratatouille.</i> ErinNudi.com.  
+                            <br/>
+                            <a href="https://www.erinnudi.com/2014/04/25/food-history-ratatouille/">
+                                <b>https://www.erinnudi.com/2014/04/25/food-history-ratatouille/</b>
+                            </a>
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
 
             <div className="recipeCard" id="prepListWeek7">
@@ -1322,10 +1461,24 @@ function App() {
                 <Collapse isOpen={prepListIsOpen7}>
                     <Card>
                         <CardBody>
-                            Content
+                        <div>
+                                <img src={wk7PanFriedChickenPrepList} alt="Pan Fried Chicken prep list" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk7PotatoPrepList} alt="Potato dauph prep list" className="prepListImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                            <img src={wk7RatatouillePrepList} alt="Ratatouille prep list" className="prepListImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
 
             <div className="recipeCard" id="recipeWeek7">
@@ -1333,10 +1486,24 @@ function App() {
                 <Collapse isOpen={recipeIsOpen7}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk7PanFriedChickenRecipe} alt="Pan fried recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk7PotatoDauph} alt="Potato Dauph recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk7Rata} alt="Ratatouille recipe" className="recipeImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
 
             <div className="recipeCard" id="foodCostWeek7">
@@ -1348,6 +1515,7 @@ function App() {
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
 
             <div className="recipeCard" id="reflectionWeek7">
@@ -1360,6 +1528,7 @@ function App() {
                     </Card>
                 </Collapse>
             </div>
+            <br/>
         </div>
 
         <div className="jumbotron" id="week-8">
