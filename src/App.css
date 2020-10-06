@@ -250,3 +250,15 @@ label {
 }
 
 /* Styling for week 7 */
+.jumbotron #reflectionWeek7 .row .col .cardImgWk7 {
+   width: 100%;
+   height: 85%;
+   padding: 0;
+   margin: 0;
+}
+
+.jumbotron #reflectionWeek7 .row .col .cardImgWk7TwoPics {
+   width: 90%;
+   margin: 0%;
+   padding: 0%;
+}

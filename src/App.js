@@ -63,6 +63,21 @@ import wk7RatatouillePrepList from './images/Week_7/PrepList/ratatouillePrepList
 import wk7PanFriedChickenRecipe from './images/Week_7/Recipe/panFriedChicken.PNG';
 import wk7PotatoDauph from './images/Week_7/Recipe/potatoDauph.PNG';
 import wk7Rata from './images/Week_7/Recipe/ratatouille.PNG';
+import wk7FoodCostDauphin from './images/Week_7/FoodCost_dauphinoise.xlsx';
+import wk7FoodCostFriedChicken from './images/Week_7/FoodCost_friedChicken.xlsx';
+import wk7FoodCostRata from './images/Week_7/FoodCost_rata.xlsx';
+import wk7ReflectDauphPotato from './images/Week_7/Reflection/dauphinoise potatoes.jpg';
+import wk7ReflectDicedVegetables from './images/Week_7/Reflection/medium diced vegetables.jpg';
+import wk7ReflectPotatoesInGarlicCream from './images/Week_7/Reflection/potatoes in garlic infused cream.jpg';
+import wk7ReflectRata from './images/Week_7/Reflection/ratatouille.jpg';
+import wk7ReflectFinalPlate from './images/Week_7/Reflection/finalPlate.jpg';
+import wk8GreenBeanPrepList from './images/Week_8/PrepList/GreenBeanPrepList.png';
+import wk8LyonPotatoesPrepList from './images/Week_8/PrepList/LyonPotatoesPrepList.png';
+import wk8PorkEscalopePrepList from './images/Week_8/PrepList/PorkEscalopePrepList.png';
+import wk8RecipeGreenBeans from './images/Week_8/Recipe/GreenBeans.PNG';
+import wk8RecipeLyonPotatoes from './images/Week_8/Recipe/LyonPotatoes.PNG';
+import wk8RecipePork from './images/Week_8/Recipe/Pork.PNG';
+
 
 function App() {
 
@@ -1530,7 +1545,17 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen7}>
                     <Card>
                         <CardBody>
-                            Content
+                            <a href={wk7FoodCostDauphin}>
+                                <b>Dauphinoise_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk7FoodCostFriedChicken}>
+                                <b>FriedChicken_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk7FoodCostRata}>
+                                <b>Ratatouille_FoodCost.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -1542,7 +1567,91 @@ function App() {
                 <Collapse isOpen={reflectionIsOpen7}>
                     <Card>
                         <CardBody>
-
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                            Overall, every dish that we made turned out very well. The fried chicken had great flavor from 
+                            the flour mixture and was very juicy on the inside. The crispy skin achieved a nice brown 
+                            color with both the deep fryer and the pan frying method. The dauphinoise potatoes, even 
+                            though they were so simple to make, you were able to distinctly pick out the flavors of the 
+                            garlic infused heavy cream, the gruyere cheese, and the fresh thyme. The overall dish didn’t 
+                            have a lot of colors, just some brown and gold from the gruyere cheese browning on the tops. 
+                            The texture was pretty plain because it was just the potatoes and cream, but the potatoes 
+                            held a harder consistency since we didn’t cook them very long in the pot to where it would’ve 
+                            turned to mush. However, when you eat the potatoes with the fried chicken, the textures 
+                            balanced out. The ratatouille had a lot of different flavors in the dish because of the 
+                            quality of products that we used and the variety of vegetables that we used. The taste 
+                            from the sweet peppers overpowered the other ingredients like the zucchini and eggplant, 
+                            but the sweet peppers were very refreshing and crisp and went well with the chiffonade basil. 
+                            Since ratatouille is a stew of vegetables, the texture was soft and mushy because of the size 
+                            dice that we did and because of how long it was cooked in the pot. The dish had colors of 
+                            yellow, red, orange, green, and white from all of the ingredients that we used. 
+                            I was pleasantly surprised by this dish because I don’t usually like eggplant or tomatoes.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk7ReflectFinalPlate} alt="Final plate with pan fried chicken, potatoes and ratatouille" name="wk7FinalPlate" className="cardImgWk7"></img>
+                                    <Label for="wk7FinalPlate">Final Plate</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk7ReflectDauphPotato} alt="dauphPotatoes" name="dauphPotatoes" className="cardImgWk7"></img>
+                                    <Label for="dauphPotatoes">Dauphinoise Potatoes</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk7ReflectRata} alt="Ratatouille in a stainless steal pot" name="wk7Rata" className="cardImgWk7"></img>
+                                    <Label for="wk7Rata">Ratatouille</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                            There were some parts of the chicken that had more batter than other places. This probably happened 
+                            because we were low on buttermilk so the chicken didn’t have enough moisture to keep the flour stuck to it. 
+                            Another reason could’ve been if you didn’t pay attention to which hand you were using to pick up 
+                            the chicken. Switching between a wet hand and a dry hand prevents a large mess and prevents the dry 
+                            hand from being coated in the flour (Alfaro, D., 2020). For the potatoes, we covered them with foil to 
+                            prevent the cheese from burning while everything else cooked. We then removed the foil halfway through so 
+                            that we could achieve the “Au Gratin” which gave the dish it’s color and some added texture. 
+                            The potatoes cooked for a few minutes in a pan of garlic infused cream to help cook out the raw 
+                            flavor and impart the garlic flavor into the potato slices. The ratatouille turned out well because 
+                            we diced the vegetables to similar sizes so that each vegetable would cook at the same rate (Franke, 2014). 
+                            The basil was added at the very end because it was used as a garnish and doesn’t require a long cooking time.
+                            <br/>
+                            <br/>
+                            <Row>
+                                <Col>
+                                    <img src={wk7ReflectPotatoesInGarlicCream} alt="Potatoes in garlic cream" name="potatoesInGarlicCream" className="cardImgWk7TwoPics"></img>
+                                    <Label for="potatoesInGarlicCream">Potatoes in Garlic Infused Cream</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk7ReflectDicedVegetables} alt="Diced vegetables" name="dicedVegetable" className="cardImgWk7TwoPics"></img>
+                                    <Label for="dicedVegetables">Diced Vegetables</Label>
+                                </Col>
+                            </Row>
+                            Alafaro, D. (2020, March 25). <i>The Standard Breading Process.</i> The Spruce Eats.
+                            <br/>
+                            <a href="https://www.thespruceeats.com/the-standard-breading-procedure-995453">
+                                <i>https://www.thespruceeats.com/the-standard-breading-procedure-995453</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Franke, S. (2014, February 12). <i>The 6 Biggest Mistakes You Make Chopping Vegetables</i>. GH.
+                            <br/>
+                            <a href="https://www.goodhousekeeping.com/food-recipes/cooking/tips/a18999/chopping-vegetables-mistakes/#:~:text=By%20cutting%20veggies%20into%20pieces,are%20meltingly%20soft%20and%20tender">
+                                <i>https://www.goodhousekeeping.com/food-recipes/cooking/tips/a18999/chopping-vegetables-mistakes/#:~:text=By%20cutting%20veggies%20into%20pieces,are%20meltingly%20soft%20and%20tender</i>
+                            </a>
+                            </p>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                            The objectives that I set for this week was to learn how to properly bread chicken so that the chicken is 
+                            flavorful and moist. I think I did well at achieving this goal because the flour had a lot of dried herbs 
+                            and other seasonings in it that gave the chicken all of its flavor. Also since we were constantly checking 
+                            the temperature of the chicken during its cooking process, the chicken wasn’t overcooked and therefore was 
+                            still juicy. This week we also butchered a chicken so that we could fry each individual piece like the 
+                            tenderloin, wings, drumstick, thighs, etc. This technique can be used on other cuts of meat like a turkey. 
+                            Even though there is a different procedure for butchering beef, you could still use the same principles like 
+                            using a sharp knife, cutting out the connective tissue and ligaments, cutting off the extra fat, etc. I still 
+                            need to practice seasoning my food correctly, because I noticed my chicken could’ve used more salt or black pepper 
+                            the ratatouille needed more black pepper. 
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -1559,10 +1668,79 @@ function App() {
                 <Collapse isOpen={researchIsOpen8}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <b><u>Method of Cooking:</u></b> Saute
+                                <br/>
+                                <b><u>List of Objectives:</u></b> This week I would like to practice cooking pork so that it remains juicy and flavorful. I would also like to practice slicing potatoes evenly.
+                                <br/>
+                                <b><u>Method of cookery:</u></b> The pork scallops are coated in a light layer of flour so that it can 
+                                achieve a nice brown color on the outside and keep some of the juices locked in. Similar to how we pan 
+                                fried the chicken last week, the pork should be constantly turned so that it can be cooked evenly on both 
+                                sides and then removed from the heat so that it doesn’t overcook while you’re making the sauce and softening 
+                                the apples. The apples act as a good garnish that balances out and compliments the natural flavors of pork. 
+                                The lyonnaise potatoes are first baked or boiling in order to start the cooking process and it’s also a good 
+                                way to use out any leftover potatoes (Labensky et al., 2018). The initial cooking process helps to cook out 
+                                the raw flavor from the potatoes, similar to what we did when we cooked the potatoes in garlic cream cream 
+                                last week. The green beans don’t require much prep other than maybe cutting off the ends since they can be 
+                                hard to chew sometimes and washing them before boiling them. It’s important to remember not to overcrowd the 
+                                pot when cooking the green beans because it can cause the cooking process to take longer and can cause them 
+                                to become discolored (labensky, et al., 2018).
+                                <br/>
+                                <b><u>Prior Knowledge:</u></b> I have cooked pork before in a pan, sous vide and in the oven. It took a few tries 
+                                to get the temperature and the consistency correct, but I understand now what seasonings compliment each cooking 
+                                method. I also topped my pork with peaches as opposed to apples, so I think any tree fruit might pair will with 
+                                pork. I haven’t made lyonnaise potatoes before, but I have cooked green beans by boiling them and I’ve cooked it 
+                                in the pan before. Luckily green beans don’t require a lot of seasoning and they’re easy to make, so just some 
+                                garlic, salt, and pepper goes a long way.
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                                <b><u>Origin and history:</u></b> The pork dish originated in Germany. They call it a schnitzel but the 
+                                process is the same in that a thin meat cutlet is breaded and cooked in a pan (Ozimek, 2020). The dish is 
+                                usually cooked around Oktoberfest since it’s such an easy, but tasty dish to make for everyone. Lyonnaise 
+                                potatoes originated from France near the city of Lyon because potatoes and onions were easy to come by during 
+                                the time they were created. Green beans originally come from the Peru and Mexico region of South America because 
+                                the crop is able to tolerate a lot of heat (Kerr, 2011). 
+                                <br/>
+                                <b><u>Methods used:</u></b> The pork is cooked in the pan rather than roasting or grilling it because the scallops 
+                                are very small and thin so it doesn’t take long for them to cook. By using the pan we are able to control the 
+                                cooking process better because we can constantly flip it and control the heat better. The juices from the pork 
+                                can also be used to make a delicious sauce. The temperature and the browning process for the potatoes is easier 
+                                to control when it’s cooked in the pan and when they’re sliced thinly. Lastly, the green beans are boiled and 
+                                then immediately placed in an ice bath. Placing it in an ice bath halts the cooking process and when pulled 
+                                out at the right time, the green beans become bright green indicating that they’re done cooking. Salting the 
+                                water is also important because it seasons the green beans while they’re cooking. Variations: The pork can be 
+                                seasoned with a variety of different herbs depending on what else you’re paring it with. For example, you could 
+                                season your pork with citrus flavors and herbs that are consistent with the tropical regions if you’re looking 
+                                to do a caribbean style pork dish. You can also cook the pork in a few different ways like grilling it, roasting 
+                                it, or sous vide depending on the cut of meat that you have. You can also vary what kind of fruit you place on top. 
+                                For example, you can use peaches or pears or a different tree fruit that might go well with the flavors of your 
+                                side dishes and the pork. The green beans can be cooked in a sauce or have different seasonings or you could fry 
+                                it with tempura batter if you want a crunchier texture. The potatoes can also have different seasonings or it 
+                                could be baked.
+                                <br/>
+                                <br/>
+                                Kerr, Bill. (2011, May 19). <i>History of the Green Bean Crop</i>. Farmer’s Weekly. 
+                                <br/>
+                                <a href="https://www.farmersweekly.co.za/farm-basics/how-to-crop/history-of-the-green-bean-crop/">
+                                    <i>https://www.farmersweekly.co.za/farm-basics/how-to-crop/history-of-the-green-bean-crop/</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                                <br/>
+                                <br/>
+                                Ozimek, S. (2020, September 21). <i>Traditional German Pork Schnitzel</i>. Curious Cuisiniere.
+                                <br/>
+                                <a href="https://www.curiouscuisiniere.com/german-schnitzel/">
+                                    <i>https://www.curiouscuisiniere.com/german-schnitzel/</i>
+                                </a>
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
 
             <div className="recipeCard" id="prepListWeek8">
@@ -1570,10 +1748,24 @@ function App() {
                 <Collapse isOpen={prepListIsOpen8}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk8LyonPotatoesPrepList} alt="Lyon's potatoes" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk8PorkEscalopePrepList} alt="pork escalope" className="prepListImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                            <img src={wk8GreenBeanPrepList} alt="Green beans." className="prepListImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
 
             <div className="recipeCard" id="recipeWeek8">
@@ -1581,10 +1773,24 @@ function App() {
                 <Collapse isOpen={recipeIsOpen8}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk8RecipePork} alt="Pork Escalope recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk8RecipeLyonPotatoes} alt="Lyonnaise potatoes recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk8RecipeGreenBeans} alt="Green bean recipe" className="recipeImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
 
             <div className="recipeCard" id="foodCostWeek8">
@@ -1596,6 +1802,7 @@ function App() {
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
 
             <div className="recipeCard" id="reflectionWeek8">
@@ -1607,6 +1814,7 @@ function App() {
                         </CardBody>
                     </Card>
                 </Collapse>
+                <br/>
             </div>
         </div>
 
