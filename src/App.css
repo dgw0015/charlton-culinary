@@ -262,3 +262,10 @@ label {
    margin: 0%;
    padding: 0%;
 }
+
+/* Styling for week 8 */
+.jumbotron #reflectionWeek8 .row .col .cardImg  {
+   width: 100%;
+   margin: 0;
+   padding: 0 5vw 5px 0;
+}

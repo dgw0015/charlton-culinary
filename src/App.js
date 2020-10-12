@@ -77,6 +77,20 @@ import wk8PorkEscalopePrepList from './images/Week_8/PrepList/PorkEscalopePrepLi
 import wk8RecipeGreenBeans from './images/Week_8/Recipe/GreenBeans.PNG';
 import wk8RecipeLyonPotatoes from './images/Week_8/Recipe/LyonPotatoes.PNG';
 import wk8RecipePork from './images/Week_8/Recipe/Pork.PNG';
+import wk8FoodCostLyns from './images/Week_8/foodCost-lynsPotatoes.xlsx';
+import wk8FoodCostPork from './images/Week_8/foodCost-pork.xlsx';
+import wk8FoodCostGreenBeans from './images/Week_8/foodCost-greenBeans.xlsx';
+import wk8FinalPlate from './images/Week_8/Reflection/finalPlate.jpg';
+import wk8LyonsPotatoes from './images/Week_8/Reflection/Lyonnaise potatoes.jpg';
+import wk8PotatoesBrowning from './images/Week_8/Reflection/potatoes browning.jpg';
+import wk8SauceReducing from './images/Week_8/Reflection/sauce reducing in pan.jpg';
+import wk9CarrotsPrepList from './images/Week_9/PrepList/glazedCarrotsPrepList.png';
+import wk9RisottoPrepList from './images/Week_9/PrepList/risottoPrepList.png';
+import wk9SeaBassAndSaucePrepList from './images/Week_9/PrepList/seaBassAndSaucePrepList.png';
+import wk9CarrotsRecipe from './images/Week_9/Recipe/glazedCarrots.PNG';
+import wk9SauceRecipe from './images/Week_9/Recipe/hollandaiseSauceRecipe.PNG';
+import wk9SeaBassRecipe from './images/Week_9/Recipe/seaBassRecipe.PNG';
+import wk9RisottoRecipe from './images/Week_9/Recipe/risottoRecipe.PNG';
 
 
 function App() {
@@ -117,6 +131,42 @@ function App() {
     const [reflectionIsOpen8, setReflectionIsOpen8] = useState(false);
     const [prepListIsOpen8, setPrepListIsOpen8] = useState(false);
 
+     const [researchIsOpen9, setResearchIsOpen9] = useState(false);
+     const [recipeIsOpen9, setRecipeIsOpen9] = useState(false);
+     const [foodCostIsOpen9, setFoodCostIsOpen9] = useState(false);
+     const [reflectionIsOpen9, setReflectionIsOpen9] = useState(false);
+     const [prepListIsOpen9, setPrepListIsOpen9] = useState(false);
+    
+     const [researchIsOpen10, setResearchIsOpen10] = useState(false);
+     const [recipeIsOpen10, setRecipeIsOpen10] = useState(false);
+     const [foodCostIsOpen10, setFoodCostIsOpen10] = useState(false);
+     const [reflectionIsOpen10, setReflectionIsOpen10] = useState(false);
+     const [prepListIsOpen10, setPrepListIsOpen10] = useState(false);
+    
+     const [researchIsOpen11, setResearchIsOpen11] = useState(false);
+     const [recipeIsOpen11, setRecipeIsOpen11] = useState(false);
+     const [foodCostIsOpen11, setFoodCostIsOpen11] = useState(false);
+     const [reflectionIsOpen11, setReflectionIsOpen11] = useState(false);
+     const [prepListIsOpen11, setPrepListIsOpen11] = useState(false);
+    
+     const [researchIsOpen12, setResearchIsOpen12] = useState(false);
+     const [recipeIsOpen12, setRecipeIsOpen12] = useState(false);
+     const [foodCostIsOpen12, setFoodCostIsOpen12] = useState(false);
+     const [reflectionIsOpen12, setReflectionIsOpen12] = useState(false);
+     const [prepListIsOpen12, setPrepListIsOpen12] = useState(false);
+    
+     const [researchIsOpen13, setResearchIsOpen13] = useState(false);
+     const [recipeIsOpen13, setRecipeIsOpen13] = useState(false);
+     const [foodCostIsOpen13, setFoodCostIsOpen13] = useState(false);
+     const [reflectionIsOpen13, setReflectionIsOpen13] = useState(false);
+     const [prepListIsOpen13, setPrepListIsOpen13] = useState(false);
+    
+     const [researchIsOpen14, setResearchIsOpen14] = useState(false);
+     const [recipeIsOpen14, setRecipeIsOpen14] = useState(false);
+     const [foodCostIsOpen14, setFoodCostIsOpen14] = useState(false);
+     const [reflectionIsOpen14, setReflectionIsOpen14] = useState(false);
+     const [prepListIsOpen14, setPrepListIsOpen14] = useState(false);
+
 
     const toggle = () => setResearchIsOpen(!researchIsOpen);
     const toggle2 = () => setPrepListIsOpen(!prepListIsOpen);
@@ -154,20 +204,56 @@ function App() {
     const toggle29 = () => setFoodCostIsOpen8(!foodCostIsOpen8);
     const toggle30 = () => setReflectionIsOpen8(!reflectionIsOpen8);
 
+     const toggle32 = () => setResearchIsOpen9(!researchIsOpen9);
+     const toggle33 = () => setPrepListIsOpen9(!prepListIsOpen9);
+     const toggle34 = () => setRecipeIsOpen9(!recipeIsOpen9);
+     const toggle35 = () => setFoodCostIsOpen9(!foodCostIsOpen9);
+     const toggle36 = () => setReflectionIsOpen9(!reflectionIsOpen9);
+    
+     const toggle37 = () => setResearchIsOpen10(!researchIsOpen10);
+     const toggle38 = () => setPrepListIsOpen10(!prepListIsOpen10);
+     const toggle39 = () => setRecipeIsOpen10(!recipeIsOpen10);
+     const toggle40 = () => setFoodCostIsOpen10(!foodCostIsOpen10);
+     const toggle41 = () => setReflectionIsOpen10(!reflectionIsOpen10);
+    
+     const toggle42 = () => setResearchIsOpen11(!researchIsOpen11);
+     const toggle43 = () => setPrepListIsOpen11(!prepListIsOpen11);
+     const toggle44 = () => setRecipeIsOpen11(!recipeIsOpen11);
+     const toggle45 = () => setFoodCostIsOpen11(!foodCostIsOpen11);
+     const toggle46 = () => setReflectionIsOpen11(!reflectionIsOpen11);
+    
+     const toggle47 = () => setResearchIsOpen12(!researchIsOpen12);
+     const toggle48 = () => setPrepListIsOpen12(!prepListIsOpen12);
+     const toggle49 = () => setRecipeIsOpen12(!recipeIsOpen12);
+     const toggle50 = () => setFoodCostIsOpen12(!foodCostIsOpen12);
+     const toggle51 = () => setReflectionIsOpen12(!reflectionIsOpen12);
+    
+     const toggle52 = () => setResearchIsOpen13(!researchIsOpen13);
+     const toggle53 = () => setPrepListIsOpen13(!prepListIsOpen13);
+     const toggle54 = () => setRecipeIsOpen13(!recipeIsOpen13);
+     const toggle55 = () => setFoodCostIsOpen13(!foodCostIsOpen13);
+     const toggle56 = () => setReflectionIsOpen13(!reflectionIsOpen13);
+    
+     const toggle57 = () => setResearchIsOpen14(!researchIsOpen14);
+     const toggle58 = () => setPrepListIsOpen14(!prepListIsOpen14);
+     const toggle59 = () => setRecipeIsOpen14(!recipeIsOpen14);
+     const toggle60 = () => setFoodCostIsOpen14(!foodCostIsOpen14);
+     const toggle61 = () => setReflectionIsOpen14(!reflectionIsOpen14);
+
 
 
     return (
     <div className="App-container">
-       <a href="https://charlton-website.vercel.app/">
+       <a href="https:charlton-website.vercel.app/">
           <h1 className="display-menu">
              <BsBoxArrowInUpLeft /> Back to Website
           </h1>
        </a>
         <div className="socialMediaLinks">
-            <a className="facebook" href="https://www.facebook.com/charlton.kam" ><FaFacebook /></a>
-            <a className="linkedIn" href="https://www.linkedin.com/in/charlton-kam-ba81b5176/"><FaLinkedin /></a>
-            <a className="pinterest" href="https://www.pinterest.com/auburnthunder17/"><RiPinterestFill /></a>
-            <a className="instagram" href="https://www.instagram.com/c.kam_design/"><FiInstagram /></a>
+            <a className="facebook" href="https:www.facebook.com/charlton.kam" ><FaFacebook /></a>
+            <a className="linkedIn" href="https:www.linkedin.com/in/charlton-kam-ba81b5176/"><FaLinkedin /></a>
+            <a className="pinterest" href="https:www.pinterest.com/auburnthunder17/"><RiPinterestFill /></a>
+            <a className="instagram" href="https:www.instagram.com/c.kam_design/"><FiInstagram /></a>
         </div>
         <div className="titleBox">
             <h1 className="display"><mark>Welcome to My Culinary Page</mark></h1>
@@ -264,20 +350,20 @@ function App() {
                                 <br/>
                                 Alfaro, D. (2020, March 25). Tomato Concasseée. The Spruce Eats
                                 <br/>
-                                <a href="https://www.thespruceeats.com/how-to-make-tomato-concasse-996208">
-                                    <i>https://www.thespruceeats.com/how-to-make-tomato-concasse-996208</i>
+                                <a href="https:www.thespruceeats.com/how-to-make-tomato-concasse-996208">
+                                    <i>https:www.thespruceeats.com/how-to-make-tomato-concasse-996208</i>
                                 </a>
                                 <br/>
                                 <br/>
                                 Devteam (2019, September 30). <i>The History of Minestrone Soup: What is it and How is it Made?</i> Authentic Italian De Nicola’s Restaurant.
                                 <br/>
-                                <a href="https://www.denicolasitaliandining.com/blog/the-history-of-minestrone-soup-what-is-it-and-how-is-it-made">
-                                    <i>https://www.denicolasitaliandining.com/blog/the-history-of-minestrone-soup-what-is-it-and-how-is-it-made</i>
+                                <a href="https:www.denicolasitaliandining.com/blog/the-history-of-minestrone-soup-what-is-it-and-how-is-it-made">
+                                    <i>https:www.denicolasitaliandining.com/blog/the-history-of-minestrone-soup-what-is-it-and-how-is-it-made</i>
                                 </a>
                                 <br/><br/>
                                 Jawad, Y. (2019, February 25). 10 Recipes with Vegetable Stock. Feel Good Foodie.
                                 <br/>
-                                <a href="https://feelgoodfoodie.net/blog/vegetable-broth/"><i>https://feelgoodfoodie.net/blog/vegetable-broth/</i></a>
+                                <a href="https:feelgoodfoodie.net/blog/vegetable-broth/"><i>https:feelgoodfoodie.net/blog/vegetable-broth/</i></a>
                             </p>
                         </CardBody>
                     </Card>
@@ -785,8 +871,8 @@ function App() {
                             <br/>
                             <br/>
                             Filippone, Peggy T. (2019, November 16). Bouquet Garni. The Spruce Eats.<br/>
-                            <a href="https://www.thespruceeats.com/bouquet-garni-recipe-1805692">
-                                <i>https://www.thespruceeats.com/bouquet-garni-recipe-1805692</i>
+                            <a href="https:www.thespruceeats.com/bouquet-garni-recipe-1805692">
+                                <i>https:www.thespruceeats.com/bouquet-garni-recipe-1805692</i>
                             </a>
                             <br/>
                             <br/>
@@ -843,8 +929,8 @@ function App() {
                                 <br/>
                                 McGavin, Jennifer. (2019, November 1). <i>German Fresh Cream of Tomato Soup.</i> The Spruce Eats.
                                 <br/>
-                                <a href="https://www.thespruceeats.com/german-fresh-cream-of-tomato-soup-1447351">
-                                    <i>https://www.thespruceeats.com/german-fresh-cream-of-tomato-soup-1447351</i>
+                                <a href="https:www.thespruceeats.com/german-fresh-cream-of-tomato-soup-1447351">
+                                    <i>https:www.thespruceeats.com/german-fresh-cream-of-tomato-soup-1447351</i>
                                 </a>
                             </p>
                         </CardBody>
@@ -987,8 +1073,8 @@ function App() {
                             <br/>
                             Jenny. (2018, January, 11). <i>Why Your Broth Doesn’t Gel.</i> Nourished Kitchen.
                             <br/>
-                            <a href="https://nourishedkitchen.com/bone-broth-doesnt-gel/">
-                                <i>https://nourishedkitchen.com/bone-broth-doesnt-gel/</i>
+                            <a href="https:nourishedkitchen.com/bone-broth-doesnt-gel/">
+                                <i>https:nourishedkitchen.com/bone-broth-doesnt-gel/</i>
                             </a>
                             <br/>
                             Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals.</i> Pearson.
@@ -1048,8 +1134,8 @@ function App() {
                                 <br/>
                                 <br/>
                                 Lemm, E. (2019, August 12). <i>Classic Leek and Potato Soup</i>. The Spruce Eats. 
-                                <a href="https://www.thespruceeats.com/leek-and-potato-soup-recipe-435299">
-                                    <i>https://www.thespruceeats.com/leek-and-potato-soup-recipe-435299</i>
+                                <a href="https:www.thespruceeats.com/leek-and-potato-soup-recipe-435299">
+                                    <i>https:www.thespruceeats.com/leek-and-potato-soup-recipe-435299</i>
                                 </a>
                             </p>
                         </CardBody>
@@ -1181,8 +1267,8 @@ function App() {
                             <br/>
                             Arnarson, A. (2019, March 7). <i>Potatoes 101: Nutrition Facts and Health Effects.</i> Healthline.
                             <br/>
-                            <a href="https://www.healthline.com/nutrition/foods/potatoes">
-                                <i>https://www.healthline.com/nutrition/foods/potatoes</i>
+                            <a href="https:www.healthline.com/nutrition/foods/potatoes">
+                                <i>https:www.healthline.com/nutrition/foods/potatoes</i>
                             </a>
                             <br/>
                             <br/>
@@ -1246,8 +1332,8 @@ function App() {
                                 <br/>
                                 Waggoner, S. (2015, February 4th). <i>Veloute Sauce: The Versatile Stranger.</i> Fork and Plate.
                                 <br/>
-                                <a href="https://forknplate.com/2015/02/04/veloute-sauce-the-versatile-stranger/">
-                                    <i>https://forknplate.com/2015/02/04/veloute-sauce-the-versatile-stranger/</i>
+                                <a href="https:forknplate.com/2015/02/04/veloute-sauce-the-versatile-stranger/">
+                                    <i>https:forknplate.com/2015/02/04/veloute-sauce-the-versatile-stranger/</i>
                                 </a>
                             </p>
                         </CardBody>
@@ -1398,15 +1484,15 @@ function App() {
                             <br/>
                             Hill, Meggan. (2018, November 11). <i>How to Truss a Chicken.</i> Culinary Hill.
                             <br/>
-                            <a href="https://www.culinaryhill.com/how-to-truss-a-chicken/">
-                                <i>https://www.culinaryhill.com/how-to-truss-a-chicken/.</i>
+                            <a href="https:www.culinaryhill.com/how-to-truss-a-chicken/">
+                                <i>https:www.culinaryhill.com/how-to-truss-a-chicken/.</i>
                             </a>
                             <br/>
                             <br/>
                             Mattison, L. and Woodward, P. (2019, October 31). How to Carve a Chicken. Taste of Home.
                             <br/>
-                            <a href="https://www.tasteofhome.com/article/how-to-carve-a-chicken/">
-                                <i>https://www.tasteofhome.com/article/how-to-carve-a-chicken/</i>
+                            <a href="https:www.tasteofhome.com/article/how-to-carve-a-chicken/">
+                                <i>https:www.tasteofhome.com/article/how-to-carve-a-chicken/</i>
                             </a>
                             </p>
                         </CardBody>
@@ -1467,21 +1553,21 @@ function App() {
                             <br/>
                             Alafaro, D. (2019, October 2). <i>Potatoes Dauphinoise vs. Potatoes Dauphine.</i> The Spruce Eats. 
                             <br/>
-                            <a href="https://www.thespruceeats.com/potatoes-dauphine-vs-dauphinoise-995642">
-                                <b>https://www.thespruceeats.com/potatoes-dauphine-vs-dauphinoise-995642</b>
+                            <a href="https:www.thespruceeats.com/potatoes-dauphine-vs-dauphinoise-995642">
+                                <b>https:www.thespruceeats.com/potatoes-dauphine-vs-dauphinoise-995642</b>
                             </a>
                             <br/>
                             <br/>
                             Grilli, S. (2017, April 12). <i>The Surprising History of Fried Chicken.</i> Groupon Guide.                            <br/>
-                            <a href="https://www.groupon.com/articles/who-invented-fried-chicken">
-                                <b>https://www.groupon.com/articles/who-invented-fried-chicken</b>
+                            <a href="https:www.groupon.com/articles/who-invented-fried-chicken">
+                                <b>https:www.groupon.com/articles/who-invented-fried-chicken</b>
                             </a>
                             <br/>
                             <br/>
                             Nudi, E. (2014, April 25). <i>Food History: Ratatouille.</i> ErinNudi.com.  
                             <br/>
-                            <a href="https://www.erinnudi.com/2014/04/25/food-history-ratatouille/">
-                                <b>https://www.erinnudi.com/2014/04/25/food-history-ratatouille/</b>
+                            <a href="https:www.erinnudi.com/2014/04/25/food-history-ratatouille/">
+                                <b>https:www.erinnudi.com/2014/04/25/food-history-ratatouille/</b>
                             </a>
                             </p>
                         </CardBody>
@@ -1628,15 +1714,15 @@ function App() {
                             </Row>
                             Alafaro, D. (2020, March 25). <i>The Standard Breading Process.</i> The Spruce Eats.
                             <br/>
-                            <a href="https://www.thespruceeats.com/the-standard-breading-procedure-995453">
-                                <i>https://www.thespruceeats.com/the-standard-breading-procedure-995453</i>
+                            <a href="https:www.thespruceeats.com/the-standard-breading-procedure-995453">
+                                <i>https:www.thespruceeats.com/the-standard-breading-procedure-995453</i>
                             </a>
                             <br/>
                             <br/>
                             Franke, S. (2014, February 12). <i>The 6 Biggest Mistakes You Make Chopping Vegetables</i>. GH.
                             <br/>
-                            <a href="https://www.goodhousekeeping.com/food-recipes/cooking/tips/a18999/chopping-vegetables-mistakes/#:~:text=By%20cutting%20veggies%20into%20pieces,are%20meltingly%20soft%20and%20tender">
-                                <i>https://www.goodhousekeeping.com/food-recipes/cooking/tips/a18999/chopping-vegetables-mistakes/#:~:text=By%20cutting%20veggies%20into%20pieces,are%20meltingly%20soft%20and%20tender</i>
+                            <a href="https:www.goodhousekeeping.com/food-recipes/cooking/tips/a18999/chopping-vegetables-mistakes/#:~:text=By%20cutting%20veggies%20into%20pieces,are%20meltingly%20soft%20and%20tender">
+                                <i>https:www.goodhousekeeping.com/food-recipes/cooking/tips/a18999/chopping-vegetables-mistakes/#:~:text=By%20cutting%20veggies%20into%20pieces,are%20meltingly%20soft%20and%20tender</i>
                             </a>
                             </p>
                             <h4 className="reflectionHeader">CONCLUSION</h4>
@@ -1723,8 +1809,8 @@ function App() {
                                 <br/>
                                 Kerr, Bill. (2011, May 19). <i>History of the Green Bean Crop</i>. Farmer’s Weekly. 
                                 <br/>
-                                <a href="https://www.farmersweekly.co.za/farm-basics/how-to-crop/history-of-the-green-bean-crop/">
-                                    <i>https://www.farmersweekly.co.za/farm-basics/how-to-crop/history-of-the-green-bean-crop/</i>
+                                <a href="https:www.farmersweekly.co.za/farm-basics/how-to-crop/history-of-the-green-bean-crop/">
+                                    <i>https:www.farmersweekly.co.za/farm-basics/how-to-crop/history-of-the-green-bean-crop/</i>
                                 </a>
                                 <br/>
                                 <br/>
@@ -1733,8 +1819,8 @@ function App() {
                                 <br/>
                                 Ozimek, S. (2020, September 21). <i>Traditional German Pork Schnitzel</i>. Curious Cuisiniere.
                                 <br/>
-                                <a href="https://www.curiouscuisiniere.com/german-schnitzel/">
-                                    <i>https://www.curiouscuisiniere.com/german-schnitzel/</i>
+                                <a href="https:www.curiouscuisiniere.com/german-schnitzel/">
+                                    <i>https:www.curiouscuisiniere.com/german-schnitzel/</i>
                                 </a>
                             </p>
                         </CardBody>
@@ -1798,7 +1884,17 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen8}>
                     <Card>
                         <CardBody>
-                            Content
+                            <a href={wk8FoodCostPork}>
+                                <b>PorkEscalope_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk8FoodCostLyns}>
+                                <b>LyonnaisePotatoes_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk8FoodCostGreenBeans}>
+                                <b>GreenBeans_FoodCost.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -1810,11 +1906,575 @@ function App() {
                 <Collapse isOpen={reflectionIsOpen8}>
                     <Card>
                         <CardBody>
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                            Overall, all of the dishes were very tasty, had good color, and were cooked properly. The pork 
+                            that I used was part of the pork filet, so my pieces were much smaller than everyones, but 
+                            they were still tender, carried good flavor, and had a nice brown skin from the flour and 
+                            butter. I added thyme to the pan towards the end of the cooking process to add flavor to the 
+                            pork and to the juices in the pan that we were going to use for the sauce later. The sauce was 
+                            thick, creamy, and slightly sweet and salty. The apples and the sauce paired really well with 
+                            the pork because the sweetness from the apples and the cinnamon balanced out the herbs that 
+                            were added to the pan when we cooked the pork. The potatoes also came out well, but personally I like 
+                            the dauphinoise potatoes better than these. The onions were cooked perfectly and had minimal color and 
+                            still had a bite to it rather than being soggy. This added some texture to the potatoes and balanced 
+                            it out because they were somewhat soft compared to the crispy, hard potatoes. The potatoes had good 
+                            varying color to it because some parts were more brown than others depending on the size and the 
+                            position of where it was in the pot. They were still firm on the inside rather than falling apart 
+                            when you went to eat it. The green beans were bright green and still slightly crunchy and kept its 
+                            natural, fresh flavor. The vinaigrette was refreshing on the green beans and had a nice yellow color 
+                            to it from combining the olive oil, apple cider vinegar, and dijon mustard. The dish itself was pretty 
+                            neutral in color because the sauce was light brown along with the apples and outside of the pork and 
+                            the potatoes were different shades of brown. The only color that was added to the dish was the green 
+                            beans and some of the vinaigrette.
+                            <br/>
+                            <br/>
+                            <Row>
+                                <Col>
+                                    <img src={wk8FinalPlate} alt="Final plate with pork, potatoes, and green beans" name="week8FinalPlate" className="cardImg"></img>
+                                    <Label for="wk8FinalPlate">Final Plate</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk8LyonsPotatoes} alt="Lyonnaise potatoes" name="LyonPotatoes" className="cardImg"></img>
+                                    <Label for="LyonPotatoes">Lyonnaise Potatoes</Label>
+                                </Col>
+                            </Row>
+                            </p>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                                The pork cooked well and had a good brown color because we made sure it was thin so that it would 
+                                cook quickly, we checked the temperature while it was cooking to pull it out at the right time, and once 
+                                we placed the pork in the pan, we didn’t move it which let the crust form. Pounding the meat helps to 
+                                tenderize the meat, create an even thickness, and decrease the cooking time (Glatz, 2008). Since I used 
+                                the pork filet instead of the pork chops, some of my pieces were tougher than others because of how 
+                                small they were. In the future, I will either cook it for a shorter amount of time or purchase a larger 
+                                cut of meat. The sauce had really good flavor because we used quality stock and added back in the juices 
+                                from the pork as well as strained it so that we had a clean, lump-free sauce. We also removed the apple 
+                                slices right before adding the heavy cream so that the apples wouldn’t become overcooked and mushy. 
+                                Some of my potatoes were hard which means I should’ve cooked them longer in the parboiling process or 
+                                cut them thinner. When I cook this again in the future, I will make sure to take into account the size 
+                                of the potato for the parboiling process. Parboiling the potatoes in salted water helps to season the 
+                                potatoes, cook out the enzymes and raw flavor, and shortens the cooking time before cooking it in the pan. 
+                                The green beans had a bright green color to it because they were blanched and then added to an ice bath. 
+                                Blanching helps to cook out any bitter flavors from the vegetables. It’s also important to remember to blanch 
+                                it in salted water so that the vegetables retain their color and flavor (Labensky et al., 2018). Refreshing or 
+                                placing it in an ice bath is also important because it stops the cooking process and sets their color 
+                                (Labensky, et al., 2018).
+                                <br/>
+                                <br/>
+                                Glatz, J., (2008, September 18). <i>Pounding Pork to Perfection</i>. Illinois Times.
+                                <br/>
+                                <a href="https://www.illinoistimes.com/springfield/pounding-pork-to-perfection/Content?oid=11452010">
+                                    <i>https://www.illinoistimes.com/springfield/pounding-pork-to-perfection/Content?oid=11452010</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                                <br/>
+                                <br/>
+                                <Row>
+                                    <Col>
+                                        <img src={wk8PotatoesBrowning} alt="Lyonnaise potatoes browning" name="potatoesBrowning" className="cardImg"/>
+                                        <Label for="potatoesBrowning">Potatoes Browning</Label>
+                                    </Col>
+                                    <Col>
+                                        <img src={wk8SauceReducing} alt="Sauce reducing in pan" name="sauceReducing" className="cardImg"/>
+                                        <Label for="sauceReducing">Sauce Reducing in Pan</Label>
+                                    </Col>
+                                </Row>
+                            </p>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                            This week I wanted to work on cooking pork evenly and slicing potatoes evenly. 
+                            I was able to slice the potatoes pretty evenly but there were a few that varied in thickness which 
+                            caused them to be cooked unevenly. Since my potatoes were so large, when I parboiled them they didn’t 
+                            even come close to cooking halfway through so when I tried to slice them it was hard to get through the middle 
+                            which caused my knife to cut unevenly. Some additional skills that I learned was how to mount a sauce. 
+                            This is when you add cold cubes of butter to your sauce at the very end of the cooking process and mix it in 
+                            quickly. The butter adds a shine to the sauce which is just for appearance when you go to serve it. 
+                            I can use this technique for any sauce that I make in the future so that it looks better on the plate. 
+                            I still need to practice cooking things evenly and I can do that by getting more familiar with my pots and 
+                            pans and the cooking environment since every stove and pan takes on heat differently.
+                            </p>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+        </div>
+
+         <div className="jumbotron" id="week-9">
+            <h1 className="display-4">Broiled Sea Bass, Hollandaise Sauce, Glazed Carrots, Risotto</h1>
+            <p className="h3">Week 9</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek9">
+                <Button color="secondary" onClick={toggle32} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen9}>
+                    <Card>
+                        <CardBody>
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <u><b>Cooking Method: </b></u> Broiling and seafood
+                                <br/>
+                                <u><b>List of Objectives: </b></u> This week I would like to practice cooking fish properly without it 
+                                drying out. I would also like to practice chopping carrots evenly.
+                                <br/>
+                                <u><b>Methods of Cookery: </b></u> For most fish when you use a dry cooking method, you keep the skin on 
+                                and score it “to prevent the fish from curling during cooking, promote even cooking, and to create a more 
+                                attractive product” (Labensky et al., 2018). You also have to remember to dry the skin before placing it 
+                                on the grill or under a broiler that way it achieves the correct brown color. Fish is already really 
+                                tender so you have to be careful and attentive to make sure it doesn’t overcook. Fish especially 
+                                benefits from over carry cooking which is when the residual heat continues to cook to product after 
+                                being removed. The carrots, similar to potatoes, should be parboiled prior to sauteing in order to 
+                                speed up the cooking process and cook out the raw flavors. The risotto requires a specific type of 
+                                rice grain because its starchy qualities are what helps provide the correct consistency.  
+                                The arborio grain doesn’t require any rinsing before cooking like other grains because that will 
+                                remove the starches and won’t let it absorb liquids quite as well (Labensky et al., 2018). Lastly, 
+                                the hollandaise sauce requires some skill and help since you have to constantly whisk the egg mixture 
+                                and butter over boiling water without causing the eggs to scramble in the bowl.
+                                <br/>
+                                <u><b>Prior Knowledge: </b></u> I’ve cooked fish before, but it’s usually on the pan rather than 
+                                broiling it. I don’t cook fish that often because I usually overcook it. I cook carrots all the time 
+                                in many different methods and I have made hollandaise sauce a few times before. I’ve also made risotto 
+                                but it’s been a long time so I can’t remember the exact steps. 
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                                <u><b>Origin and history: </b></u>Everyone has their own recipe for preparing sea bass, but the fish itself originates from South America. Areas of Chile have become 
+                                famous for how they prepare sea bass since it’s so plentiful in the area. Risotto is a common grain in Italy. It was first introduced in the Sicily area and slowly 
+                                spread up the country of Italy. When it reached the northern part of Italy, the climate and growing areas were perfect for it, so now the Po Valley is one of the 
+                                largest producers of the rice grain (Donati, 2016). It wasn’t until many years later that people experimented with it and cooked the grain with butter and stock 
+                                rather than simply boiling it in water. Hollandaise sauce comes from France and also used to be known as Sauce Isigny (Waggoner, 2015). It wasn’t until the 20th 
+                                century that Hollandaise sauce became one of the Mother sauces (Waggoner, 2015). 
+                                <br/>
+                                <u><b>Methods Used: </b></u>Fish can be cooked in a variety of different methods like steaming, poaching, frying, baking, grilling etc. Broiling is commonly 
+                                used because it is a shorter cooking time and you can get good color on the skin from the high heat. Broiling is also useful for vegetables and to finish a 
+                                product off to obtain a good color like broiling potatoes. Risotto is pretty easy to make, but it does require constant attention to make sure that the stock 
+                                is being incorporated correctly and that the grain isn’t burning to the bottom of the pot. The stock is added 4 oz at a time to let the grain soak and cook 
+                                properly (Labensky et al., 2018). The rice is held at a simmer and is stirred constantly so that every grain is cooked evenly. Lastly, for the hollandaise sauce, 
+                                the clarified butter has to be added slowly but in a constant stream while you are whisking it over boiling water. The steam from the water allows you to incorporate 
+                                your ingredients correctly and cook the egg yolks just enough that they don't become solid in the bowl. 
+                                <br/>
+                                <u><b>Variations: </b></u>There are a few different ways to prepare sea bass whether it’s the cooking method in or with different seasonings. 
+                                However, you don’t want to use overpowering seasonings because it’ll mask the natural flavor of the fish. For the carrots, you can also prepare 
+                                them with different cooking methods like roasting, boiling, sauteing, etc. For the risotto, you can use different types of stock or add different 
+                                seasoning to it. Lastly, for the hollandaise sauce, the only variations are in the seasonings.
+                                <br/>
+                                <br/>
+                                Donati, S., (2016, November 9). <i>The History of Risotto alla Milanese</i>. Italy Magazine.
+                                <br/>
+                                <a href="https://www.italymagazine.com/news/history-risotto-alla-milanese">
+                                    <i>https://www.italymagazine.com/news/history-risotto-alla-milanese</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                                <br/>
+                                <a href="https://forknplate.com/2015/02/18/hollandaise-sauce/">
+                                    <i>https://forknplate.com/2015/02/18/hollandaise-sauce/</i>
+                                </a>
+                            </p>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek9">
+                <Button color="info" onClick={toggle33} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen9}>
+                    <Card>
+                        <CardBody>
+                            <div>
+                                <img src={wk9SeaBassAndSaucePrepList} alt="sea bass prep list" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk9CarrotsPrepList} alt="Glazed carrots prep list" className="prepListImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                            <img src={wk9RisottoPrepList} alt="Risotto prep list" className="prepListImg"/>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek9">
+                <Button color="danger" onClick={toggle34} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen9}>
+                    <Card>
+                        <CardBody>
+                            <div>
+                                <img src={wk9SeaBassRecipe} alt="Sea bass recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk9SauceRecipe} alt="Hollandaise sauce recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk9RisottoRecipe} alt="Risotto recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <div>
+                                <img src={wk9CarrotsRecipe} alt="Glazed carrots recipe" className="recipeImg"/>
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek9">
+                <Button color="success" onClick={toggle35} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen9}>
+                    <Card>
+                        <CardBody>
                             Content
                         </CardBody>
                     </Card>
                 </Collapse>
                 <br/>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek9">
+                <Button color="primary" onClick={toggle36} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen9}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+        </div>
+
+        <div className="jumbotron" id="week-10">
+            <h1 className="display-4">Poached Halibut, Tomato Sauce, Cauliflower, Mornay, Rice Pilaf</h1>
+            <p className="h3">Week 10</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek10">
+                <Button color="secondary" onClick={toggle37} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen10}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek10">
+                <Button color="info" onClick={toggle38} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen10}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek10">
+                <Button color="danger" onClick={toggle39} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen10}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek10">
+                <Button color="success" onClick={toggle40} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen10}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek10">
+                <Button color="primary" onClick={toggle41} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen10}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+        </div>
+
+        <div className="jumbotron" id="week-11">
+            <h1 className="display-4">Chicken Fricassee, Broccoli, Amandine, Fettuccine Carbonara</h1>
+            <p className="h3">Week 11</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek11">
+                <Button color="secondary" onClick={toggle42} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen11}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek11">
+                <Button color="info" onClick={toggle43} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen11}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek11">
+                <Button color="danger" onClick={toggle44} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen11}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek11">
+                <Button color="success" onClick={toggle45} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen11}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek11">
+                <Button color="primary" onClick={toggle46} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen11}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+        </div>
+
+        <div className="jumbotron" id="week-12">
+            <h1 className="display-4">Braised Lamb Shanks, Baked Butternut Squash, Safron Rice</h1>
+            <p className="h3">Week 12</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek12">
+                <Button color="secondary" onClick={toggle47} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen12}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek12">
+                <Button color="info" onClick={toggle48} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen12}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek12">
+                <Button color="danger" onClick={toggle49} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen12}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek12">
+                <Button color="success" onClick={toggle50} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen12}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek12">
+                <Button color="primary" onClick={toggle51} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen12}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+        </div>
+
+        <div className="jumbotron" id="week-13">
+            <h1 className="display-4">Sous Vide Steak, Stir Fry Asparagus, Beer Battered Onion Rings, Steak Fries</h1>
+            <p className="h3">Week 13</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek13">
+                <Button color="secondary" onClick={toggle52} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen13}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek13">
+                <Button color="info" onClick={toggle53} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen13}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek13">
+                <Button color="danger" onClick={toggle54} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen13}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek13">
+                <Button color="success" onClick={toggle55} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen13}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek13">
+                <Button color="primary" onClick={toggle56} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen13}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+        </div>
+
+        <div className="jumbotron" id="week-14">
+            <h1 className="display-4">Asparagus Frittata, Poached Eggs, Salad Nicoise</h1>
+            <p className="h3">Week 14</p>
+            <hr className="my-4"/>
+            <div className="recipeCard" id="researchWeek14">
+                <Button color="secondary" onClick={toggle57} style={{ marginBottom: '1rem' }}>Research</Button>
+                <Collapse isOpen={researchIsOpen14}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="prepListWeek14">
+                <Button color="info" onClick={toggle58} style={{ marginBottom: '1rem' }}>Prep List</Button>
+                <Collapse isOpen={prepListIsOpen14}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="recipeWeek14">
+                <Button color="danger" onClick={toggle59} style={{ marginBottom: '1rem' }}>Recipe</Button>
+                <Collapse isOpen={recipeIsOpen14}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="foodCostWeek14">
+                <Button color="success" onClick={toggle60} style={{ marginBottom: '1rem' }}>Food Cost</Button>
+                <Collapse isOpen={foodCostIsOpen14}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <br/>
+            </div>
+
+            <div className="recipeCard" id="reflectionWeek14">
+                <Button color="primary" onClick={toggle61} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
+                <Collapse isOpen={reflectionIsOpen14}>
+                    <Card>
+                        <CardBody>
+                            Content
+                        </CardBody>
+                    </Card>
+                </Collapse>
             </div>
         </div>
 
