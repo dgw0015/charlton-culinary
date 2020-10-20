@@ -91,6 +91,21 @@ import wk9CarrotsRecipe from './images/Week_9/Recipe/glazedCarrots.PNG';
 import wk9SauceRecipe from './images/Week_9/Recipe/hollandaiseSauceRecipe.PNG';
 import wk9SeaBassRecipe from './images/Week_9/Recipe/seaBassRecipe.PNG';
 import wk9RisottoRecipe from './images/Week_9/Recipe/risottoRecipe.PNG';
+import wk9FoodCostCarrots from './images/Week_9/FoodCost/FoodCost-Carrots.xlsx';
+import wk9FoodCostFish from './images/Week_9/FoodCost/FoodCost-Fish.xlsx';
+import wk9FoodCostRisotto from './images/Week_9/FoodCost/FoodCost-Risotto.xlsx';
+import wk9FoodCostSauce from './images/Week_9/FoodCost/FoodCost-sauce.xlsx';
+import wk9ReflectFinalPlate from './images/Week_9/Reflect/final plate.jpg';
+import wk9ReflectRisotto from './images/Week_9/Reflect/risotto after absorbing stock.jpg';
+import wk9ReflectRisottoCooking from './images/Week_9/Reflect/risotto cooking.jpg';
+import wk9ReflectCarrots from './images/Week_9/Reflect/sauteeing carrots.jpg';
+import wk10RecipeRice from './images/Week_10/Recipe/rice.PNG';
+import wk10RecipeCauliflower from './images/Week_10/Recipe/Cauliflower.PNG';
+import wk10RecipeSauce from './images/Week_10/Recipe/tomatoSauce.PNG';
+import wk10RecipeFish from './images/Week_10/Recipe/wk10Fish.PNG';
+import wk10PrepListCauliflower from './images/Week_10//PrepList/cauliflowerPrepList.png';
+import wk10PrepListFishAndSauce from './images/Week_10/PrepList/fishAndTomatoSaucePrepList.png';
+import wk10PrepListRice from './images/Week_10/PrepList/ricePilafPrepList.png';
 
 
 function App() {
@@ -2139,7 +2154,20 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen9}>
                     <Card>
                         <CardBody>
-                            Content
+                            <a href={wk9FoodCostFish}>
+                                <b>Fish_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk9FoodCostRisotto}>
+                                <b>Risotto_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk9FoodCostCarrots}>
+                                <b>GlazedCarrots_FoodCost.xlsx</b>
+                            </a>
+                            <a href={wk9FoodCostSauce}>
+                                <b>HollandaiseSauce_FoodCost.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2151,7 +2179,74 @@ function App() {
                 <Collapse isOpen={reflectionIsOpen9}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                                Overall the fish, carrots, risotto, and sauce turned out very tasty and were all cooked perfectly. The fish had good flavor from the herb butter 
+                                that melted on top of it and from the lemon juice that was used to season it. Since the fish was broiled, it obtained a nice golden color on the 
+                                top and was crispy around the edges. Instead of leeks, I used green beans to place the fish on top of for the presentation. The juices from the 
+                                fish ran onto the green beans which helped flavor them. I steamed the green beans so that they would still have a slight crunch to them and kept 
+                                their bright green color which contrasted well with everything else on the plate. The carrots had a slight sweet and salty flavor to it from the 
+                                honey and the chicken stock that combined to form the glaze. Since the carrots were parboiled and sauteed, they kept a harder texture as opposed 
+                                to boiling it. They had a bright orange glossy to it from the glaze and from the sauteeing which contrasted well with everything else on the plate. 
+                                The hollandaise sauce had a perfect balance of saltiness and acidity from the lemon juice, egg yolk, and clarified butter. The risotto was creamy, 
+                                salty, and slightly crunchy and had a light brown color. The chicken stock and white wine added a lot of flavor to the rice since it was able to 
+                                soak it all up as opposed to cooking it in water. The parmesan cheese, when melted, added creaminess to the rice and helped keep the grains 
+                                together for service. Since the rice was par cooked, there were some brown bits from the rice that also added saltiness to the whole dish. 
+                                Overall, each dish had their own color and varying textures that went well together to add depth and complexity.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk9ReflectFinalPlate} alt="Final plate with broiled tilapia, glazed carrots, and risotto" name="wk9FinalPlate" className="cardImg"/>
+                                    <Label for="wk9FinalPlate">Final Plate</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk9ReflectRisotto} alt="Risotto after absorbing stock" name="risottoAfterAbsorb" className="cardImg"/>
+                                    <Label for="risottoAfterAbsorb">Risotto After Absorbing Stock</Label>
+                                </Col>
+                            </Row>
+                                <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                                The broiling technique worked and cooked the fish perfectly and gave it a nice brown color on the top. This 
+                                worked because the fish, along with many other types of fish and shellfish, are thin and tender so they cooked quickly under high heat (Labensky et al., 2018). 
+                                The glazed carrots cooked relatively quickly in the pan since we parboiled them first to speed up the cooking process. The chicken stock and the honey emulsified 
+                                and reduced down to create a nice glaze for the carrots. The hollandaise sauce turned out well because the mixture was constantly being whisked and bounced back 
+                                and forth between a cold surface and the steaming water which helped regulate the temperature to make sure that the eggs didn’t cook. The clarified butter was 
+                                slowly added to make sure that it was fully incorporated. Lastly, the risotto was creamy and still slightly crunchy from the natural starches that were released 
+                                during the cooking process. The important thing to remember for this dish was to only add the stock a little bit at a time until it was absorbed before adding 
+                                more. This process is to ensure that the rice is taking in all of the flavor and releasing the starches that give it that creamy, velvety texture (Alfaro, 2020). 
+                                Another important thing to do is to deglaze the pan with white wine. This adds flavor to the rice since it absorbs the wine and also helps remove any brown bits 
+                                from the bottom of the pan from the rice and the onions that were cooking. By doing so, you are left with a clean pan at the end.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk9ReflectCarrots} alt="Glazed carrots" name="carrots" className="cardImg"/>
+                                    <Label for="carrots">Glazed Carrots</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk9ReflectRisottoCooking} alt="Risotto while it was cooking" name="risottoCooking" className="cardImg"/>
+                                    <Label for="risottoeCooking">Risotto Cooking</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                                For this week, I wanted to practice cooking fish to the right temperature and cutting my carrots evenly. I think I did well with both objectives because the fish 
+                                flaked just enough and the carrots were cut to the same width and were able to cook evenly. I can still practice cooking fish to the correct temperature because 
+                                the outsides of the fish were very crispy and were very dark brown from the broiler. In the future, I will move the fish farther down from the heating coils that 
+                                way it does not get too much color when it's cooking. Some additional knowledge that I learned this week were variations of the risotto recipe. I learned that I 
+                                could use different stock to make it a fully vegetarian dish. Also I could’ve added different vegetables as garnishes like mushrooms or asparagus. Lastly, I could’ve 
+                                used a wide variety and different combinations of cheese at the end. I can use this knowledge for other dishes that I’m going to cook in the future since so many 
+                                ingredients are so versatile.
+                                <br/>
+                                <br/>
+                                Alfaro, D. (2020, July 5). <i>Risotto Recipe for Beginners</i>. The Spruce Eats.
+                                <br/>
+                                <a href="https://www.thespruceeats.com/risotto-recipe-for-beginners-996008">
+                                    <i>https://www.thespruceeats.com/risotto-recipe-for-beginners-996008</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2167,7 +2262,61 @@ function App() {
                 <Collapse isOpen={researchIsOpen10}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <b><u>Cooking method: </u></b> Boiling
+                                <br/>
+                                <b><u>List of objectives: </u></b> This week I would like to practice cutting cauliflower and my knife skills.
+                                <br/>
+                                <b><u>Methods of cookery: </u></b> It’s important to remember to cover the fish before placing it in the oven because it helps to flavor the fish and with 
+                                speeding up the cooking process. Next, the rice is par cooked slightly before adding the stock so that each of the grains can be coated in the seasoning from 
+                                the onions. Cauliflower is also par cooked to help speed up the cooking process so that it doesn’t have to spend extra time in the oven. Par cooking it also 
+                                helps the cauliflower absorb some of the cheese that is being poured over it. Lastly, it’s important to remember to use quality flavored meat for the tomato 
+                                sauce because the rendering fat imparts a lot of flavor to the overall sauce. You also have to puree it or place in a blender or pass it through a fine strainer 
+                                in order to get a nice clean, smooth tomato sauce.
+                                <br/>
+                                <b><u>Prior knowledge: </u></b> I’ve never poached fish before in the oven, but I have steamed it in a pot. I’ve also never made rice pilaf before, but I have 
+                                cooked many different types of rice plenty of times. In addition, I haven’t made cauliflower mornay with a sauce, I’ve only roasted it in the oven with other 
+                                vegetables or steamed it. Lastly, I’ve never made a tomato sauce either. 
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                                <b><u>Origin and history: </u></b> The filet of fish Duglere is a classic French dish created by Adolphe Duglere. The basics of the dish include using a fresh fillet fish and 
+                                poaching it in a fish stock made from the fish bones and served with a white sauce (Stephane, 2018). The tomato sauce is also a classic French recipe as it is one of the 
+                                5 mother sauces. Rice pilaf originated from Persia and the middle east because of the influence with the Silk Road (Ahmed, 2017). Since the middle eastern countries had 
+                                access to the silk road, they had access to many different spices and vegetables to allow them to create rice pilaf. Lastly, cauliflower mornay originated from Great Britain; 
+                                however, the mornay sauce is from France since it’s a derivative of a Bechamel sauce.
+                                <br/>
+                                <b><u>Methods used: </u></b> There are few different types of moist heat cooking methods that are used to cook fish and shellfish. The 3 common ones are boiling, steaming, 
+                                and poaching. Boiling involves food that is fully submerged in rapid movement of bubbles when water reaches 212 deg F (Labensky et al., 2018). Next, steaming involves 
+                                cooking fish and shellfish without adding fats (Labensky et al., 2018). Lastly, poaching is when food is partially or fully submerged in liquid that is 160-180 
+                                deg F (Labensky et al., 2018). For the rice, it’s important to cover it while it’s cooking to keep the moisture locked in while the liquid is evaporating. 
+                                This will keep the rice from drying out and will help to cook the grains evenly. The sauces for the fish and the cauliflower require a roux to be 
+                                added in order to get it to the correct thickness and creaminess for a quality final product.
+                                <br/>
+                                <b><u>Variations: </u></b>For the fish, you can add different vegetables and herbs to the stock to add more flavor like celery, carrots, thyme, or rosemary. 
+                                Since the fish is covered while it’s cooking in the oven, all of the aromas become infused in the fish and give it really good flavor. For the tomato sauce, you can use 
+                                a few different types of meat in order to impart different flavors to the sauce like smoked meat or salted meat. For the cauliflower mornay, you can use a few different 
+                                types of cheeses that will give it different flavors to pair with certain foods. The rice pilaf can be cooked on the stove or in the oven and can be made vegetarian by 
+                                using vegetable stock instead of chicken stock. You can also season the rice with different herbs and spices.
+                                <br/>
+                                <br/>
+                                Ahmed, Yusuf. (2017, April 8). <i>Understanding History With Rice Pilaf</i>. Yusuf Ahmed.
+                                <br/>
+                                <a href="https://medium.com/@Yusuf_Ahmed/understanding-history-with-rice-pilaf-27d64e46902f">
+                                    <i>https://medium.com/@Yusuf_Ahmed/understanding-history-with-rice-pilaf-27d64e46902f</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                                <br/>
+                                <br/>
+                                Stephane. (2018, October 19). <i>Fish Filet With Duglere Sauce</i>. The French Cooking Academy. 
+                                <br/>
+                                <a href="https://www.thefrenchcookingacademy.com/fish-filet-with-duglere-sauce/">
+                                    <i>https://www.thefrenchcookingacademy.com/fish-filet-with-duglere-sauce/</i>
+                                </a>
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2179,7 +2328,20 @@ function App() {
                 <Collapse isOpen={prepListIsOpen10}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk10PrepListFishAndSauce} alt="Fish and sauce prep list" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk10PrepListRice} alt="Rice pilaf prep list" className="prepListImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                            <img src={wk10PrepListCauliflower} alt="Cauliflower prep list" className="prepListImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2191,7 +2353,24 @@ function App() {
                 <Collapse isOpen={recipeIsOpen10}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk10RecipeFish} alt="Fish recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk10RecipeRice} alt="Rice pilaf recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk10RecipeCauliflower} alt="Cauliflower recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <div>
+                                <img src={wk10RecipeSauce} alt="Sauce recipe" className="recipeImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>

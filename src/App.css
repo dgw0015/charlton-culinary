@@ -269,3 +269,17 @@ label {
    margin: 0;
    padding: 0 5vw 5px 0;
 }
+
+/* Styling for week 9 */
+.jumbotron #reflectionWeek9 .row .col .cardImg {
+   width: 90%;
+   margin: 0;
+   padding: 0;
+}
+
+/* Styling for week 10 */
+.jumbotron #reflectionWeek10 .row .col .cardImg  {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
