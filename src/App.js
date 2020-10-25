@@ -106,6 +106,20 @@ import wk10RecipeFish from './images/Week_10/Recipe/wk10Fish.PNG';
 import wk10PrepListCauliflower from './images/Week_10//PrepList/cauliflowerPrepList.png';
 import wk10PrepListFishAndSauce from './images/Week_10/PrepList/fishAndTomatoSaucePrepList.png';
 import wk10PrepListRice from './images/Week_10/PrepList/ricePilafPrepList.png';
+import wk10FoodCost1 from './images/Week_10/FoodCost/FoodCost-CauliflowerMornay.xlsx';
+import wk10FoodCost2 from './images/Week_10/FoodCost/FoodCost-FishFilet.xlsx';
+import wk10FoodCost3 from './images/Week_10/FoodCost/FoodCost-RicePilaf.xlsx';
+import wk10ReflectCauliflower from './images/Week_10/Reflect/CauliflowerMornayBeforeOven.jpg';
+import wk10ReflectFishAfterPoach from './images/Week_10/Reflect/FishAfterPoaching.jpg';
+import wk10ReflectMornaySauce from './images/Week_10/Reflect/MornaySauce.jpg';
+import wk10ReflectRicePilafBeforeStock from './images/Week_10/Reflect/RicePilafBeforeStock.jpg';
+import wk10ReflectSeasonedTilapia from './images/Week_10/Reflect/SeasonedTilapiaBeforePoaching.jpg';
+import wk11BroccoliPrepList from './images/Week_11/PrepList/broccoliPrepList.png';
+import wk11ChickenFricasseePrepList from './images/Week_11/PrepList/chickenFricasseePrepList.png';
+import wk11FettuccineCarbonaraPrepList from './images/Week_11/PrepList/fettuccineCarbonaraPrepList.png';
+import wk11BroccoliRecipe from './images/Week_11/Recipe/wk11BroccoliRecipe.PNG';
+import wk11CarbonaraRecipe from './images/Week_11/Recipe/wk11CarbonaraRecipe.PNG';
+import wk11ChickenRecipe from './images/Week_11/Recipe/wk11Chicken.PNG';
 
 
 function App() {
@@ -2254,7 +2268,7 @@ function App() {
         </div>
 
         <div className="jumbotron" id="week-10">
-            <h1 className="display-4">Poached Halibut, Tomato Sauce, Cauliflower, Mornay, Rice Pilaf</h1>
+            <h1 className="display-4">Poached Halibut, Cauliflower, Mornay, Rice Pilaf</h1>
             <p className="h3">Week 10</p>
             <hr className="my-4"/>
             <div className="recipeCard" id="researchWeek10">
@@ -2382,7 +2396,17 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen10}>
                     <Card>
                         <CardBody>
-                            Content
+                            <a href={wk10FoodCost1}>
+                                <b>CauliflowerMornay_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk10FoodCost2}>
+                                <b>FishFilet_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk10FoodCost3}>
+                                <b>RicePilaf_FoodCost.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2394,7 +2418,75 @@ function App() {
                 <Collapse isOpen={reflectionIsOpen10}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                                Every dish was very tasty and all went really well together. However, I didn’t add enough milk to the mornay sauce so it was very thick and didn’t pour out 
+                                like a sauce. I didn’t par boil the cauliflower because I like it to still have a bite to it when you eat it. Cauliflower already cooks pretty quickly so I 
+                                didn’t see the need to boil it beforehand. For the sauce, I made too much roux compared to the amount of milk that I added and together with that, when I 
+                                added the cheese at the end, it made the sauce very thick. The cauliflower dish got a good brown color to it on top from adding the shredded cheese. The 
+                                sauce had good flavors from the smoked gouda cheese that I used and I didn't need to add any salt or pepper since the cheese had so much flavor already. 
+                                For the fish, I used chicken stock instead of fish stock which gave it more flavor and less of a fishy taste to the overall dish. I poached the fish in a 
+                                pan on the stove rather than putting it in the oven and it still came out really well and was perfectly cooked. The fish cooked on a low heat so it was 
+                                able to absorb all of the flavors from the shallots, tomatoes, white wine, and the stock. The fish was very soft and flaky which helped to balance out 
+                                the chewy texture from the cauliflower. The rice pilaf had good flavors from the spices I used to season the onions. I used cinnamon, paprika, nutmeg, 
+                                coriander, and a bay leaf so the rice was slightly sweet from the cinnamon and nutmeg but balanced out well with the coriander, paprika, and bay leaf. 
+                                I may have added a little too much stock to cook the rice because the grains at the bottom of the pan were mushy and some of the other grains were a 
+                                little gummy. However, I really like this dish as a whole because of how well each dish paired well with each other.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk10ReflectFishAfterPoach} alt="Tilapia after poaching" name="TilapiaAfterPoaching" className="cardImg" />
+                                    <Label for="TilapiaAfterPoaching">Tilapia After Poaching</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk10ReflectMornaySauce} alt="Mornay sauce" name="mornaySauce" className="cardImg"/>
+                                    <Label for="mornaySauce">Mornay Sauce</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                                The 2 moist cooking techniques worked because we added enough liquid for the ingredients to cook in without drying out and the fish and rice both had lids 
+                                on them which helped retain moisture. For the poaching method, the ingredients can either be fully or partially submerged in liquid that is about 160-180 
+                                deg F in temperature (Labensky, et al., 2018). The method is especially useful for fish because of how delicate it can be. The rice pilaf turned out well 
+                                and had good flavor because right after the onions were cooked, the rice was added and stirred around so that each grain was well seasoned. The stock also 
+                                added more flavor which allowed me not to have to add any additional salt or pepper to the dish. The rice also required a lid in order to keep the cooking 
+                                time down and to keep the steam and pressure inside of the pot to allow the rice to gradually soak up the liquid (Gavin, 2020). The cauliflower was cooked 
+                                perfectly, but the sauce was too thick to pour on top. When I was making the roux, I added more butter because it seemed too thick. However, I ended up 
+                                adding too much but I didn’t add enough milk to balance out the ratio. Together with that, I may have added too much cheese initially which made it even 
+                                thicker. In the future, I will use more milk and less cheese so that it has the correct consistency.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk10ReflectCauliflower} alt="Cauliflower mornay" name="cauliflowerMornay" className="cardImg"/>
+                                    <Label for="cauliflowerMornay">Cauliflower Mornay Before Oven</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk10ReflectSeasonedTilapia} alt="Seasoned Tilapia before paoching" name="tilapiaBeforePoach" className="cardImg"/>
+                                    <Label for="tilapiaBeforePoach">Seasoned Fish Before Poaching</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk10ReflectRicePilafBeforeStock} alt="Rice pilaf before stock" name="ricePilaf" className="cardImg"/>
+                                    <Label for="ricePilaf">Rice Pilaf Before Stock</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                                The objectives that I set for this week was to practice cutting cauliflower and my knife skills. They go hand in hand and I think I did well with it this 
+                                week because my cauliflower was cut evenly and uniformly. I didn’t know there was a correct way to cut a cauliflower until I watched the video which made 
+                                it a lot easier to prepare. Additional knowledge that I learned this week, was to not stir the rice while it’s in the middle of cooking. I made the mistake 
+                                of lifting the lid and stirring the rice because I didn’t want the rice to burn at the bottom; however, it resulted in my rice being mushy. This knowledge 
+                                can be applied to any type of rice that I’m cooking unless it’s risotto. I still need to practice my knife skills so that I can get faster at it.
+                            <br/>
+                            <br/>
+                            Gavin, J. (2020, March 30). <i>How to Cook Rice Like a Pro</i>. Jessica Gavin Culinary Scientist.
+                            <br/>
+                            <a href="https://www.jessicagavin.com/how-to-cook-rice/">
+                                <i>https://www.jessicagavin.com/how-to-cook-rice/</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2410,7 +2502,67 @@ function App() {
                 <Collapse isOpen={researchIsOpen11}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <b><u>Method of Cooking: </u></b> Braising
+                                <br/>
+                                <b><u>List of Cookery: </u></b> This week I would like to practice cooking pasta to the correct doneness. 
+                                <br/>
+                                <b><u>Method of Cookery: </u></b>When cooking the chicken fricassee, it’s important to remember to deglaze the pan before adding the chicken stock. 
+                                The roux also helps to thicken the cream and the stock as it’s slowly cooking. Fricassee is the process of sauteing and stewing meat in oil or fat at a 
+                                low temperature (Alfaro, 2018). Since the meat is being cooked for a long period of time, typically the meat doesn’t brown which results in all of the meat 
+                                being white along with the sauce (Alfaro, 2018). Steaming the broccoli helps to keep the integrity of the nutrients, color, and flavor while it’s cooking. 
+                                Amadine refers to any dish that incorporates sliced nuts as the garnish. It can be placed on fish, vegetables, or desserts to add a crunchy texture to the dish. 
+                                Lastly, for the fettuccine carbonara, it’s important to reserve some of the pasta liquid for the sauce because it helps to thin out the sauce/cheese if it 
+                                becomes too thick and stringy.
+                                <br/>
+                                <b><u>Prior Knowledge: </u></b>I’ve never made these specific recipes before, but I have cooked each of these dishes with different ingredients. 
+                                I’ve made stewed chicken which is also a form of moist heat cooking. Together with that, I steam broccoli frequently but I don’t add almonds and lemon 
+                                juice to it afterwards. Lastly, I’ve cooked many different types of pasta before and I’ve made fettuccine alfredo so the fettuccine carbonara shouldn’t 
+                                be much of a difference. 
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                                <b><u>Origin and history: </u></b>Chicken fricassee comes from France and is seen as a comfort food to be enjoyed during all seasons of the year, but particularly in the winter 
+                                (Alfaro, 2018). The word “Amandine” originated in France but the technique is used around the world (Alfaro 2019). Lastly, fettuccine carbonara 
+                                originated from Italy in the city of Bologna (Divino, 2017). The dish was created during World War 2 when the only ingredients left from rationing 
+                                was bacon, dried processed cheese, dried egg yolk, and dried pasta (Divino, 2017).
+                                <br/>
+                                <b><u>Methods used: </u></b>For the chicken we will combine dry and moist cooking when we saute the chicken and then when we braise it in chicken stock for a 
+                                long period of time. The other common method of combination cooking would be stewing.  The main difference between stewing and braising is that braising involves 
+                                cooking large, whole cuts of meat that is only partially submerged; whereas stewing is for smaller cuts of meat and typically it is fully submerged in a cooking 
+                                liquid. We will be doing a white braising meaning that the chicken won’t brown at all during the cooking process. On the other hand, you can do brown braising 
+                                where the meat is browned before adding the cooking liquid. For the pasta, the correct doneness is referred to al dente which means that it should still be firm 
+                                when bitten. This is a common characteristic when cooking any pasta. Lastly, you should only add the cheese towards the end of cooking process because it doesn’t 
+                                take a lot of heat or time for the cheese to melt and you don’t want it to become rubbery and thick from overcooking.
+                                <br/> 
+                                <b><u>Variations: </u></b>For the chicken fricassee, you can add almost any type of vegetable that will hold up with the heat and length of 
+                                cooking time. For example, you can use carrots, mushrooms, potatoes, broccoli, or green beans. You can also use different types of stock to 
+                                flavor the sauce; in addition, you can use different types of meat like veal, lamb, rabbit, and some seafood. For the broccoli amandine, 
+                                you can use different types of nuts like almonds, walnuts, pecans, or pistachios. Lastly, for the fettuccine you can add or substitute shrimp, 
+                                chicken, bacon, or scallops into the dish.
+                                <br/>
+                                <br/>
+                                Alfaro, D. (2019, October 1). <i>Amandine: A Garnish Featuring Almonds</i>. The Spruce Eats.
+                                <br/>
+                                <a href="https://www.thespruceeats.com/what-does-amandine-in-culinary-mean-995557">
+                                    <i>https://www.thespruceeats.com/what-does-amandine-in-culinary-mean-995557</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                Alfaro, D. (2018, December 12). <i>What Does Fricassee Mean?</i> The Spruce Eats.
+                                <br/>
+                                <a href="https://www.thespruceeats.com/all-about-fricassee-995685">
+                                    <i>https://www.thespruceeats.com/all-about-fricassee-995685</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                Divino, T. (2017, July 5). <i>Who Invented Carbonara?</i> Toscano Divino.
+                                <br/>
+                                <a href="https://www.toscanadivino.com/who-invented-carbonara/">
+                                    <i>https://www.toscanadivino.com/who-invented-carbonara/</i>
+                                </a>
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2422,7 +2574,20 @@ function App() {
                 <Collapse isOpen={prepListIsOpen11}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk11BroccoliPrepList} alt="Broccoli prep list" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk11ChickenFricasseePrepList} alt="Chicken fricassee prep list" className="prepListImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                            <img src={wk11FettuccineCarbonaraPrepList} alt="Fettuccine carbonara prep list" className="prepListImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2434,7 +2599,20 @@ function App() {
                 <Collapse isOpen={recipeIsOpen11}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk11BroccoliRecipe} alt="Broccoli amadine recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk11ChickenRecipe} alt="Chicken Fricassee recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk11CarbonaraRecipe} alt="Fetteccine carbonara recipe" className="recipeImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
