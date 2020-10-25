@@ -2268,7 +2268,7 @@ function App() {
         </div>
 
         <div className="jumbotron" id="week-10">
-            <h1 className="display-4">Poached Halibut, Cauliflower, Mornay, Rice Pilaf</h1>
+            <h1 className="display-4">Poached Fish, Cauliflower Mornay, Rice Pilaf</h1>
             <p className="h3">Week 10</p>
             <hr className="my-4"/>
             <div className="recipeCard" id="researchWeek10">
@@ -2494,7 +2494,7 @@ function App() {
         </div>
 
         <div className="jumbotron" id="week-11">
-            <h1 className="display-4">Chicken Fricassee, Broccoli, Amandine, Fettuccine Carbonara</h1>
+            <h1 className="display-4">Chicken Fricassee, Broccoli Amandine, Fettuccine Carbonara</h1>
             <p className="h3">Week 11</p>
             <hr className="my-4"/>
             <div className="recipeCard" id="researchWeek11">
