@@ -285,3 +285,8 @@ label {
 }
 
 /* Styling for week 11 */
+.jumbotron #reflectionWeek11 .row .col .cardImg  {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}

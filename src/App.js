@@ -120,6 +120,21 @@ import wk11FettuccineCarbonaraPrepList from './images/Week_11/PrepList/fettuccin
 import wk11BroccoliRecipe from './images/Week_11/Recipe/wk11BroccoliRecipe.PNG';
 import wk11CarbonaraRecipe from './images/Week_11/Recipe/wk11CarbonaraRecipe.PNG';
 import wk11ChickenRecipe from './images/Week_11/Recipe/wk11Chicken.PNG';
+import wk11FoodCostBroccoliAmandine from './images/Week_11/FoodCost/FoodCost-BroccoliAmandine.xlsx';
+import wk11FoodCostChicken from './images/Week_11/FoodCost/FoodCost-ChickenFricassee.xlsx';
+import wk11FoodCostFettuccine from './images/Week_11/FoodCost/FoodCost-FettuccineCarbonara.xlsx';
+import wk11ReflectCarbonara from './images/Week_11/Reflect/fettuccineCarbonara.jpg';
+import wk11ReflectWhiteRoux from './images/Week_11/Reflect/makingTheWhiteRoux.jpg';
+import wk11RelfectToastedAlmonds from './images/Week_11/Reflect/toastedAlmonds.jpg';
+import wk11ReflectChickenAndBroccoli from './images/Week_11/Reflect/braisedChickenAndBroccoliAmandine.jpg';
+import wk11ReflectCheeseInFettuccine from './images/Week_11/Reflect/mixingCheeseInFettuccine.jpg';
+import wk12RecipeSquash from './images/Week_12/Recipe/ButternutSquash.PNG';
+import wk12RecipeLambCurry from './images/Week_12/Recipe/LambCurry.PNG';
+import wk12RecipeVegetable from './images/Week_12/Recipe/VegetableBiryani.PNG';
+import wk12ButternutSquashPrepList from './images/Week_12/PrepList/butternutSquashPrepList.png';
+import wk12LambCurryPrepList from './images/Week_12/PrepList/lambCurryPrepList.png';
+import wk12VegetableBiryaniPrepList from './images/Week_12/PrepList/vegetableBiryaniPrepList.png';
+
 
 
 function App() {
@@ -2624,7 +2639,17 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen11}>
                     <Card>
                         <CardBody>
-                            Content
+                            <a href={wk11FoodCostFettuccine}>
+                                <b>FettuccineCarbonara_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk11FoodCostChicken}>
+                                <b>ChickenFricassee_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk11FoodCostBroccoliAmandine}>
+                                <b>BroccoliAmandine_FoodCost.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2636,7 +2661,84 @@ function App() {
                 <Collapse isOpen={reflectionIsOpen11}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                            Overall, each dish was cooked properly and had good flavor and color. I forgot to add the nutmeg to the sauce so the chicken fricassee 
+                            tasted bland at first, but once I added it later on it elevated the flavor of the entire dish. The chicken was tender and juicy since it 
+                            was braised for a long time. The heavy cream lightened the sauce to a beige color and added extra creaminess to the sauce. The dish 
+                            didn’t really have a lot of color to it since we didn’t brown the chicken and we made a white roux as opposed to a blonde or brown roux. 
+                            The broccoli amandine had a few different flavors from the toasted almonds, garlic, and the natural flavor of the broccoli. Since we 
+                            boiled the broccoli for a few minutes, it still had a slight bite to it and had a nice bright green color. The toasted almonds added 
+                            a nice contrast of brown to the green. It also added an extra crunch and gave the dish a good nutty, buttery flavor. The fettuccine 
+                            carbonara didn’t have a lot of color to it and had simple flavors from the 2 different types of cheese and the pancetta. The fettuccine 
+                            was cooked perfectly al dente since we continually tasted it throughout the cooking process. The bits of crispy pancetta added a crunch 
+                            and saltiness to the dish so a lot of seasoning wasn’t required. The cheeses also had salt in it so all we had to add was pepper to give 
+                            it some spice.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk11ReflectChickenAndBroccoli} alt="chicken and broccoli amandine" name="chickenBroccoliAmandine" className="cardImg" />
+                                    <Label for="chickenBroccoliAmandine">Braised Chicken and Broccoli Amandine</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk11ReflectCarbonara} alt= "Fettuccine Carbonara" name="fettuccineCarb" className="cardImg" />
+                                    <Label for="fettuccineCarb">Fettuccine Carbonara</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                               The chicken fricassee turned out well because we used the braising process of combination cooking. This process is when you use both 
+                               dry heat from sauteing the chicken and moist heat from adding stock in order to cook the meat on a low heat for a long period of time 
+                               (Labensky et al., 2018). The juices from the chicken are incorporated into the sauce because we made a white roux in the pan while 
+                               the chicken was cooking. After the chicken was fully cooked, we removed it from the pan in order to finish making the sauce. 
+                               The roux and the heavy cream are important to add because they thicken up the sauce after the juices from the chicken are 
+                               reduced down. In the future, I will do a better job of monitoring the heat of my pan because my chicken had a slight brown color to 
+                               the skin while it was braising because the pan got a little too hot. For the broccoli amandine, the broccoli was cooked perfectly 
+                               because it only sat in the boiling water for about 3 minutes and then I removed it from the water so that it wouldn’t continue to 
+                               soak in it. The almonds were dark brown which means I cooked it too long. Together with that, the garlic started to burn so it added 
+                               a little bit of bitterness to the dish. In the future, I will take the almonds and garlic off of the heat earlier so that it doesn’t 
+                               take on so much color. Lastly, the fettuccine carbonara was executed correctly because we were able to achieve the correct doneness 
+                               for the noodles and the pancetta. In addition, an egg was added to ½ of the parmesan cheese in order to create a good base for the 
+                               sauce. The egg yolk added richness and creaminess, while the egg white combined with the starchy pasta water to create a velvety 
+                               feel in your mouth (Martinez, 2016). The pecorino cheese and the remaining parmesan was added at the end of the process so 
+                               that it could be melted just enough from the residual heat of the dish. If we were to add it to the pan, the cheese would 
+                               become hard, rubbery, and sticky from too much heat and it would be very difficult to mix it with the pasta.  
+                               <br/>
+                               <br/>
+                               <Row>
+                                <Col>
+                                    <img src={wk11ReflectWhiteRoux} alt="Making the roux sauce" name="rouxSauce" className="cardImg"/>
+                                    <Label for="rouxSauce">Making the White Roux</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk11ReflectCheeseInFettuccine} alt="Mixing the cheese into the fettuccine" name="mixingInCheese" className="cardImg"/>
+                                    <Label for="mixingInCheese">Mixing The Cheese In Fettuccine</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk11RelfectToastedAlmonds} alt="Toasted almonds" name="toastedAlmonds" className="cardImg"/>
+                                    <Label for="toastedAlmonds">Toasted Almonds</Label>
+                                </Col>
+                                </Row>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                                <br/>
+                                <br/>
+                                Martinez, A. (2016 February, 24). <i>Make Silky Carbonara - Not Scrambled Egg Pasta</i>. Bon Appetit. 
+                                <br/>
+                                <a href="https://www.bonappetit.com/test-kitchen/cooking-tips/article/how-to-make-pasta-carbonara">
+                                    <i>https://www.bonappetit.com/test-kitchen/cooking-tips/article/how-to-make-pasta-carbonara</i>
+                                </a>
+                            </p>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                                This week I wanted to practice cooking pasta to the correct doneness. Pasta can be a tricky thing to cook if you don’t keep 
+                                track of the time. Leave it a little too long and you end up with mushy pasta that’s stuck together from the starches or you 
+                                pull from the stove too early and end up with half cooked, half raw pasta. I tried the pasta multiple times throughout the cooking 
+                                process in order to monitor the texture accurately. This week I learned that you can use an egg yolk to add extra creaminess and 
+                                richness to the sauce. We used this technique with the chicken fricassee in order to thicken it up and give it more creaminess with 
+                                the heavy cream. This technique can be used when you make any sauce as long as you temper it correctly so that it doesn’t end up as 
+                                scrambled eggs in your sauce. Lastly, I think I still need to practice cooking chicken because I have a habit of overcooking chicken 
+                                with the fear of it being undercooked. In the future, I will monitor it closer so that it doesn't get over cooked. 
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2644,7 +2746,7 @@ function App() {
         </div>
 
         <div className="jumbotron" id="week-12">
-            <h1 className="display-4">Braised Lamb Shanks, Baked Butternut Squash, Safron Rice</h1>
+            <h1 className="display-4">Lamb Curry, Baked Butternut Squash, Vegetable Biryani</h1>
             <p className="h3">Week 12</p>
             <hr className="my-4"/>
             <div className="recipeCard" id="researchWeek12">
@@ -2652,7 +2754,78 @@ function App() {
                 <Collapse isOpen={researchIsOpen12}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <b><u>Method of cooking: </u></b>Stewing and baking
+                                <br/>
+                                <b><u>List of objectives: </u></b>This week I would like to practice my knife skills.
+                                <br/>
+                                <b><u>Method of cookery: </u></b>Lamb can be a tough cut of meat so it needs a lot of time to cook in order to break down the collagen so that 
+                                it’s tender and juicy by the time you eat it. However, you have to be careful not to overcook it because then it can become very chewy and tough. 
+                                Lamb has really nice natural flavors so you’re able to pair it with a lot of different dishes. Especially if you use bone-in lamb leg, the bone 
+                                imparts a lot of flavor and texture from the marrow being incorporated into the rest of the dish. There are a few different ways to cook squash, 
+                                but baking it is probably one of the easiest ways.
+                                <br/>
+                                <b><u>Prior knowledge: </u></b>I’ve made sous vide and roasted lamb before, but I’ve never curried it. I’ve also made curry before, but I used 
+                                chicken, beef, and goat. In addition, I’ve also stewed quite a bit of meat, but have never used lamb. Overall, whenever I make these dishes they 
+                                come out very tasty and are cooked well since it cooks for a long period of time. I’ve made baked butternut squash on many occasions since it’s 
+                                pretty simple and doesn’t require a lot of ingredients. I like my squash to be a little mushy because then it almost melts in your mouth. I haven't 
+                                made vegetable biryani before, but I’ve made a very similar saffron rice dish with kebabs. The recipe was a Persian family recipe and it turned out 
+                                really well. I mainly just watched and took notes, so I haven’t made it on my own yet.
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                            <b><u>Origin and history: </u></b>Lamb curry is thought to have originated from Northern India or modern day Iran. The dish requires a lot of spices 
+                            in order to make it so flavorful and with all of the importing of food and spices in the area, the people here had a lot of access to these ingredients. 
+                            The dish is also usually accompanied by a type of flaky bread like naan or rice so that it can soak up all of the flavorful sauce left 
+                            behind (Baveja, 2015). Butternut squash is mainly planted in Mexico and parts of South America because of their ability to grow in warm or cool 
+                            climates (Sleuth, 2018). The native americans started cooking with it and due to a tendency to not waste anything, they found creative ways to bake, 
+                            simmer, or fry the entire squash (Sleuth, 2018). Biryani originated in west Asia near Persia but has now become a classic dish all over India. 
+                            This dish is thought to be eaten a lot during war because it was just thrown together with whatever spices and meats they had available (Pal, 2016). 
+                            The combination of rice and meat can be quite heavy and nutritious so it ended up being enough fuel for the military during war. 
+                            <br/>
+                            <b><u>Methods used: </u></b>Stewing is another combination cooking method similar to braising; however, you typically use smaller cuts of meat when 
+                            stewing (Labensky, et al., 2018). There are also two types of stew: brown stews and white stews; this week we will be doing a brown stew. For brown 
+                            stews, the meat is browned in fat which adds more flavor and color to the overall dish (Labensky, et al., 2018). For brown stews, it’s important to 
+                            remember to first cook the meat on high heat until it’s browned, then add the cooking liquid and lower the heat to a gentle simmer because the meat cooks 
+                            best at low temperatures so that all of the flavors and ingredients are incorporated without burning. (Labensky, et al., 2018). Basmati rice is typically 
+                            used in Indian culture because of their accessibility to the product and because of the natural nutty, flavorful tastes it imparts to a dish. For biryani 
+                            and other Indian rice dishes, it’s common to use a damp cloth as a lid while it’s cooking because it soaks up the evaporated water and prevents it from 
+                            falling back into the rice. 
+                            <br/>
+                            <b><u>Variations: </u></b>Curry is typically prepared with either lamb or goat, but the good things about curry is that you can use almost 
+                            any type of meat. Things like tomato puree or tomato paste can be added or you can use different types of seasonings to alter the 
+                            flavor and change the color of the sauce (Baveja, 2015). What you eat with it can also vary; for example, the curry can be placed on 
+                            top of different types of rice or several different types of absorbent bread. Next, butternut squash can be prepared and used in a multitude of 
+                            ways; for example, it can be baked, boiled, or fried and can be used to eat by itself, put into soups, pies, souffles, casseroles, and breads 
+                            (Sleuth, 2018). The nice thing about squash is that the entire thing is edible. You can bake/roast the seeds and you can batter and fry the flowers 
+                            (Sleuth, 2018). Biryani has a lot of different variations depending on the region you’re visiting. Biryani can include spiced meat, seafood, quail, 
+                            deer saffron flavored rice, potatoes, lemon, yogurt, nuts, vegetables, ghee, and creamy milk (Pal, 2016).
+                            <br/>
+                            <br/>
+                            Baveja, G. (2015 September, 9). <i>The Story Behind Rogan Josh, an Authentic Lamb Curry</i>. Los Alto Town Crier
+                            <br/>
+                            <a href="https://www.losaltosonline.com/special-sections2/sections/food-a-wine/51079  -the-story-behind-rogan-josh-an-authentic-indian-lamb-curry">
+                                <i>https://www.losaltosonline.com/special-sections2/sections/food-a-wine/51079  -the-story-behind-rogan-josh-an-authentic-indian-lamb-curry</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson
+                            <br/>
+                            <br/>
+                            Pal, S. (2016 July 6). <i>Origin of Biryani in India</i>. The Better India.
+                            <br/>
+                            <a href="https://www.thebetterindia.com/60553/history-biryani-india/">
+                                <i>https://www.thebetterindia.com/60553/history-biryani-india/</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Sleuth, G. (2018 December 5). <i>Butternut Squash</i>. Gourmet Sleuth.
+                            <br/>
+                            <a href="https://www.gourmetsleuth.com/articles/detail/butternut-squash">
+                                <i>https://www.gourmetsleuth.com/articles/detail/butternut-squash</i>
+                            </a>
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2664,7 +2837,20 @@ function App() {
                 <Collapse isOpen={prepListIsOpen12}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk12LambCurryPrepList} alt="Lamb curry prep list" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk12ButternutSquashPrepList} alt="Butternut squash prep list" className="prepListImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                            <img src={wk12VegetableBiryaniPrepList} alt="Vegetable biryani prep list" className="prepListImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2676,7 +2862,20 @@ function App() {
                 <Collapse isOpen={recipeIsOpen12}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk12RecipeLambCurry} alt="Lamb curry recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk12RecipeSquash} alt="Butternut squash recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk12RecipeVegetable} alt="Vegetable biryani recipe" className="recipeImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
