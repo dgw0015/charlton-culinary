@@ -134,7 +134,21 @@ import wk12RecipeVegetable from './images/Week_12/Recipe/VegetableBiryani.PNG';
 import wk12ButternutSquashPrepList from './images/Week_12/PrepList/butternutSquashPrepList.png';
 import wk12LambCurryPrepList from './images/Week_12/PrepList/lambCurryPrepList.png';
 import wk12VegetableBiryaniPrepList from './images/Week_12/PrepList/vegetableBiryaniPrepList.png';
-
+import wk12FoodCostSquash from  './images/Week_12/FoodCost/FoodCost-ButternutSquash.xlsx';
+import wk12FoodCostLamb from './images/Week_12/FoodCost/FoodCost-Lamb Curry.xlsx';
+import wk12FoodCostVegetable from './images/Week_12/FoodCost/FoodCost-VegetableBiryani.xlsx';
+import wk12ReflectSquash from './images/Week_12/Reflect/butternutSquash.jpg';
+import wk12ReflectVegetablesBeforeAddingRice from './images/Week_12/Reflect/cookingVegetablesBeforeAddingToRice.jpg';
+import wk12ReflectLamb from './images/Week_12/Reflect/lambCurryWithNaan.jpg';
+import wk12ReflectCoconutMilk from './images/Week_12/Reflect/spicesCookingBeforeCoconutMilk.jpg';
+import wk12ReflectVegetables from './images/Week_12/Reflect/vegetableBiryani.jpg';
+import wk12ReflectVegetablesBeforeStir from './images/Week_12/Reflect/vegetableBiryaniBeforeStirring.jpg';
+import wk13ChipsPrepList from './images/Week_13/PrepList/chipsPrepList.png'
+import wk13OnionRingPrepList from './images/Week_13/PrepList/onionRingPrepList.png';
+import wk13SousVidePrepList from './images/Week_13/PrepList/sousVidePrepList.png';
+import wk13ChipsRecipe from './images/Week_13/Recipe/chipsRecipe.PNG';
+import wk13OnionRingsRecipe from './images/Week_13/Recipe/onionRingsRecipe.PNG';
+import wk13SteakRecipe from './images/Week_13/Recipe/steakRecipe.PNG';
 
 
 function App() {
@@ -2887,7 +2901,17 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen12}>
                     <Card>
                         <CardBody>
-                            Content
+                        <a href={wk12FoodCostSquash}>
+                                <b>ButternutSquash_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk12FoodCostLamb}>
+                                <b>LambCurry_FoodCost.xlsx</b>
+                            </a>
+                            <br/>
+                            <a href={wk12FoodCostVegetable}>
+                                <b>VegetableBiryani_FoodCost.xlsx</b>
+                            </a>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2899,7 +2923,83 @@ function App() {
                 <Collapse isOpen={reflectionIsOpen12}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                            All three of the dishes were cooked perfectly, had great flavors, and had good color to them. Since the curry has so many different spices, it 
+                            masked the natural gamey flavor of the lamb. If anyone hasn’t tried lamb before, this probably would be a good introductory dish because you 
+                            taste a little bit of the lamb without being overpowered by its natural, bold flavors. Since we cooked the dish for a few hours, the lamb was 
+                            very tender and juicy from soaking up the spices and liquid of the curry. All of the spices mixed together gave the overall dish a brown, yellow 
+                            color. The curry had a tiny bit of heat to it and was very savory from all of the spices. The coconut milk helped to lighten the color of the 
+                            dish, but didn’t impart any extra flavor. The vegetable biryani had lots of different flavors and textures from the fresh cilantro, toasted 
+                            almonds, peas and carrots, and spices. This spice mixture was slightly different from the curry and had slightly sweeter flavors from the cinnamon, 
+                            star anise, and cardamom. The dish had pops of green and orange from the peas, cilantro, and carrots which was a good contrast when placed next to 
+                            monochromatic brown, yellow curry. There was a nice crunchy texture from the toasted almonds and the diced potatoes also added some variation to 
+                            the dish because it wasn’t mushy and still held its structure in the rice. The butternut squash was very soft, mushy, and sweet. The squash was 
+                            roasted in the oven so the outsides of some pieces were charred but didn’t impart any burnt flavors. We drizzled a little bit of honey at the end, 
+                            but the squash has a slightly natural sweetness so it didn’t require a lot. 
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk12ReflectSquash} alt="Butternut squash" name="butterSquash" className="cardImg"/>
+                                    <Label for="butterSquash">Butternut Squash</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk12ReflectVegetables} alt="Vegetable Biryani" name="vegetableBir" className="cardImg"/>
+                                    <Label for="vegetableBir">Vegetable Biryani</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk12ReflectLamb} alt="Lamb curry" name="lambCurry" className="cardImg"/>
+                                    <Label for="lambCurry">Lamb Curry</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                            The lamb curry was a brown stew rather than a white stew, meaning that the lamb was browned first in fat and then cooking liquid was added 
+                            after (Labensky et al., 2018). We browned the meat in order to impart more flavor and color to the overall dish. Lamb leg is a very tough piece 
+                            of meat because it does a lot of work during the animal’s lifetime, so these cuts of meat do well when they are cooked for a long period of time at 
+                            a low temperature (Mattison, 2013). The garlic and ginger were pureed together and then added to the pan with the spices and then reduced down 
+                            slightly before slowly incorporating the coconut milk. The garlic and ginger puree incorporated better into the sauce since it was pureed rather 
+                            than being minced. While the coconut milk didn’t add too much extra flavor, it did add extra creaminess and acted as an emulsifier for the curry 
+                            sauce. For the biryani we cooked the rice to 90% doneness because it would finish off cooking with the vegetables sandwiched between 2 layers of 
+                            rice. The potatoes, carrots, onions, and yogurt had to cook separately before adding it to the rice because it takes longer to cook and needed 
+                            extra water so that the potatoes could cook properly. Once the vegetables and rice were done cooking, we created a layer of ½ of the rice in a pot, 
+                            then added the vegetables, and lastly added the remaining rice to the top and covered it to finish the cooking process. Covering it with a damp 
+                            towel helped to keep all of the moisture and aromas from escaping. Once the rice was done cooking, we stirred everything together and made sure to 
+                            fully coat the rice in all of the spices and liquid from the vegetables. Lastly, the squash was nice and soft because we cut them into small squares 
+                            so they cooked faster and evenly. Butternut squash doesn’t require a lot of extra seasoning because it has nice natural flavors.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk12ReflectCoconutMilk} alt="Spices cooking before adding coconut milk" name="coconutMilk" className="cardImg"/>
+                                    <Label for="coconutMilk">Spices Before Adding Coconut Milk</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk12ReflectVegetablesBeforeAddingRice} alt="Vegetable Biryani before adding to rice" name="vegetableBeforeRice" className="cardImg"/>
+                                    <Label for="vegetableBeforeRice">Cooking Vegetables Before Adding to Rice</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk12ReflectVegetablesBeforeStir} alt="Vegetables before stiring" name="vegetablesBeforeStir" className="cardImg"/>
+                                    <Label for="vegetablesBeforeStir">Vegetables Before Stirring</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                            This week I wanted to practice my knife skills. I think I did well this week because my potato, carrots, and squash pieces were pretty even. 
+                            I learned about the different cuts of lamb and how each cut has to be treated/prepared differently so that you get the best flavors out of 
+                            them. This can be applied to any type of meat or even fish because some cuts of meat don’t require a lot of cooking or seasoning and others 
+                            do. I still need to practice cooking rice to the correct doneness because every type of rice grain is different and requires a different 
+                            cooking process.
+                            <br/>
+                            <br/>
+                            Mattison, L. (2017, April 3). <i>Mistakes Everyone Makes When Cooking Lamb</i>. Mashed.
+                            <br/>
+                            <a href="https://www.mashed.com/54466/mistakes-everyone-makes-cooking-lamb/">
+                                <i>https://www.mashed.com/54466/mistakes-everyone-makes-cooking-lamb/</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2915,7 +3015,78 @@ function App() {
                 <Collapse isOpen={researchIsOpen13}>
                     <Card>
                         <CardBody>
-                            Content
+                            <h4 className="researchHeader">INTRO</h4>
+                            <p>
+                                <b><u>Method of Cooking: </u></b>Combination cooking, sous vide
+                                <br/>
+                                <b><u>List of objectives: </u></b>This week I would like to practice determining the doneness level for foods.
+                                <br/>
+                                <b><u>Method of Cookery: </u></b>Sous vide is a method of combination cooking where the food is placed in a bag and submerged in a water 
+                                bath and held at a precise temperature for a certain period of time (Labensky et al., 2018). Sous vide is best used for tough cuts of 
+                                meat because the constant, consistent temperature helps to break down the collagen and retain flavor, resulting in a very tender cut of
+                                 meat (Labensky et al., 2018). The piece of meat is then browned after it has cooked in order to get a nice crust on the outside. 
+                                 For the triple cooked chips, the cooking is done in stages in order to dry out the fries before fully cooking them so that they don’t 
+                                 end up soggy in the middle (Blumenthal, 2019). Lastly, for the onion rings, all of the seasoning goes in the batter because it gives 
+                                 your food extra flavor and texture. 
+                                <br/>
+                                <b><u>Prior knowledge: </u></b>I have sous vide a lot of different types of meat before like lamb, steak, and pork chops. They always 
+                                come out really tasty since the sous vide holds them at the perfect cooking temp and is able to break down the collagen in the meats 
+                                so that they are really tender. However, I’ve never eaten or tried to cook venison. I’ve also eaten onion rings and chips at restaurants 
+                                before, but I’ve never made them myself. 
+                            </p>
+                            <h4 className="researchHeader">BACKGROUND</h4>
+                            <p>
+                                <b><u>Origin and history: </u></b>Sous vide cooking doesn’t have an exact place of origin, but the idea was thought of by 2 French chefs 
+                                in the 1970s. The idea came up when one of the chefs wanted to improve the tenderness of roast beef (Popovici, 2018). The other chef 
+                                wanted to prevent his food from shrinking during the cooking process so he wrapped foie gras in plastic wrap and then cooked it 
+                                (Popovici, 2018). The two chefs then paired with a plastic manufacturer to refine their technique and ended up creating a vacuum sealing 
+                                machine that could lock in all of the liquids while also being able to withstand the heat while cooking (Popovici, 2018). Around this 
+                                time period, prepackaged food and tv dinners were on the rise, so this method offered better tasting food with less material waste and 
+                                was easy to prepare. The triple fried chip was created by Heston Blumenthal in the 1990s. He took the French’s double cooked fry recipe 
+                                and elevated it by cooking it one more time in order to keep a nice crispy fry that doesn’t get soggy when cooled (Blumenthal, 2019). 
+                                One of the first recipes of onion rings can be found in a cookbook called “The Art of Cookery Made Easy and Refined” 
+                                (Onion Business, 2019). 
+                                <br/>
+                                <b><u>Methods used: </u></b>Combination cooking is when you apply both moist and dry heat to your food. For the steaks we will be placing 
+                                it in a water bath and then finishing it on a hot pan to sear the outside. The sous vide gives you a precise cooking temp all the way 
+                                around so that you don’t have to worry about if you under or overcooked your meat. The other 2 combination method techniques are stewing 
+                                and braising, but sous vide is different because the food is vacuum sealed which draws out air and locks in the flavors of your seasoning 
+                                while it’s cooking. Using beer for the batter acts as a leavening agent due to the carbonation and adds flavor (Labensky et al., 2018). 
+                                You can also add baking powder or you can place the batter in a soda stream container so that the batter comes out light and fluffy. 
+                                <br/>
+                                <b><u>Variations: </u></b>For the sous vide, you can use any type of meat or seafood along with any type of seasonings. 
+                                The sous vide is great for obtaining the perfect internal temperature of your meat. There are also a few different ways to 
+                                finish off the meat after you pull it out of the water bath. You can use the grill, a hot iron skillet, a pan, or you can broil it. 
+                                All of these techniques can add extra flavor to the meat; for example, if you finished a steak on a wood fired grill you might get a 
+                                charred steak with some of the smoky characteristics on the outside. For the chips, you can season it with different things and the 
+                                cooking methods also vary: using a deep fryer, air fryer, or baking them. Lastly, the onion rings your batter can vary so you can use 
+                                bread crumbs, milk, beer, chipotle seasoning, coconut flour, and cornmeal.
+                                <br/>
+                                <br/>
+                                Bluementhal, H. (2019, August 19). <i>My Signature Dish: Heston Blumenthal’s Triple Cooked Chips</i>. Michelin Guide.
+                                <br/>
+                                <a href="https://guide.michelin.com/us/en/california/article/people/heston-blumenthal-triple-cooked-chips-french-fries">
+                                    <i>https://guide.michelin.com/us/en/california/article/people/heston-blumenthal-triple-cooked-chips-french-fries</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                (2019, June 27). O is For Onion Ring. Onion Business
+                                <br/>
+                                <a href="https://onionbusiness.com/o-is-for-onion-ring-as-in-national-onion-ring-day-june-22/">
+                                    <i>https://onionbusiness.com/o-is-for-onion-ring-as-in-national-onion-ring-day-june-22/</i>
+                                </a>
+                                <br/>
+                                <br/>
+                                Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                                <br/>
+                                <br/>
+                                Popovici, A. (2018, May 9). <i>The Colonel in The Kitchen: A Surprising History of Sous Vide.</i> NPR
+                                <br/>
+                                <a href="https://www.npr.org/sections/thesalt/2018/05/09/608308624/the-colonel-in-the-kitchen-a-surprising-history-of-sous-vide#:~:text=Most%20sources%20credit%20two%20French,the%20tenderness%20of%20roast%20beef">
+                                    <i>https://www.npr.org/sections/thesalt/2018/05/09/608308624/the-colonel-in-the-kitchen-a-surprising-history-of-sous-vide#:~:text=Most%20sources%20credit%20two%20French,the%20tenderness%20of%20roast%20beef</i>
+                                </a>
+                                <br/>
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2927,7 +3098,20 @@ function App() {
                 <Collapse isOpen={prepListIsOpen13}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk13ChipsPrepList} alt="Chips prep list" className="prepListImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk13SousVidePrepList} alt="Sous vide steak prep list" className="prepListImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                            <img src={wk13OnionRingPrepList} alt="Onion rings prep list" className="prepListImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -2939,7 +3123,20 @@ function App() {
                 <Collapse isOpen={recipeIsOpen13}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <img src={wk13ChipsRecipe} alt="Chips recipe" className="recipeImg"/>
+                            </div>
+                            <br/>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk13SteakRecipe} alt="steak recipe" className="recipeImg"/>
+                            </div>
+                            <hr className="my-3"/>
+                            <br/>
+                            <div>
+                                <img src={wk13OnionRingsRecipe} alt="onion rings recipe" className="recipeImg"/>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>

@@ -290,3 +290,10 @@ label {
    margin: 0;
    padding: 0;
 }
+
+/* Styling for week 12 */
+.jumbotron #reflectionWeek12 .row .col .cardImg {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
