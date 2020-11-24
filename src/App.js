@@ -149,6 +149,15 @@ import wk13SousVidePrepList from './images/Week_13/PrepList/sousVidePrepList.png
 import wk13ChipsRecipe from './images/Week_13/Recipe/chipsRecipe.PNG';
 import wk13OnionRingsRecipe from './images/Week_13/Recipe/onionRingsRecipe.PNG';
 import wk13SteakRecipe from './images/Week_13/Recipe/steakRecipe.PNG';
+import wk13FoodCostFries from './images/Week_13/FoodCost/FoodCost-Fries.xlsx';
+import wk13FoodCostOnionRings from './images/Week_13/FoodCost/FoodCost-onionRings.xlsx';
+import wk13FoodCostSteak from './images/Week_13/FoodCost/FoodCost-SousVideSteak.xlsx';
+import wk13FoodCostStirFry from './images/Week_13/FoodCost/FoodCost-StirFry.xlsx';
+import wk13ReflectFinalPlate from './images/Week_13/Reflect/finalPlate.jpg';
+import wk13ReflectSearingVenison from './images/Week_13/Reflect/searingVenison.jpg';
+import wk13ReflectStirFryAsparagusMushroom from './images/Week_13/Reflect/stirFryAsparagusAndMushrooms.jpg';
+import wk13ReflectTripleCookedFry from './images/Week_13/Reflect/tripleCookedFriesFrozen.jpg';
+import wk13ReflectVenisonVacuumed from './images/Week_13/Reflect/venisonVacuumPacked.jpg';
 
 
 function App() {
@@ -218,13 +227,6 @@ function App() {
      const [foodCostIsOpen13, setFoodCostIsOpen13] = useState(false);
      const [reflectionIsOpen13, setReflectionIsOpen13] = useState(false);
      const [prepListIsOpen13, setPrepListIsOpen13] = useState(false);
-    
-     const [researchIsOpen14, setResearchIsOpen14] = useState(false);
-     const [recipeIsOpen14, setRecipeIsOpen14] = useState(false);
-     const [foodCostIsOpen14, setFoodCostIsOpen14] = useState(false);
-     const [reflectionIsOpen14, setReflectionIsOpen14] = useState(false);
-     const [prepListIsOpen14, setPrepListIsOpen14] = useState(false);
-
 
     const toggle = () => setResearchIsOpen(!researchIsOpen);
     const toggle2 = () => setPrepListIsOpen(!prepListIsOpen);
@@ -291,14 +293,6 @@ function App() {
      const toggle54 = () => setRecipeIsOpen13(!recipeIsOpen13);
      const toggle55 = () => setFoodCostIsOpen13(!foodCostIsOpen13);
      const toggle56 = () => setReflectionIsOpen13(!reflectionIsOpen13);
-    
-     const toggle57 = () => setResearchIsOpen14(!researchIsOpen14);
-     const toggle58 = () => setPrepListIsOpen14(!prepListIsOpen14);
-     const toggle59 = () => setRecipeIsOpen14(!recipeIsOpen14);
-     const toggle60 = () => setFoodCostIsOpen14(!foodCostIsOpen14);
-     const toggle61 = () => setReflectionIsOpen14(!reflectionIsOpen14);
-
-
 
     return (
     <div className="App-container">
@@ -2901,7 +2895,7 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen12}>
                     <Card>
                         <CardBody>
-                        <a href={wk12FoodCostSquash}>
+                            <a href={wk12FoodCostSquash}>
                                 <b>ButternutSquash_FoodCost.xlsx</b>
                             </a>
                             <br/>
@@ -3148,7 +3142,23 @@ function App() {
                 <Collapse isOpen={foodCostIsOpen13}>
                     <Card>
                         <CardBody>
-                            Content
+                            <div>
+                                <a href={wk13FoodCostSteak}>
+                                    <b>FoodCost_SousVideSteak.xlsx</b>
+                                </a> 
+                                <br/>
+                                <a href={wk13FoodCostStirFry}>
+                                    <b>FoodCost_StirFry.xlsx</b>
+                                </a>
+                                <br/>
+                                <a href={wk13FoodCostFries}>
+                                    <b>FoodCost_Fries.xlsx</b>
+                                </a>
+                                <br/>
+                                <a href={wk13FoodCostOnionRings}>
+                                    <b>FoodCost_onionRings.xlsx</b>
+                                </a>
+                            </div>
                         </CardBody>
                     </Card>
                 </Collapse>
@@ -3160,71 +3170,79 @@ function App() {
                 <Collapse isOpen={reflectionIsOpen13}>
                     <Card>
                         <CardBody>
-                            Content
-                        </CardBody>
-                    </Card>
-                </Collapse>
-            </div>
-        </div>
-
-        <div className="jumbotron" id="week-14">
-            <h1 className="display-4">Asparagus Frittata, Poached Eggs, Salad Nicoise</h1>
-            <p className="h3">Week 14</p>
-            <hr className="my-4"/>
-            <div className="recipeCard" id="researchWeek14">
-                <Button color="secondary" onClick={toggle57} style={{ marginBottom: '1rem' }}>Research</Button>
-                <Collapse isOpen={researchIsOpen14}>
-                    <Card>
-                        <CardBody>
-                            Content
-                        </CardBody>
-                    </Card>
-                </Collapse>
-                <br/>
-            </div>
-
-            <div className="recipeCard" id="prepListWeek14">
-                <Button color="info" onClick={toggle58} style={{ marginBottom: '1rem' }}>Prep List</Button>
-                <Collapse isOpen={prepListIsOpen14}>
-                    <Card>
-                        <CardBody>
-                            Content
-                        </CardBody>
-                    </Card>
-                </Collapse>
-                <br/>
-            </div>
-
-            <div className="recipeCard" id="recipeWeek14">
-                <Button color="danger" onClick={toggle59} style={{ marginBottom: '1rem' }}>Recipe</Button>
-                <Collapse isOpen={recipeIsOpen14}>
-                    <Card>
-                        <CardBody>
-                            Content
-                        </CardBody>
-                    </Card>
-                </Collapse>
-                <br/>
-            </div>
-
-            <div className="recipeCard" id="foodCostWeek14">
-                <Button color="success" onClick={toggle60} style={{ marginBottom: '1rem' }}>Food Cost</Button>
-                <Collapse isOpen={foodCostIsOpen14}>
-                    <Card>
-                        <CardBody>
-                            Content
-                        </CardBody>
-                    </Card>
-                </Collapse>
-                <br/>
-            </div>
-
-            <div className="recipeCard" id="reflectionWeek14">
-                <Button color="primary" onClick={toggle61} style={{ marginBottom: '1rem' }}>Report & Reflection</Button>
-                <Collapse isOpen={reflectionIsOpen14}>
-                    <Card>
-                        <CardBody>
-                            Content
+                            <h4 className="reflectionHeader">RESULTS</h4>
+                            <p>
+                                Overall, I think each dish came out really well. The venison and the beef were very tender and juicy, the asparagus and mushrooms had good flavor 
+                                and still had a bite to it, the onion rings were crispy and golden, and both sets of fries were crunchy on the outside with a soft fluffy center. 
+                                Since the venison was cooked in the sous vide for 20 hours, the round cut off meat was broken down enough in the cooking process that it was 
+                                tender, juicy, and kept it’s natural flavor. It had a little bit of a gamey mouth feel when you ate it, but it wasn’t overpowering. 
+                                The bernaise sauce helped to mask some of the gamey flavor and added a creamy, rich texture and flavor to the meat. The venison had to be 
+                                seared in order to get a nice crispy outside, but we continuously flipped it so that it wouldn’t get overcooked. The entire piece of meat had a 
+                                perfect medium rare temperature so it was pinkish red throughout the entire piece of meat. The asparagus and mushrooms had a lot of umami flavor 
+                                from the soy sauce and the sesame oil. The addition of the basil at the very end added some freshness and herbal characteristics which helped 
+                                balance out the salt. The asparagus only cooked for a few minutes so they were bright green which was a good contrast with the brown mushrooms. 
+                                The onion rings were fluffy and crispy and had a slight orange/brown tint from adding the turmeric and the beer to the batter. Lastly, between 
+                                both sets of fries, the triple cooked ones came out the best but they both tasted very good and had the perfect amount of salt. They were golden 
+                                brown and since we cut them thick, they were still soft on the inside.
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk13ReflectFinalPlate} alt= "Final plate of food. Steak, stir fry, onion rings, and fries" name="wk13Fp" className="cardImg"/>
+                                    <Label for="wk13Fp">Final Plate</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk13ReflectStirFryAsparagusMushroom} alt="Stir fried asparagus and mushrooms" name="stirFryMushrooms" className="cardImg"/>
+                                    <Label for="stirFryMushrooms">Stir Fried Asparagus and Mushrooms</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">EVALUATION</h4>
+                            <p>
+                                The venison came out perfectly cooked because we used the sous vide and seared it just enough at the end to give it a good brown color. 
+                                The sous vide technique works so well because the food is placed in a vacuum sealed bag and is submerged in a temperature controlled water 
+                                bath for an extended period of time. The vacuum sealed bag helps to concentrate flavors and extend the shelf life of food (Labensky et al., 2018). 
+                                The machine holds the water at a specific temperature to be sure that the food doesn’t overcook or undercook. We seared the steaks at the very end 
+                                with rosemary and garlic so that we could impart a little bit of flavor while also causing a maillard reaction for the outside to get crispy. The stir 
+                                fried asparagus and mushrooms came out well because we cut the asparagus into smaller pieces so that they would cook faster in the pan on a very high 
+                                heat. The onion rings were crispy but also fluffy from adding the beer at the end to the batter. The carbonation added air to the batter making it 
+                                fluffier when fried. In the future, I will add more salt to the batter so that it has a little bit more taste. Lastly, the triple cooked fries was 
+                                a very long process but it paid off in the end because the fries maintained their structure on the inside even being cooked 3 different times until 
+                                they were almost falling apart. I think the triple cooked came out better than the double cooked because the oil seeped down into the cracks during 
+                                the 2nd cooking process so it was crispier (Blumenthal, 2019). The triple cooked ones were also more flavorful because they were boiled in salted water 
+                                so we didn’t have to add a lot of salt at the end of the process. We had to place the fries in the freezer in order to dry out the moisture completely 
+                                before placing them back in the fryer (Bluemnthal, 2019).
+                            </p>
+                            <Row>
+                                <Col>
+                                    <img src={wk13ReflectSearingVenison} alt= "searing venison" name="searVenison" className="cardImg"/>
+                                    <Label for="searVenison">Searing Venison</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk13ReflectTripleCookedFry} alt="Triple cookdef fries after freezer" name="friesAfterFreezer" className="cardImg"/>
+                                    <Label for="friesAfterFreezer">Triple Cooked Fries After Freezing</Label>
+                                </Col>
+                                <Col>
+                                    <img src={wk13ReflectVenisonVacuumed} alt="Venison vacuumed packed" name="vacuumedVenison" className="cardImg"/>
+                                    <Label for="vacuumedVenison">Venison Vacuum Packed</Label>
+                                </Col>
+                            </Row>
+                            <h4 className="reflectionHeader">CONCLUSION</h4>
+                            <p>
+                                For this week, I wanted to practice cooking food to the correct temperature. I think I did well at this because I didn’t sear my venison for too long so it wasn’t 
+                                over cooked. Also the asparagus still had a bite to it because I only stir fried it for a few minutes until it was bright green. I also learned how to make a bernaise 
+                                sauce and another type of sauce which was very tasty and paired well with the venison. I can use these new sauce recipes to pair with other types of meat. I think 
+                                I still need to practice getting faster at my knife skills. 
+                            <br/>
+                            <br/>
+                            Bluementhal, H. (2019, August 19). <i>My Signature Dish: Heston Blumenthal’s Triple Cooked Chips</i>. Michelin Guide.
+                            <br/>
+                            <a href="https://guide.michelin.com/us/en/california/article/people/heston-blumenthal-triple-cooked-chips-french-fries">
+                                <i>https://guide.michelin.com/us/en/california/article/people/heston-blumenthal-triple-cooked-chips-french-fries</i>
+                            </a>
+                            <br/>
+                            <br/>
+                            Labensky, S. R., Hause, A.M., Martel P. A. (2018). <i>On Cooking: A Textbook of Culinary Fundamentals</i>. Pearson.
+                            <br/>
+                            </p>
                         </CardBody>
                     </Card>
                 </Collapse>
